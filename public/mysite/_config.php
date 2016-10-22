@@ -8,7 +8,7 @@ $databaseConfig = array(
 	'type' => 'MySQLPDODatabase',
 	'server' => 'localhost',
 	'username' => 'root',
-	'password' => 'root',
+	'password' => 'qweyha520',
 	'database' => 'Simpsonwestern',
 	'path' => ''
 );
