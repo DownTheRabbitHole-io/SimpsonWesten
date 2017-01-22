@@ -1,0 +1,11 @@
+{
+    "name": "Simpsonwestern",
+    "description": "Simpsonwestern SilverStripe 3 theme",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",    
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.0"
+    }
+}
