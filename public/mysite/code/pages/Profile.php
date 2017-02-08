@@ -19,11 +19,12 @@ class Profile extends Page {
      */
     private static $has_one = array(
         'OurPeople' => 'OurPeople',
-        'ProfileImage' => 'Image',
+        'ProfileImage' => 'Image'
     );
 
     private static $many_many = array(
       'ServiceTags' => 'ServiceTag',
+      'Articles' => 'Article'
     );
 
     /**
