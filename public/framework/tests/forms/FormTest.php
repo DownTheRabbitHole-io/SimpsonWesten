@@ -58,10 +58,37 @@ class FormTest extends FunctionalTest {
 		$form->loadDataFrom($requestData);
 
 		$fields = $form->Fields();
-		$this->assertEquals($fields->fieldByName('key1')->Value(), 'val1');
-		$this->assertEquals($fields->fieldByName('namespace[key2]')->Value(), 'val2');
-		$this->assertEquals($fields->fieldByName('namespace[key3][key4]')->Value(), 'val4');
-		$this->assertEquals($fields->fieldByName('othernamespace[key5][key6][key7]')->Value(), 'val7');
+		$this->assertEquals('val1', $fields->fieldByName('key1')->Value());
+		$this->assertEquals('val2', $fields->fieldByName('namespace[key2]')->Value());
+		$this->assertEquals('val4', $fields->fieldByName('namespace[key3][key4]')->Value());
+		$this->assertEquals('val7', $fields->fieldByName('othernamespace[key5][key6][key7]')->Value());
+	}
+
+	public function testSubmitReadonlyFields() {
+		$this->get('FormTest_Controller');
+
+		// Submitting a value for a readonly field should be ignored
+		$response = $this->post(
+			'FormTest_Controller/Form',
+			array(
+				'Email' => 'invalid',
+				'Number' => '888',
+				'ReadonlyField' => '<script>alert("hacxzored")</script>'
+				// leaving out "Required" field
+			)
+		);
+
+		// Number field updates its value
+		$this->assertContains('<input type="text" name="Number" value="888"', $response->getBody());
+
+
+		// Readonly field remains
+		$this->assertContains(
+			'<input type="text" name="ReadonlyField" value="This value is readonly"',
+			$response->getBody()
+		);
+
+		$this->assertNotContains('hacxzored', $response->getBody());
 	}
 
 	public function testLoadDataFromUnchangedHandling() {
@@ -783,7 +810,10 @@ class FormTest_Controller extends Controller implements TestOnly {
 				new EmailField('Email'),
 				new TextField('SomeRequiredField'),
 				new CheckboxSetField('Boxes', null, array('1'=>'one','2'=>'two')),
-				new NumericField('Number')
+				new NumericField('Number'),
+				TextField::create('ReadonlyField')
+					->setReadonly(true)
+					->setValue('This value is readonly')
 			),
 			new FieldList(
 				new FormAction('doSubmit')

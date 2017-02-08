@@ -70,7 +70,7 @@ class CsvBulkLoader extends BulkLoader {
 			foreach ($files as $file) {
 				$last = $file;
 
-				$next = $this->processChunk($file, false);
+				$next = $this->processChunk($file, $preview);
 
 				if ($result instanceof BulkLoader_Result) {
 					$result->merge($next);
@@ -81,7 +81,11 @@ class CsvBulkLoader extends BulkLoader {
 				@unlink($file);
 			}
 		} catch (Exception $e) {
-			print "Failed to parse {$last}\n";
+			$failedMessage = sprintf("Failed to parse %s", $last);
+			if (Director::isDev()) {
+				$failedMessage = sprintf($failedMessage . " because %s", $e->getMessage());
+			}
+			print $failedMessage . PHP_EOL;
 		}
 
 		return $result;
