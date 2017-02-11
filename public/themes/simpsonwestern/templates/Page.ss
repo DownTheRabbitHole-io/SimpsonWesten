@@ -29,20 +29,37 @@ Change it, enhance it and most importantly enjoy it!
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-    <header id="header">
-        <% include TopBar %>
-        <% include MainNav %>
-    </header>
-    <div class="main" role="main">
-        <div class="inner typography line">
-            $Layout
-        </div>
-    </div>
-    <% include Footer %>
+    <div class="container page">
+		<%--<% include Header %>--%>
+		<% include MainNav %>
+        <%--<div class="row header-image">--%>
+            <%--<div>22222222222222222 </div>--%>
+        <%--</div>--%>
+        <%--<div class="row description">--%>
+            <%--<div>33333333333333333333333333 </div>--%>
+        <%--</div>--%>
+        <%--<div class="row image2">--%>
+            <%--<div>44444444444444444444444444 </div>--%>
+        <%--</div>--%>
+        <%--<div class="row footer">--%>
+            <%--<div>55555555555555555555555555555 </div>--%>
+        <%--</div>--%>
+		<%--<div class="row">--%>
+		<%--<header id="header">--%>
+			<%--<% include Header %>--%>
+			<%--<% include MainNav %>--%>
+		<%--</header>--%>
+		<%--</div>--%>
 
-    <% require javascript('framework/thirdparty/jquery/jquery.js') %>
+			<%--<div class="inner typography line">--%>
+				$Layout
+			<%--</div>--%>
+
+		<% include Footer %>
+	</div>
+    <%--<% require javascript('framework/thirdparty/jquery/jquery.js') %>--%>
     <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
-    <script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>
+    <%--<script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>--%>
 
 </body>
 </html>

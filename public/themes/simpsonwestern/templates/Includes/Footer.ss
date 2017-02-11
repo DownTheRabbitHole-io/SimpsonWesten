@@ -1,102 +1,46 @@
 <footer id="footer">
-    <div id="footer-top" class="container">
+    <div class="container-fluid footer-content">
         <div class="row">
-            <div class="block col-sm-3">
-                <a href="#"><img src="$ThemeDir/images/logo.png" alt="One Ring Rentals" /></a>
-                <br><br>
-                <p>$SiteConfig.FooterContent</p>
+            <div class="col-sm-3 col-xm-12 phone-number">
+                <img src="$ThemeDir/images/logo.png" alt="One Ring Rentals" />
+                <h2>09 486 3058</h2>
             </div>
-            <div class="block col-sm-3">
-                <h3>Helpful Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#">All rentals</a></li>
-                    <li><a href="#">List your rental</a></li>
-                    <li><a href="#">Read our FAQs</a></li>
+            <div class="col-sm-3 col-xm-12">
+                <ul class="nav">
+                    <% loop $Menu(1) %>
+                        <span class="col-sm-6 col-xm-12">
+                            <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                        </span>
+                    <% end_loop %>
                 </ul>
             </div>
-            <div class="block col-sm-6">
-                <h3>Popular regions</h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="footer-listings">
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Rhovanion</a></p>
-                            </li>
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Eriador</a></p>
-                            </li>
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Bay of Belfalas</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="footer-listings">
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Mordor</a></p>
-                            </li>
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Arnor</a></p>
-                            </li>
-                            <li>
-                                <div class="image">
-                                    <a href="properties-detail.html"><img src="http://placehold.it/760x670" alt="" /></a>
-                                </div>
-                                <p><a href="properties-detail.html">Forlindon</a></p>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="col-sm-3 hidden-xs">
+            </div>
+            <div class="col-sm-3 col-xm-12">
+                <p class="address">Takapuna Level3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna Silverdale Cnr Millwater Parkway & Polarity Rise, SIlverdale</p>
+                <div class="social-networks">
+                    <%--style testing code start--%>
+                    <a href="#"><img class="fa-nzlaw" src="$ThemeDir/images/NZLaw_icon.png"></a>
+                    <a href="#"><img class="fa-linkedin" src="$ThemeDir/images/linkedin_icon.png"></a>
+                    <a href="#"><img class="fa-twitter" src="$ThemeDir/images/twitter_icon.png"></a>
+                    <%--style testing code end--%>
+
+                    <%--<% with $SiteConfig %>--%>
+                    <%--<% if $FacebookLink %>--%>
+                    <%--<a href="$FacebookLink"><img class="fa fa-facebook" src=""></a>--%>
+                    <%--<% end_if %>--%>
+                    <%--<% if $TwitterLink %>--%>
+                    <%--<a href="$TwitterLink"><img class="fa fa-twitter" src=""></img></a>--%>
+                    <%--<% end_if %>--%>
+                    <%--<% end_with %>--%>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- BEGIN COPYRIGHT -->
-    <div id="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    &copy; 2014 One Ring Rentals
-
-                    <!-- BEGIN SOCIAL NETWORKS -->
-                    <ul class="social-networks">
-                    <% with $SiteConfig %>
-                        <% if $FacebookLink %>
-                        <li><a href="$FacebookLink"><i class="fa fa-facebook"></i></a></li>
-                        <% end_if %>
-                        <% if $TwitterLink %>
-                        <li><a href="$TwitterLink"><i class="fa fa-twitter"></i></a></li>
-                        <% end_if %>
-                        <% if $GoogleLink %>
-                        <li><a href="$GoogleLink"><i class="fa fa-google"></i></a></li>
-                        <% end_if %>
-                        <% if $YouTubeLink %>
-                        <li><a href="$YouTubeLink"><i class="fa fa-youtube"></i></a></li>
-                        <% end_if %>
-                    <% end_with %>
-                    </ul>
-                    <!-- END SOCIAL NETWORKS -->
-
-                </div>
+        <div class="row">
+            <div class="copyright">
+                <span>All pages copyright Simpson Western 2017</span>
             </div>
+
         </div>
     </div>
-    <!-- END COPYRIGHT -->
-
 </footer>
