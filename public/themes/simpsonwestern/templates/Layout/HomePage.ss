@@ -31,7 +31,7 @@
 				</div>
 				<!-- END MAIN CONTENT -->
 				<div class="col-sm-4 hidden-xs">
-					<% include RecentArticles %>
+					<% include RecentArticlesHome %>
 				</div>
 			</div>
 		</div>

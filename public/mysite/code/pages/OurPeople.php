@@ -51,12 +51,24 @@ class OurPeople_Controller extends Page_Controller{
 
   public function FilterForm()
   {
-      // Create fields
-      $fields = new FieldList(
-          new DropdownField('Team', 'Team', Dataobject::get("Team")->map("ID", "Name", "Please Select")),
-          new DropdownField('Expertise', 'Expertise', Dataobject::get("Expertise")->map("ID", "Title", "Please Select")),
-          new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Name", "Please Select"))
+      $data = Session::get('filter');
+      // Create fields 
+      $teamDDL = new DropdownField('Team', 'Team', Dataobject::get("Team")->map("ID", "Name"));
+      $teamDDL->setEmptyString('All');
+      $teamDDL->setValue($data['Team']);
 
+      $expertiseDDL = new DropdownField('Expertise', 'Expertise', Dataobject::get("Expertise")->map("ID", "Title"));
+      $expertiseDDL->setEmptyString('All');
+      $expertiseDDL->setValue($data['Expertise']);
+
+      $officeDDL = new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Name"));
+      $officeDDL->setEmptyString('All');
+      $officeDDL->setValue($data['Office']);
+
+      $fields = new FieldList(
+          $teamDDL,
+          $expertiseDDL,
+          $officeDDL
       );
 
       // Create actions
@@ -73,11 +85,28 @@ class OurPeople_Controller extends Page_Controller{
   }
 
   public function profileList(){
-    $filter = Session::get('filter');
-    //var_dump($filter);
-    //exit();
+    $data = Session::get('filter');
+
     //->filter(array('Expertises.ID:Equals' => 2));
-    return Profile::get()->filter(array('OfficeID' => $filter['Office'], 'TeamID' => $filter['Team']));
+
+    $filter = array();
+    foreach($data as $id => $item){
+      if($data[$id] == ''){
+        unset($data[$id]);
+      }else{
+        if($id == 'Office'){
+          $filter['OfficeID'] = $item;
+        }
+        if($id == 'Team'){
+          $filter['TeamID'] = $item;
+        }
+        if($id == 'Expertise'){
+          $filter['Expertises.ID'] = $item;
+        }
+      }
+    }
+    
+    return Profile::get()->filter($filter);
   }
 
 

@@ -23,4 +23,8 @@
 		</ul>
 
 	</div>
+	<div class="other-links">
+		<a href="#" title="Read more articles">Read more articles</a> <br />
+		<a href="#" title="Subscribe to our newsletter">Subscribe to our newsletter</a>
+	</div>
 </div>
