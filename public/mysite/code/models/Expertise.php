@@ -5,7 +5,7 @@
  * @package silverstripe
  */
 
-class ServiceTag extends DataObject {
+class Expertise extends DataObject {
 	/**
 	 * @var array
 	 */
@@ -19,11 +19,11 @@ class ServiceTag extends DataObject {
 	 * @var array
 	 */
 	private static $belongs_many_many = array(
-		'ProfileTags' => 'Profile'
+		'ProfileExpertise' => 'Profile'
 	);
 
 	/**
-	 * The default sorting lists ServiceTag by title alpha.
+	 * The default sorting lists Expertise by title alpha.
 	 *
 	 * @var string
 	 */

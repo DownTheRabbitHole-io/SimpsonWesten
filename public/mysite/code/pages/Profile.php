@@ -8,9 +8,10 @@ class Profile extends Page {
         'Name' => 'Varchar(400)',
         'Position' => 'Varchar(400)',
         'Phone' => 'Varchar(400)',
+        'Mobile' => 'Varchar(400)',
+        'PA' => 'Varchar(400)',
         'Email' => 'Varchar(400)',
         'Linkedin' => 'Varchar(400)',
-        'Office' => 'Varchar(400)',
         'Bio' => 'HTMLText'
     );
 
@@ -18,12 +19,13 @@ class Profile extends Page {
      * @var array
      */
     private static $has_one = array(
-        'OurPeople' => 'OurPeople',
-        'ProfileImage' => 'Image'
+        'ProfileImage' => 'Image',
+        'Office' => 'Office',
+        'Team' => 'Team'
     );
 
     private static $many_many = array(
-      'ServiceTags' => 'ServiceTag',
+      'Expertises' => 'Expertise',
       'Articles' => 'Article'
     );
 
@@ -54,6 +56,10 @@ class Profile extends Page {
 		$Phone->Required();
 		$Phone->setCustomValidationMessage('A Phone is required.');
 
+    $Mobile = TextField::create('Mobile', 'Mobile');
+
+    $PA = TextField::create('PA', 'PA');
+
     $Email = TextField::create('Email', 'Email');
 		$Email->Required();
 		$Email->setCustomValidationMessage('A Email is required.');
@@ -62,17 +68,23 @@ class Profile extends Page {
 		$Linkedin->Required();
 		$Linkedin->setCustomValidationMessage('A Linkedin is required.');
 
-    $Officelist = array(''=>'Select Office','Takapuna' => 'Takapuna','Orewa' => 'Orewa');
+    $Officelist = Dataobject::get("Office")->map("ID", "Name", "Please Select");
     
-    $Office = DropdownField::create('Office','Office',$Officelist);
+    $Office = DropdownField::create('OfficeID','Office',$Officelist);
     $Office->Required();
     $Office->setCustomValidationMessage('A Office is required.');
 
+    $Teamlist = Dataobject::get("Team")->map("ID", "Name", "Please Select");
+    
+    $Team = DropdownField::create('TeamID','Team',$Teamlist);
+    $Team->Required();
+    $Team->setCustomValidationMessage('A Team is required.');
+
     $tagField = TagField::create(
-				'ServiceTags',
-				'Services',
-				ServiceTag::get(),
-				$this->ServiceTags()
+				'Expertises',
+				'Expertise',
+				Expertise::get(),
+				$this->Expertises()
 			)
 			->setShouldLazyLoad(true) // tags should be lazy loaded
 			->setCanCreate(true);     // new tag DataObjects can be created
@@ -90,10 +102,13 @@ class Profile extends Page {
 		$fieldlist = new FieldList(
 			$Name,
       $Position,
-      $Phone,
       $Email,
+      $Phone,
+      $Mobile,
+      $PA,      
       $Linkedin,
       $Office,
+      $Team,
       $tagField,
       $uploadField,
       $Bio
