@@ -90,18 +90,21 @@ class OurPeople_Controller extends Page_Controller{
     //->filter(array('Expertises.ID:Equals' => 2));
 
     $filter = array();
-    foreach($data as $id => $item){
-      if($data[$id] == ''){
-        unset($data[$id]);
-      }else{
-        if($id == 'Office'){
-          $filter['OfficeID'] = $item;
-        }
-        if($id == 'Team'){
-          $filter['TeamID'] = $item;
-        }
-        if($id == 'Expertise'){
-          $filter['Expertises.ID'] = $item;
+
+    if($data != null){
+      foreach($data as $id => $item){
+        if($data[$id] == ''){
+          unset($data[$id]);
+        }else{
+          if($id == 'Office'){
+            $filter['OfficeID'] = $item;
+          }
+          if($id == 'Team'){
+            $filter['TeamID'] = $item;
+          }
+          if($id == 'Expertise'){
+            $filter['Expertises.ID'] = $item;
+          }
         }
       }
     }

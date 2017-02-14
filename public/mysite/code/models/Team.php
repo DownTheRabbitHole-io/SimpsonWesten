@@ -20,7 +20,7 @@ class Team extends DataObject {
 	 *
 	 * @var string
 	 */
-	private static $default_sort = 'Title ASC';
+	private static $default_sort = 'Name ASC';
 
 	private static $hide_preview_panel = true;
 

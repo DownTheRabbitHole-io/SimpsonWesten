@@ -13,3 +13,6 @@ $databaseConfig = array(
 	'path' => ''
 );
 
+
+Security::setDefaultAdmin("admin","password");
+
