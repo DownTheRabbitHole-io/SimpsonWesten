@@ -1911,6 +1911,7 @@ div.page {
   border: 1px solid #eee;
   padding: 0;
   color: #333541;
+  position: relative;
 }
 
 .page .header {
@@ -1929,14 +1930,14 @@ div.page {
     font-weight: bolder;
 }
 
-.header button {
+.header .nav-button {
   float: right;
   margin-top: 5px;
   background-color: #fff;
   border: none;
 }
 
-.header .fa-bars {
+.header .fa-bars, .header .fa-times {
   font-size: 25px;
   font-weight: lighter;
   color: #333742;
@@ -1947,6 +1948,17 @@ div.page {
   margin-top: 5px;
   margin-right: 30px;
 }
+
+.header .primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .primary {
+  display: none;
+}
+
 
 
 /* #Recent Articles
@@ -1964,11 +1976,11 @@ div.page {
     margin-bottom: 25px;
 }
 
-/*.recent-article .article-links ul{*/
-    /*list-style: none;*/
-    /*padding: 0;*/
-    /*margin: 0;*/
-/*}*/
+.recent-article .article-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .recent-article .article-links li {
     padding: 5px 0;
@@ -2061,7 +2073,6 @@ div.page {
 #home-search-buttons > .btn {
   margin: 0 5px;
 }
-
 /*round-off the corners on home-search*/
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
@@ -6068,7 +6079,6 @@ a.tp-caption.btn-lg {
 .login-info p {
   margin-bottom: 50px;
 }
-
 /* #Contacts
 ================================================== */
 .contacts {
@@ -6145,9 +6155,6 @@ a.tp-caption.btn-lg {
   color: #74777c;
   font-style: italic;
 }
-
-
-
 /* #Footer
 ================================================== */
 #footer {
@@ -6381,14 +6388,6 @@ a.tp-caption.btn-lg {
 .action-box .social-networks li a:hover {
   color: #fff !important;
 }
-
-
-
-
-
-
-
-
 /* #PrettyPhoto Skin Override
 ================================================== */
 div.cozy .pp_next:hover,
@@ -7208,6 +7207,13 @@ div.dark_square #pp_full_res .pp_inline {
   .property-large-buttons2 li {
     width: 100%;
   }
+
+
+
+    .page .header {
+        padding: 22px 50px;
+    }
+
 }
 @media (max-width: 600px) {
   .e404 {

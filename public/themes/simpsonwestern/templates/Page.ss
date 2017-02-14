@@ -32,24 +32,6 @@ Change it, enhance it and most importantly enjoy it!
     <div class="container page">
 		<%--<% include Header %>--%>
 		<% include MainNav %>
-        <%--<div class="row header-image">--%>
-            <%--<div>22222222222222222 </div>--%>
-        <%--</div>--%>
-        <%--<div class="row description">--%>
-            <%--<div>33333333333333333333333333 </div>--%>
-        <%--</div>--%>
-        <%--<div class="row image2">--%>
-            <%--<div>44444444444444444444444444 </div>--%>
-        <%--</div>--%>
-        <%--<div class="row footer">--%>
-            <%--<div>55555555555555555555555555555 </div>--%>
-        <%--</div>--%>
-		<%--<div class="row">--%>
-		<%--<header id="header">--%>
-			<%--<% include Header %>--%>
-			<%--<% include MainNav %>--%>
-		<%--</header>--%>
-		<%--</div>--%>
 
 			<%--<div class="inner typography line">--%>
 				$Layout

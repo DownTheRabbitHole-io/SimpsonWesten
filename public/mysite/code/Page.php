@@ -46,7 +46,7 @@ class Page_Controller extends ContentController {
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/bootstrap-checkbox.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/nice-scroll.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/jquery-browser.js");
-        Requirements::javascript("{$this->ThemeDir()}/javascript/scripts.js");
+//        Requirements::javascript("{$this->ThemeDir()}/javascript/scripts.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/script.js");
 	}
 }

@@ -1,7 +1,7 @@
 <div class="recent-article">
 	<h5>RECENT ARTICLES</h5>
 	<div class="article-links">
-		<ul class="nav">
+		<ul>
 			<li class="article">
 				<h6 class="article-title">date or title</h6>
 				<div class="short-description">

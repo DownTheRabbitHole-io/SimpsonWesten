@@ -43,12 +43,16 @@
         </div>
 
         <!-- BEGIN MAIN MENU -->
-        <button class="nav-button"><i class="fa fa-bars"></i></button>
+        <span class="nav-button nav-open-button">
+            <i class="fa fa-bars js-fa-bars"></i>
+        </span>
         <%--<% include Navigation %>--%>
 
         <div class="phone-icon">
             <img src="$ThemeDir/images/phone_icon.png" />
         </div>
+
+        <% include Navigation %>
     </div>
 
 </div>

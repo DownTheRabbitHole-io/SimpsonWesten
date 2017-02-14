@@ -1,5 +1,6 @@
-<nav class="navbar">
-	<span class="nav navbar-nav>²</span>
+<nav class="primary">
+    <span class="nav-open-button"><i class="fa fa-times js-fa-times"></i></span>
+
 	<ul>
 		<% loop $Menu(1) %>
 			<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
