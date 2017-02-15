@@ -6953,6 +6953,12 @@ nav.nav-mobile{
   visibility:hidden;
 }
 
+nav.navbar{
+  width:100%;
+  max-width:1168px;
+  margin:0 auto;
+}
+
 /* #Media Queries
 ================================================== */
 @media (min-width: 993px) and (max-width: 1199px) {
@@ -6979,12 +6985,20 @@ nav.nav-mobile{
     height:747px !important;
   }
 
+  nav.navbar{
+    max-width:968px !important;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 992px) {
 
   .nav-menu{
     width:288px !important;
     height:595px !important;
+  }
+
+  nav.navbar{
+    max-width:748px !important;
   }
 
   .sidebar #newsletter h2 span {
