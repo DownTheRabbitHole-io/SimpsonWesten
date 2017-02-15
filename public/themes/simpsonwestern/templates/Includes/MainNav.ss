@@ -1,50 +1,12 @@
-<!--<header class="">
-<div id="nav-section" class="container navbar-fixed-top">
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="row">
-        <div class="container">
-            <div class="col-sm-12 nav-header">
-            <div class="nav-header">
-                <div id="navbar" class="navbar-collapse collapse">
-                    <a href="$AbsoluteBaseURL" class="nav-logo"><img src="$ThemeDir/images/logo.png" alt="One Ring Rentals" /></a>--%>
-                    <div class="title">
-                        SIMPSONWESTERN
-                        $SiteConfig.Title
-                        <% if $SiteConfig.Tagline %>
-                            p>$SiteConfig.Tagline</p>
-                        <% end_if %>
-                    </div>
-
-                    <!-- BEGIN MAIN MENU -->
-                   <!-- <button id="nav-mobile-btn"><i class="fa fa-bars"></i></button>
-                    <% include Navigation %>
-
-                    <div class="phone-icon">
-                        <img src="$ThemeDir/images/phone_icon.png" />
-                    </div>
-                    <!-- END MAIN MENU -->
-
-               <!-- </div>
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-
 <div class="row header">
     <div class="header-content">
         <div class="title">
             SIMPSONWESTERN
-            $SiteConfig.Title
-            <% if $SiteConfig.Tagline %>
-            <p>$SiteConfig.Tagline</p>
-            <% end_if %>
+            
         </div>
 
         <!-- BEGIN MAIN MENU -->
         <button class="nav-button"><i class="fa fa-bars"></i></button>
-        <% include Navigation %>
 
         <div class="phone-icon">
             <img src="$ThemeDir/images/phone_icon.png" />
@@ -52,3 +14,23 @@
     </div>
 
 </div>
+
+<!-- nav menu -->
+
+<div class="nav-menu closed">
+    <button class="close-button"><i class="fa fa-times"></i></button>
+    <nav class="navbar">
+
+        
+	    <ul>
+			<li class="link"><a href="/about/" title="About">About</a></li>
+			<li class="link"><a href="/our-people/" title="Our People">Our People</a></li>
+			<li class="link"><a href="/business-law/" title="Business Law">Business Law</a><a class="plus-link" href="#"> + </a></li>
+			<li class="link"><a href="/personal-law/" title="Personal Law">Personal Law</a><a class="plus-link" href="#"> + </a></li>
+			<li class="link"><a href="/helpful-reading/" title="Helpful reading">Helpful reading</a></li>
+			<li class="link"><a href="/contact/" title="Contact">Contact</a></li>
+	    </ul>
+    </nav>
+</div>
+
+<!-- nav menu ends -->
