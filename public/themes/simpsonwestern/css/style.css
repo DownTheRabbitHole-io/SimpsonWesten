@@ -6878,6 +6878,15 @@ div.dark_square #pp_full_res .pp_inline {
 
 /* Nav - Menu */
 
+a.home-link{
+  color:#000;
+  text-decoration:none;
+}
+
+div.header{
+  background-color:#fff;
+}
+
 div.container.page{
   position:relative;
 }
@@ -6897,30 +6906,30 @@ div.container.page{
   right:-999999px;
 }
 
-.navbar li{
+.inner-nav li{
   list-style-type: none;
   margin-bottom:16px;
 }
 
-.navbar li a{
+.inner-nav li a{
   text-decoration:underline;
   font-size:20px;
   color:#000;
 }
 
-.navbar li a.plus-link{
+.inner-nav li a.plus-link{
   text-decoration:none;
   font-size:18px;
   display: inline-block;
   margin-left:4px;
 }
 
-.navbar li a:hover, 
-.navbar li a:focus{
+.inner-nav li a:hover, 
+.inner-nav li a:focus{
   color:#2e3192;
 }
 
-nav.navbar{
+nav.inner-nav{
   margin-top:108px;
 }
 
@@ -6939,6 +6948,10 @@ button.close-button{
   margin-top:27px;
 }
 
+nav.nav-mobile{
+  display:none !important;
+  visibility:hidden;
+}
 
 /* #Media Queries
 ================================================== */
@@ -7316,8 +7329,13 @@ button.close-button{
 @media (min-width: 481px) and (max-width: 992px) {
 
    .nav-menu{
+     margin-top:80px;
     width:100% !important;
-    height:30% !important;
+    height:320px !important;
+  }
+
+    nav.inner-nav{
+    margin-top:32px;
   }
 
   .property-large-buttons li h4 {
@@ -7335,8 +7353,13 @@ button.close-button{
 @media (max-width: 480px) {
 
   .nav-menu{
+    margin-top:80px;
     width:100% !important;
-    height:27.50% !important;
+    height:320px !important;
+  }
+
+  nav.inner-nav{
+    margin-top:32px;
   }
 
   #top-info {
