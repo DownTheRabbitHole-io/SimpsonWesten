@@ -33,7 +33,7 @@
 
 					<div class="our-people-tile-container">
 						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						<div class="people-info">
+						<div class="people-info clearfix">
 							<h3 class="name-text">James Kirk</h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
 						</div>
@@ -41,18 +41,18 @@
 
 					<div class="our-people-tile-container">
 						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						<div class="people-info">
+						<div class="people-info clearfix">
 							<h3 class="name-text">Jean Luc Picard</h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
-					</div>
+						</div>
 					</div>
 
 					<div class="our-people-tile-container">
 						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						<div class="people-info">
+						<div class="people-info clearfix">
 							<h3 class="name-text">Benjamin Sisko</h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
-					</div>
+						</div>
 					</div>
 
 				</div><!-- component -->
