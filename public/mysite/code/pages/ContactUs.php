@@ -1,6 +1,7 @@
 <?php
 class ContactUs extends Page{
 	static $db = array(
+        'ContactNumber' => 'Varchar(40)',
         'Mailto' => 'Varchar(100)',
         'SubmitText' => 'Text'
     );
@@ -8,6 +9,7 @@ class ContactUs extends Page{
     function getCMSFields() {
         $fields = parent::getCMSFields();
 
+        $fields->addFieldToTab("Root.Contact", new TextField('ContactNumber', 'Contact Number'));
         $fields->addFieldToTab("Root.OnSubmission", new TextField('Mailto', 'Email submissions to'));
         $fields->addFieldToTab("Root.OnSubmission", new TextareaField('SubmitText', 'Text on Submission'));
 
@@ -16,31 +18,18 @@ class ContactUs extends Page{
 }
 
 
-class Contact_Controller extends Page_Controller{
+class ContactUs_Controller extends Page_Controller{
 	static $allowed_actions = array(
-        'ContactForm'
+        'Form',
     );
 
-
-
-    function ContactForm() {
+    function Form() {
         // Create fields
         $fields = new FieldList(
             new TextField('Name', "Your Full Name"),
-			new TextField('Phone', 'Your Phone Number'),
             new EmailField('Email', "Your Email"),
-			new OptionsetField(
-			   $name = "Type",
-			   $title = "",
-			   $source = array(
-			      "Open Account" => "Open Account",
-			      "Deposit" =>  "Deposit",
-			      "Withdrawl" =>  "Withdrawl",
-			      "Enquiry" =>  "Enquiry"
-			   ),
-			   $value = "Open Account"
-			  ),
-            new TextareaField('Message',"Message")
+			new TextField('Phone', 'Your Phone Number'),
+			new TextareaField('Message',"Message")
         );
 
         // Create action
@@ -51,7 +40,7 @@ class Contact_Controller extends Page_Controller{
         // Create Validators
         $validator = new RequiredFields('Name', 'Email', 'Message');
 
-        return new Form($this, 'ContactForm', $fields, $actions, $validator);
+        return new Form($this, 'Form', $fields, $actions, $validator);
     }
 
 	function SendContactForm($data, $form) {
@@ -68,7 +57,10 @@ class Contact_Controller extends Page_Controller{
         //send mail
         $email->send();
         //return to submitted message
-		$this->redirect($this->Link("?success=1"));
+        return array(
+            'Message' => '<h4>Thank you for contacting us, we will be in touch as soon as possible.</h4>',
+            'Form' => ''
+        );
     }
 
 	public function Success()
