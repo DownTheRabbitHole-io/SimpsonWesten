@@ -1270,8 +1270,15 @@ colored.btn-danger:hover,
 }
 
 .breadcrumb a {
-  color: #fff;
+  color: #343741;
+  text-decoration:none;
 }
+
+.breadcrumb a:hover,
+.breadcrumb a:focus{
+  text-decoration:underline;
+}
+
 .breadcrumb > li + li:before {
   color: #fff;
   padding: 0px;
@@ -7044,6 +7051,13 @@ nav.navbar{
     text-decoration:none;
 }
 
+.subnav a:hover,
+.subnav a:focus{
+  text-decoration:underline !important;
+  line-height:1.5;
+  color:#303B95 !important;
+}
+
 ul.business-links,
 ul.subnav{
   padding:0 !important;
@@ -7058,6 +7072,49 @@ ul.business-links li a{
     font-family:'gibsonlight', sans-serif;
     font-size:13px;
     text-decoration:underline;
+}
+
+/* Our People Component */
+
+.our-people-title{
+  font-size:13px;
+  font-family:'gibsonsemibold', sans-serif;
+  color:#343741;
+  text-transform: uppercase;
+  border-bottom:2px solid #343741;
+  margin-bottom:8px;
+}
+
+.portrait-thumb{
+  float:left;
+  margin-right:8px;
+  margin-bottom:8px;
+}
+
+.name-text{
+  font-size:13px;
+  font-family:'gibsonsemibold', sans-serif;
+  color:#343741;
+}
+
+.people-info p{
+  font-size:13px;
+  font-family:'gibsonregular', sans-serif;
+  color:#343741;
+  border-bottom:2px solid #343741;
+}
+
+.support-message-container{
+  font-size:13px;
+  font-family:'gibsonregular', sans-serif;
+  color:#343741;
+}
+
+a.contact-link{
+  color:#303B95;
+  font-size:13px;
+  font-family:'gibsonsemibold', sans-serif;
+  text-decoration:underline;
 }
 
 
