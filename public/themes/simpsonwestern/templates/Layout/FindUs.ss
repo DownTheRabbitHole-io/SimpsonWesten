@@ -2,7 +2,14 @@
 <div class="content">
 	<div class="container">
 		<div class="row">
-			<div class="main col-sm-12">
+      <% loop $getOffices %>	
+      <div class="main col-sm-3 office-box" style="cursor:pointer;" id="$ID">
+				<h3>$Name</h3>
+        </br>
+        $Content
+			</div>
+      <% end_loop %>
+			<div class="main col-sm-3">
 				$Content
 			</div>			
 		</div>
@@ -11,20 +18,19 @@
 				<div id="map"></div>
         <script>
           function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 4,
+            var uluru = {lat: -36.7905752, lng: 174.7695994};
+            officeMap = new google.maps.Map(document.getElementById('map'), {
+              zoom: 10,
               center: uluru
             });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
+           
+            loadMarkers();
           }
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzymwTN6r2DtjyFeNb60ilb4hkC3G9_2I&callback=initMap">
         </script>
+        <% include Markers  %>
 			</div>			
 		</div>
     <style>
