@@ -535,8 +535,7 @@ colored.btn-danger:hover,
   text-align: left;
   font-size:100px;
   margin-top:80px;
-  margin-left:20px;
-  
+  margin-left:32px;
 }
 
 
@@ -1267,7 +1266,7 @@ colored.btn-danger:hover,
   font-family: 'gibsonlight', sans-serif;
   font-size:11px;
   padding:0 !important;
-  margin-left:20px;
+  margin-left:32px;
 }
 
 .breadcrumb a {
