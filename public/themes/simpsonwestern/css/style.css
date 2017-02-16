@@ -7088,7 +7088,6 @@ ul.business-links li a{
 .portrait-thumb{
   float:left;
   margin-right:8px;
-  margin-bottom:8px;
 }
 
 .name-text{
@@ -7122,6 +7121,46 @@ a.contact-link{
   text-decoration:underline;
 }
 
+
+/* OUR PEOPLE PAGE */
+
+ul.profile-list-holder{
+  padding:0;
+}
+
+li.profile-list{
+  list-style-type:none;
+  width:256px;
+  float:left;
+  margin:8px;
+}
+
+.portrait-medium{
+  margin-bottom:4px;
+}
+
+.people-tile-medium{
+  width:256px;
+}
+
+h4.people-tile-medium-name a{
+  text-decoration: none !important;
+  color:#000;
+}
+
+p.people-tile--medium-position a{
+  text-decoration: none !important;
+  color:#000;
+}
+
+.people-tile-medium-name a:hover,
+.people-tile-medium-name a:focus{
+  color:#303B95;
+}
+
+div.sneak{
+  visibility:hidden !important;
+}
 
 /* #Media Queries
 ================================================== */
@@ -7506,6 +7545,10 @@ a.contact-link{
 }
 @media (min-width: 481px) and (max-width: 992px) {
 
+  .portrait-thumb{
+  margin-bottom:8px;
+}
+
    .nav-menu{
      margin-top:80px;
     width:100% !important;
@@ -7535,6 +7578,8 @@ a.contact-link{
     width:100% !important;
     height:320px !important;
   }
+
+
 
   nav.inner-nav{
     margin-top:32px;
