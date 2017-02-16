@@ -1926,8 +1926,8 @@ div.page {
 
 .header .title {
     float: left;
-    font-size: 25px;
-    font-weight: bolder;
+    /*font-size: 25px;*/
+    /*font-weight: bolder;*/
 }
 
 .header .nav-button {
@@ -6172,6 +6172,10 @@ a.tp-caption.btn-lg {
     margin-left: 5px;
 }
 
+#footer .phone-number img {
+  width: 100%;
+}
+
 #footer .address {
     line-height: 20px;
 }
@@ -7209,12 +7213,33 @@ div.dark_square #pp_full_res .pp_inline {
   }
 
 
+    /* 1111111111111111111111 */
 
     .page .header {
-        padding: 22px 50px;
+        padding: 15px;
     }
+  .page .header img {
+    width: 100%;
+  }
+  #footer .phone-number img {
+    width: initial;
+  }
+
+  .header .nav-button {
+    margin-top: 0;
+  }
+  .header .phone-icon{
+    margin-top: 0;
+    margin-right: 15px;
+  }
+
+  .header .title {
+    width: 200px;
+  }
+
 
 }
+
 @media (max-width: 600px) {
   .e404 {
     text-align: center;

@@ -35,7 +35,8 @@
 <div class="row header">
     <div class="header-content">
         <div class="title">
-            SIMPSONWESTERN
+            <img src="$ThemeDir/images/logo.png" alt="One Ring Rentals" />
+            <%--SIMPSONWESTERN--%>
             <%--$SiteConfig.Title--%>
             <%--<% if $SiteConfig.Tagline %>--%>
             <%--<p>$SiteConfig.Tagline</p>--%>
