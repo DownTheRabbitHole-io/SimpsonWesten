@@ -1,4 +1,22 @@
-<% include Banner %>
+<div class="content">
+	<div class="container">
+		<div class="row" style="padding-top:80px;">
+			<div class="col-sm-6">
+				<div class="breadcrumb"><% include BreadCrumbs %></div>
+			</div>
+			<div class="col-sm-6">
+				<form>
+					<select name="category" id="category">
+						<option>Category 1</option>
+					</select>
+					<input type="submit" value="filter"/>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <div class="content">
 	<div class="container">
 		<div class="row">
