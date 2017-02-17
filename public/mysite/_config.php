@@ -4,6 +4,7 @@ global $project;
 $project = 'mysite';
 
 global $databaseConfig;
+/*
 $databaseConfig = array(
 	'type' => 'MySQLPDODatabase',
 	'server' => 'localhost',
@@ -12,6 +13,19 @@ $databaseConfig = array(
 	'database' => 'Simpsonwestern',
 	'path' => ''
 );
+*/
+
+// aws db settings
+
+$databaseConfig = array(
+	'type' => 'MySQLPDODatabase',
+	'server' => 'aa5fpiwwsz6tjx.cpgfoemq4syn.ap-southeast-2.rds.amazonaws.com',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'Simpsonwestern',
+	'path' => ''
+);
+
 
 
 Security::setDefaultAdmin("admin","password");
