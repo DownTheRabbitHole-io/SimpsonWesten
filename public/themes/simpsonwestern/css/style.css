@@ -2010,7 +2010,7 @@ div.page {
 /* #Recent Articles
 ================================================== */
 .recent-article {
-    padding: 0px 35px;
+    padding: 0px;
     line-height: 20px;
     font-size: 10px;
 }
@@ -7139,6 +7139,10 @@ li.profile-list{
   margin-bottom:4px;
 }
 
+.portrait-medium:hover{
+  opacity: 0.5;
+}
+
 .people-tile-medium{
   width:256px;
 }
@@ -7151,6 +7155,9 @@ h4.people-tile-medium-name a{
 p.people-tile--medium-position a{
   text-decoration: none !important;
   color:#000;
+  border-bottom:1px solid #000;
+  width:256px;
+  display:inline-block;
 }
 
 .people-tile-medium-name a:hover,
@@ -7160,6 +7167,18 @@ p.people-tile--medium-position a{
 
 div.sneak{
   visibility:hidden !important;
+}
+
+.sidebar-filters-title{
+  color:#000;
+  width:100%;
+  display:inline-block;
+  border-bottom:1px solid #000;
+  margin-bottom:8px;
+}
+
+div.sidebar input[type=submit]{
+  display:none !important;
 }
 
 /* #Media Queries
