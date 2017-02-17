@@ -21,7 +21,7 @@ $databaseConfig = array(
 	'type' => 'MySQLPDODatabase',
 	'server' => 'aa5fpiwwsz6tjx.cpgfoemq4syn.ap-southeast-2.rds.amazonaws.com',
 	'username' => 'root',
-	'password' => 'root',
+	'password' => 'Mellon25',
 	'database' => 'Simpsonwestern',
 	'path' => ''
 );
