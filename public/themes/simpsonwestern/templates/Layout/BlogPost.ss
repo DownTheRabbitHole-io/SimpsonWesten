@@ -16,7 +16,7 @@
 				</article>
 			</div>
 			
-			<div class="sidebar gray col-sm-4">
+			<div class="sidebar col-sm-4">
 				<% include BlogSideBar %>
 			</div>
 		</div>

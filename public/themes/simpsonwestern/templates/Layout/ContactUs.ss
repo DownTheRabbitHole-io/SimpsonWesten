@@ -1,5 +1,5 @@
 <% include Banner %>
-<div class="content">
+<div class="content contact">
 	<div class="container">
 		<!-- contact data row -->
 			<div class="row">

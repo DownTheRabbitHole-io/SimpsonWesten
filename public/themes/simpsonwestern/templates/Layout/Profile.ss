@@ -9,7 +9,7 @@
 						
         <h1>$Name</h1>
         <p>$Position</p>
-        <div class="content">$Bio</div>
+        <div class="bio-text">$Bio</div>
       </article>
 			</div>
 			<div class="sidebar profile col-sm-3">			
