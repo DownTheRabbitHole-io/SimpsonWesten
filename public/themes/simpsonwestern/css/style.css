@@ -1400,17 +1400,14 @@ colored.btn-danger:hover,
   display: block;
   overflow: hidden;
   padding: 0 0 0 15px;
-  height: 41px;
+  height: 35px;
   background-color: #fff;
   background-clip: padding-box;
   color: #74777c;
   text-decoration: none;
   white-space: nowrap;
-  line-height: 41px;
+  line-height: 35px;
   border: 1px solid #E4E4E4;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 .chzn-container-single .chzn-default {
   color: #74777c;
@@ -1466,7 +1463,6 @@ colored.btn-danger:hover,
   width: 1px;
   height: 80%;
   margin-top: 10%;
-  border-left: 1px solid #E4E4E4;
 }
 .chzn-container-single .chzn-single div b {
   display: inline-block;
@@ -1522,9 +1518,6 @@ colored.btn-danger:hover,
   -moz-osx-font-smoothing: grayscale;
 }
 .chzn-container-single .chzn-drop {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
   background-clip: padding-box;
 }
 .chzn-container-single.chzn-container-single-nosearch .chzn-search {
@@ -1567,9 +1560,6 @@ colored.btn-danger:hover,
 .chzn-container .chzn-results li.highlighted {
   background-color: rgba(32, 40, 51, 0.9);
   color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 .chzn-container .chzn-results li.no-results {
   display: list-item;
