@@ -1,8 +1,10 @@
-<div class="content">
+<div class="content sky">
 	<div class="container">
 		<div class="row" style="padding-top:80px;">
 			<div class="col-sm-6">
-				<div class="breadcrumb"><% include BreadCrumbs %></div>
+				<div class="breadcrumb">
+				<% include BreadCrumbs %>
+				</div>
 			</div>
 			<div class="col-sm-6">
 				<form>
@@ -17,10 +19,10 @@
 </div>
 
 
-<div class="content">
+<div class="content helpful-reading sky">
 	<div class="container">
 		<div class="row">
-			<div class="main col-sm-8">						
+			<div class="main col-sm-9">						
 				<article>
 					<h1>
 						<% if $ArchiveYear %>
@@ -53,7 +55,7 @@
 				</article>
 			</div>
 			
-			<div class="sidebar gray col-sm-4">
+			<div class="sidebar col-sm-3">
 				<% include BlogSideBar %>
 			</div>
 		</div>

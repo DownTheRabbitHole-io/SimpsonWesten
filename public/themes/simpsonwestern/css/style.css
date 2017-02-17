@@ -1266,7 +1266,7 @@ colored.btn-danger:hover,
   font-family: 'gibsonlight', sans-serif;
   font-size:11px;
   padding:0 !important;
-  margin-left:32px;
+  margin-left:36px;
 }
 
 .breadcrumb a {
@@ -2441,10 +2441,13 @@ div.page {
   border-bottom: 1px solid #E3E3E3;
   height: 4px;
 }
+
+
 .main {
-  padding-top: 55px;
-  padding-bottom: 75px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
 .feature {
   /* display:inline-block; */
 
@@ -7180,6 +7183,24 @@ div.sneak{
 div.sidebar input[type=submit]{
   display:none !important;
 }
+
+/* HELPFUL READING */
+
+div.content.sky{
+  background-color:#eaf6fa;
+}
+
+
+/* FIND US */
+
+
+/* CONTACT US */
+
+div.contact{
+  margin-top:16px;
+}
+
+
 
 /* #Media Queries
 ================================================== */
