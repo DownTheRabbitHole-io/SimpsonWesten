@@ -6929,6 +6929,14 @@ div.dark_square #pp_full_res .pp_inline {
   cursor: pointer;
 }
 
+
+/*REFLOW*/
+
+div.reflow{
+  float:right;
+}
+
+
 /* Nav - Menu */
 
 a.home-link{
@@ -7089,6 +7097,11 @@ ul.business-links li a{
   color:#343741;
 }
 
+.name-text a{
+  text-decoration:none;
+  color:#343741;
+}
+
 .people-info{
   border-bottom:2px solid #343741;
   margin-bottom:8px;
@@ -7124,33 +7137,30 @@ ul.profile-list-holder{
 
 li.profile-list{
   list-style-type:none;
-  width:256px;
+  width:100%;
   float:left;
-  margin:12px;
 }
 
 .portrait-medium{
   margin-bottom:4px;
+  width:100%;
 }
 
 .portrait-medium:hover{
   opacity: 0.5;
 }
 
-.people-tile-medium{
-  width:256px;
-}
 
 h4.people-tile-medium-name a{
   text-decoration: none !important;
-  color:#000;
+  color:#343741;
 }
 
 p.people-tile--medium-position a{
   text-decoration: none !important;
-  color:#000;
-  border-bottom:1px solid #000;
-  width:256px;
+  color:#343741;
+  border-bottom:1px solid #343741;;
+  width:100%;
   display:inline-block;
 }
 
@@ -7164,10 +7174,10 @@ div.sneak{
 }
 
 .sidebar-filters-title{
-  color:#000;
+  color:#343741;
   width:100%;
   display:inline-block;
-  border-bottom:1px solid #000;
+  border-bottom:1px solid  #343741;
   margin-bottom:8px;
 }
 
@@ -7263,6 +7273,16 @@ div.middleColumn textarea {
    margin-bottom:16px;
  }
 
+/* FOOTER */
+
+.flinks li a{
+  font-size:13px;
+  color: #343741;
+  text-decoration:none;
+  font-family: 'gibsonsemibold';
+}
+
+
 /* #Media Queries
 ================================================== */
 @media (min-width: 993px) and (max-width: 1199px) {
@@ -7295,6 +7315,14 @@ div.middleColumn textarea {
 
 }
 @media (min-width: 768px) and (max-width: 992px) {
+
+  .footer-content .phone-number img{
+    width:164px !important;
+  }
+
+    #footer .phone-number h2{
+      font-size:20px;
+    }
 
   .nav-menu{
     width:288px !important;
@@ -7464,6 +7492,11 @@ div.middleColumn textarea {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+
+  .footer-content .phone-number img{
+    width:164px !important;
+  }
+
   .footer-listings li {
     padding: 4px 42px 0 0;
   }
@@ -7654,6 +7687,12 @@ div.middleColumn textarea {
 }
 @media (min-width: 481px) and (max-width: 992px) {
 
+
+
+ .homepage.photo1{
+    margin-top:80px;
+  }
+
   .portrait-thumb{
   margin-bottom:8px;
 }
@@ -7683,8 +7722,16 @@ div.middleColumn textarea {
     margin-bottom: 15px;
   }
 
+  h1.page-title{
+    font-size:64px !important;
+  }
+
 }
 @media (max-width: 480px) {
+
+   .homepage.photo1{
+    margin-top:80px;
+  }
 
   .nav-menu{
     margin-top:80px;
@@ -7696,7 +7743,14 @@ div.middleColumn textarea {
     background-color: rgba(235, 247, 250, 1.0) !important;
   }
 
+  h1.page-title{
+    font-size:64px !important;
+  }
 
+  .header .title{
+    font-size:16px !important;
+    margin-top:8px;
+  }
 
   nav.inner-nav{
     margin-top:32px;
