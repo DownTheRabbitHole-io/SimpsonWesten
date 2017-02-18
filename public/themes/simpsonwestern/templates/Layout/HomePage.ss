@@ -33,6 +33,7 @@
 				<div class="col-sm-4 hidden-xs">
 					<% include RecentArticlesHome %>
 				</div>
+				
 			</div>
 		</div>
 		<div class="homepage photo2">

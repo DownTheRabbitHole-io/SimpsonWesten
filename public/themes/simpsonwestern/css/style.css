@@ -7129,13 +7129,14 @@ a.contact-link{
 
 ul.profile-list-holder{
   padding:0;
+  margin-left:12px;
 }
 
 li.profile-list{
   list-style-type:none;
   width:256px;
   float:left;
-  margin:8px;
+  margin:12px;
 }
 
 .portrait-medium{
@@ -7190,6 +7191,9 @@ div.content.sky{
   background-color:#eaf6fa;
 }
 
+#category_chzn{
+  width:50%;
+}
 
 /* FIND US */
 
@@ -7200,6 +7204,38 @@ div.contact{
   margin-top:16px;
 }
 
+div.middleColumn input.text{
+  width:100%;
+  border-top:0 none;
+  border-right:0 none;
+  border-left:0 none;
+  border-bottom:2px solid #000;
+  margin: 8px 0;
+}
+
+div.middleColumn textarea {
+  width:100%;
+  border-top:0 none;
+  border-right:0 none;
+  border-left:0 none;
+  border-bottom:2px solid #000;
+  margin-bottom:24px;
+}
+
+.contact-headline{
+  margin-bottom:8px;
+}
+
+ input[type=submit]{
+   width:192px;
+   height:52px;
+   background-color:#313b96;
+   color:#fff;
+   border:0 none;
+   font-size:16px;
+   font-family: 'gibsonregular';
+   margin-bottom:16px;
+ }
 
 
 /* #Media Queries
@@ -7288,9 +7324,15 @@ div.contact{
   }
 }
 @media (max-width: 992px) {
-  .nav {
-    display: none;
+  
+  .profile .nav{
+    display:block !important;
   }
+  
+  /* .nav {
+    display: none;
+  } */
+  
   .sb-search {
     display: none;
   }
@@ -7595,6 +7637,10 @@ div.contact{
     height:320px !important;
   }
 
+  .nav-menu.open{
+    background-color: rgba(235, 247, 250, 1.0) !important;
+  }
+
     nav.inner-nav{
     margin-top:32px;
   }
@@ -7617,6 +7663,10 @@ div.contact{
     margin-top:80px;
     width:100% !important;
     height:320px !important;
+  }
+
+  .nav-menu.open{
+    background-color: rgba(235, 247, 250, 1.0) !important;
   }
 
 
