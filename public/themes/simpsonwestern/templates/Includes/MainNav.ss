@@ -22,12 +22,20 @@
         <button class="close-button"><i class="fa fa-times"></i></button>
         <nav class="inner-nav">
             <ul>
-                <li class="link"><a href="/about/" title="About">About</a></li>
-                <li class="link"><a href="/our-people/" title="Our People">Our People</a></li>
-                <li class="link"><a href="/business-law/" title="Business Law">Business Law</a><a class="plus-link" href="#"> + </a></li>
-                <li class="link"><a href="/personal-law/" title="Personal Law">Personal Law</a><a class="plus-link" href="#"> + </a></li>
-                <li class="link"><a href="/helpful-reading/" title="Helpful reading">Helpful reading</a></li>
-                <li class="link"><a href="/contact/" title="Contact">Contact</a></li>
+                <% loop $Menu(1) %>
+                    <% if Children %>
+                    <li class="link dropdown horizontal-drop"><a href="$Link" title="$Title.XML" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">$MenuTitle.XML</a><a class="plus-link" href="#"> + </a>
+                    <ul class="dropdown-menu clearfix horizontal-drop-menu">
+                        <!-- Sub Menu -->
+                        <% control Children %>
+                        <li><a class="sub-link" href="$Link" title="$Title.XML" alt="$Title.XML">$MenuTitle</a></li>
+                        <% end_control %>
+                    </ul>
+                    </li>
+			        <% else %>
+                    <li class="link"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                    <% end_if %>
+                <% end_loop %>
             </ul>
         </nav>
     </div>
