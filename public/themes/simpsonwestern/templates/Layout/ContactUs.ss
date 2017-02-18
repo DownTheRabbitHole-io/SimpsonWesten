@@ -1,6 +1,6 @@
 <% include Banner %>
 <div class="content contact">
-	<div class="container">
+	<div class="container-fluid">
 		<!-- contact data row -->
 			<div class="row">
         <div class="col-md-3">

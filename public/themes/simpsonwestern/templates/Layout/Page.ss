@@ -1,23 +1,12 @@
 <% include Banner %>
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="sidebar col-sm-3">
 				<% if $Menu(2) %>
 				<h2 class="section-title-left">Business Law</h2>
 				<ul class="categories subnav">
 					<% loop $Menu(2) %>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
 						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
 					<% end_loop %>
 				</ul>

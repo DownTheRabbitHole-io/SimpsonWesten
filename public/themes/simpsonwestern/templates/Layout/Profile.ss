@@ -1,11 +1,11 @@
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="main col-sm-9">
 			<article class="profile-article">
         <% include BreadCrumbs %>
-        <!-- $ProfileImage -->
-				<img class="portrait-large" alt="$Title.XML" src="$ThemeDir/images/portrait-large.jpg" />
+        <!-- $ProfileImage -->				
+				<img class="portrait-large" alt="$Title.XML" src="$ProfileImage.URL" />
 						
         <h1>$Name</h1>
         <p>$Position</p>

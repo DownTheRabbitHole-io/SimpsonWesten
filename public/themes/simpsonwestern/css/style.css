@@ -7132,7 +7132,7 @@ a.contact-link{
 
 ul.profile-list-holder{
   padding:0;
-  margin-left:12px;
+  margin-left:0;
 }
 
 li.profile-list{
@@ -7192,6 +7192,7 @@ div.sidebar input[type=submit]{
   height:100%;
   max-width:868px;
   margin-bottom:8px;
+  margin-left: -50px;
 }
 
 .sidebar.profile{
@@ -7201,7 +7202,7 @@ div.sidebar input[type=submit]{
 .profile-article div#Breadcrumbs{
   position:absolute;
   top:94px;
-  left:50px;
+  left:-30px;
 }
 
 div#Breadcrumbs a{
@@ -7209,16 +7210,13 @@ div#Breadcrumbs a{
 }
 
 .profile-article h1{
-  margin-left:30px;
   margin-bottom:8px;
 }
 
 .profile-article p{
-  margin-left:30px;
 }
 
 div.bio-text{
-  margin-left:30px;
 }
 
 /* HELPFUL READING */
@@ -8560,4 +8558,11 @@ div.middleColumn textarea {
 	border-color: #fff;
 	transform: rotate(-45deg) translate(7px, -7px);
 	transition: .5s;
+}
+
+
+
+/* new styles */
+.main {
+  padding:0 !important;
 }

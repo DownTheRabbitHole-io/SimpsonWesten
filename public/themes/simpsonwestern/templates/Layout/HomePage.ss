@@ -4,7 +4,7 @@
 		<div class="homepage photo1">
 			<img src="$ThemeDir/images/homepage1.png" />
 		</div>
-		<div class="container main-content">
+		<div class="container-fluid main-content">
 			<div class="row">
 				<!-- BEGIN MAIN CONTENT -->
 				<div class="col-sm-8 col-xm-12 page-description">
