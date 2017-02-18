@@ -1,6 +1,6 @@
 <% include Banner %>
-<div class="content">
-	<div class="container">
+<div class="content contact">
+	<div class="container-fluid">
 		<!-- contact data row -->
 			<div class="row">
         <div class="col-md-3">
@@ -11,7 +11,7 @@
 					
 					<!-- contact form -->
 					<div class="csfrm-elm round-input">
-						<h3>Please leave us a message</h3>
+						<h3 class="contact-headline">Please leave us a message</h3>
 						 <% if $Message %>
 						        $Message
 						    <% else %>

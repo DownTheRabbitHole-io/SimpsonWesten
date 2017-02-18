@@ -4,7 +4,7 @@
 		<div class="homepage photo1">
 			<img src="$ThemeDir/images/homepage1.png" />
 		</div>
-		<div class="container main-content">
+		<div class="container-fluid main-content">
 			<div class="row">
 				<!-- BEGIN MAIN CONTENT -->
 				<div class="col-sm-8 col-xm-12 page-description">
@@ -14,11 +14,11 @@
 					<div class="page-links">
 						<%--<div class="container">--%>
 							<div class="row">
-								<div class="col-sm-6 col-xs-12 business">
+								<div class="col-sm-6  business">
 									<a href="#" title="Business">Business</a>
 								</div>
 
-								<div class="col-sm-6 col-xs-12 personal">
+								<div class="col-sm-6  personal">
 									<a href="#" title="Personal">Personal</a>
 								</div>
 
@@ -33,6 +33,7 @@
 				<div class="col-sm-4 hidden-xs">
 					<% include RecentArticlesHome %>
 				</div>
+				
 			</div>
 		</div>
 		<div class="homepage photo2">

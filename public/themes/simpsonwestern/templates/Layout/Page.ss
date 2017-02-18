@@ -1,23 +1,12 @@
 <% include Banner %>
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="sidebar col-sm-3">
 				<% if $Menu(2) %>
 				<h2 class="section-title-left">Business Law</h2>
 				<ul class="categories subnav">
 					<% loop $Menu(2) %>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
 						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
 					<% end_loop %>
 				</ul>
@@ -32,25 +21,31 @@
 					<h2 class="our-people-title">Our People</h2>
 
 					<div class="our-people-tile-container">
-						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						<a class="$LinkingMode" href="$Link">
+							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						</a>
 						<div class="people-info clearfix">
-							<h3 class="name-text">James Kirk</h3>
+							<h3 class="name-text"><a class="$LinkingMode" href="$Link">James Kirk</a></h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
 						</div>
 					</div>
 
 					<div class="our-people-tile-container">
-						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						<a class="$LinkingMode" href="$Link">
+							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						</a>
 						<div class="people-info clearfix">
-							<h3 class="name-text">Jean Luc Picard</h3>
+							<h3 class="name-text"><a class="$LinkingMode" href="$Link">Jean Luc Picard</a></h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
 						</div>
 					</div>
 
 					<div class="our-people-tile-container">
-						<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						<a class="$LinkingMode" href="$Link">
+							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
+						</a>
 						<div class="people-info clearfix">
-							<h3 class="name-text">Benjamin Sisko</h3>
+							<h3 class="name-text"><a class="$LinkingMode" href="$Link">Benjamin Sisko</a></h3>
 							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
 						</div>
 					</div>

@@ -1,0 +1,28 @@
+.post-summary{
+  float:left;
+  width:33%;
+  padding-right: 25px;
+}
+
+.author{
+  border-bottom: solid 2px #000;
+  color:#000 !important;
+}
+
+.author .name a{
+  text-decoration: none;
+  color:#000 !important;
+}
+
+.helpfulreading-title a{
+  text-decoration: none !important;
+  color:#000 !important;
+}
+
+.content{
+  padding: 0 50px;
+}
+
+.content .main-content{
+  padding: 0;
+}

@@ -54,15 +54,15 @@ class OurPeople_Controller extends Page_Controller{
       $data = Session::get('filter');
       // Create fields 
       $teamDDL = new DropdownField('Team', 'Team', Dataobject::get("Team")->map("ID", "Name"));
-      $teamDDL->setEmptyString('All');
+      $teamDDL->setEmptyString('Team');
       $teamDDL->setValue($data['Team']);
 
       $expertiseDDL = new DropdownField('Expertise', 'Expertise', Dataobject::get("Expertise")->map("ID", "Title"));
-      $expertiseDDL->setEmptyString('All');
+      $expertiseDDL->setEmptyString('Expertise');
       $expertiseDDL->setValue($data['Expertise']);
 
       $officeDDL = new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Name"));
-      $officeDDL->setEmptyString('All');
+      $officeDDL->setEmptyString('Office');
       $officeDDL->setValue($data['Office']);
 
       $fields = new FieldList(

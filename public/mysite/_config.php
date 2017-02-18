@@ -29,4 +29,3 @@ $databaseConfig = array(
 
 
 Security::setDefaultAdmin("admin","password");
-

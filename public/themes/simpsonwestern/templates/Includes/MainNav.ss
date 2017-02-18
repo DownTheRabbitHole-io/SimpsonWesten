@@ -11,7 +11,7 @@
             <button class="nav-button"><i class="fa fa-bars"></i></button>
 
             <div class="phone-icon">
-                <img src="$ThemeDir/images/phone_icon.png" />
+                <a href="tel:09-486-3058"><img src="$ThemeDir/images/phone_icon.png" /></a>
             </div>
         </div>
     </div>

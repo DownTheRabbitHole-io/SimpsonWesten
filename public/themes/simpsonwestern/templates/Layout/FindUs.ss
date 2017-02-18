@@ -1,6 +1,6 @@
 <% include Banner %>
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
       <% loop $getOffices %>	
       <div class="main col-sm-3 office-box" style="cursor:pointer;" id="$ID">

@@ -36,6 +36,7 @@ class Page_Controller extends ContentController {
         Requirements::css("http://fonts.googleapis.com/css?family=Raleway:300,500,900%7COpen+Sans:400,700,400italic");
         Requirements::css("{$this->ThemeDir()}/css/bootstrap.min.css");
         Requirements::css("{$this->ThemeDir()}/css/style.css");
+				Requirements::css("{$this->ThemeDir()}/css/blog.css");
 
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/modernizr.js");
 

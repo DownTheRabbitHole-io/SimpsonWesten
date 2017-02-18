@@ -9,6 +9,9 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'simpsonwestern'
+Blog_Controller:
+  extensions:
+    - Blog_ControllerExtension
 BlogPost:
   extensions:
     - BlogPostExtension
