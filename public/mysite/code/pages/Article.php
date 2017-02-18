@@ -34,6 +34,13 @@ class Article extends Page{
 	 */
 	private static $can_be_root = false;
 
+	/**
+	* @var array
+	*/
+	private static $casting = array(
+			'Excerpt' => 'HTMLText',
+	);
+
 
   public function getCMSFields(){
     $fields = parent::getCMSFields();
@@ -59,6 +66,21 @@ class Article extends Page{
 
     return $fields;
   }
+
+	/**
+	* Returns the post excerpt.
+	*
+	* @param int $wordsToDisplay
+	*
+	* @return string
+	*/
+	public function Excerpt($wordsToDisplay = 30)
+	{
+			/** @var HTMLText $content */
+			$content = $this->dbObject('Content');
+
+			return $content->Summary($wordsToDisplay);
+	}
 }
 
 

@@ -8566,3 +8566,10 @@ div.middleColumn textarea {
 .main {
   padding:0 !important;
 }
+
+
+.nav li .recent-link{
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}

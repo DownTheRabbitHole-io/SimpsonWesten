@@ -25,8 +25,11 @@ class Profile extends Page {
     );
 
     private static $many_many = array(
-      'Expertises' => 'Expertise',
-      'Articles' => 'Article'
+      'Expertises' => 'Expertise'
+    );
+
+    static $belongs_many_many = array(
+        'Articles' => 'Article'
     );
 
     /**
@@ -127,15 +130,8 @@ class Profile extends Page {
 class Profile_Controller extends Page_Controller{
 	
 	public function getRecentArticles(){
-    /*
-    $recent = Articles::get()->filter(array('Articles.ProfileID' => $this->ID))->limit(3);
-    //$recent = $this->Articles();
-    echo "<pre>";
-    print_r($recent);
-    echo "</pre>";
-    exit();
+    $recent = $this->Articles()->limit(3);    
 		return $recent;
-    */
 	}
 	
 	
