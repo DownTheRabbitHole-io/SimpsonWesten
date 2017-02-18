@@ -17,45 +17,19 @@
 			<div class="row">
 				<ul class="profile-list-holder">
 				<% if $profileList %>
-				<% loop $profileList %>
+				<% loop $profileList %>				
 				<div class="profileThumb people-tile-medium col-sm-4">
 					<li class="$LinkingMode profile-list">
 						
 						<!-- $ProfileImage -->
 						<a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">
-							<img class="portrait-medium" alt="$Title.XML" src="$ThemeDir/images/portrait-medium.jpg" />
+							<img class="portrait-medium" alt="$Title.XML" src="$ProfileImage.URL" />
 						</a>
 							<h4 class="people-tile-medium-name"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Name</a></h4>
 							<p class="people-tile--medium-position"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Position</a></p>
 							
 					</li>
-				</div>
-				<div class="profileThumb people-tile-medium col-sm-4">
-					<li class="$LinkingMode profile-list">
-						
-						<!-- $ProfileImage -->
-						<a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">
-							<img class="portrait-medium" alt="$Title.XML" src="$ThemeDir/images/portrait-medium.jpg" />
-						</a>
-							<h4 class="people-tile-medium-name"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Name</a></h4>
-							<p class="people-tile--medium-position"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Position</a></p>
-							
-					</li>
-				</div>
-				<div class="profileThumb people-tile-medium col-sm-4">
-					<li class="$LinkingMode profile-list">
-						
-						<!-- $ProfileImage -->
-						<a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">
-							<img class="portrait-medium" alt="$Title.XML" src="$ThemeDir/images/portrait-medium.jpg" />
-						</a>
-							<h4 class="people-tile-medium-name"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Name</a></h4>
-							<p class="people-tile--medium-position"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Position</a></p>
-							
-					</li>
-				</div>
-					
-					
+				</div>	
 				<% end_loop %>
 				<% end_if %>
 				<div class="clearfix sneak"></div>

@@ -126,7 +126,17 @@ class Profile extends Page {
 
 class Profile_Controller extends Page_Controller{
 	
-
+	public function getRecentArticles(){
+    /*
+    $recent = Articles::get()->filter(array('Articles.ProfileID' => $this->ID))->limit(3);
+    //$recent = $this->Articles();
+    echo "<pre>";
+    print_r($recent);
+    echo "</pre>";
+    exit();
+		return $recent;
+    */
+	}
 	
 	
 }
