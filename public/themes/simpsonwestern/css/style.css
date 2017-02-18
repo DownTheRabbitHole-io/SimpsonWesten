@@ -2042,7 +2042,11 @@ div.page {
 
 .main-content {
   padding: 55px;
+  margin-top:62px;
+  margin-bottom:74px;
 }
+
+
 
 .main-content .page-description {
   text-align: center;
@@ -2054,14 +2058,10 @@ div.page {
     margin-top: 70px;
 }
 
-.main-content .business a{
-    float: right;
+.main-content h2{
+  font-size:44px;
+  margin-bottom:22px;
 }
-
-.main-content .personal a{
-    float: left;
-}
-
 
 
 #home-search-section {
