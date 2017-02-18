@@ -11,7 +11,7 @@
 					
 					<!-- contact form -->
 					<div class="csfrm-elm round-input">
-						<h3>Please leave us a message</h3>
+						<h3 class="contact-headline">Please leave us a message</h3>
 						 <% if $Message %>
 						        $Message
 						    <% else %>

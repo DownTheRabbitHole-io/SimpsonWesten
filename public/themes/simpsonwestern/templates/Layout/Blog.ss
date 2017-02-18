@@ -1,12 +1,12 @@
 <div class="content sky">
 	<div class="container">
 		<div class="row" style="padding-top:80px;">
-			<div class="col-sm-9">
+			<div class="col-sm-7">
 				<div class="breadcrumb">
 				<% include BreadCrumbs %>
 				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-5">
 				<form>
 					<select name="category" id="category">
 						<option>Category 1</option>
