@@ -7,6 +7,7 @@
 				
 			</div>
 			<div class="col-xs-12 col-sm-5">
+
 				<form>
 					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
 				
@@ -20,6 +21,7 @@
 					</form>
 			</div>
 		</div>
+		
 		<div class="row">		 
 			<div>
 			<% loop $getFeatured %>

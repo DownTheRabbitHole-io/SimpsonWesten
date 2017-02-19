@@ -2,23 +2,23 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="main col-xs-12 col-sm-9">
-			<article class="profile-article">
-        <% include BreadCrumbs %>
-        <!-- $ProfileImage -->				
-				<img class="portrait-large" alt="$Title.XML" src="$ProfileImage.URL" />						
-        <h1>$Name</h1>
-        <p>$Position</p>
+        
+        <!-- $ProfileImage -->
+				<div class="image-holder portrait-large" style="background: url($ProfileImage.URL) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">				
+						<% include BreadCrumbs %>					
+        </div>
+				<h1>$Name <span class="t2-plus" style="margin-left:30px;">Position</span></h1>
+        
         <div class="bio-text">$Bio</div>
-      </article>
 			</div>
 			<div class="sidebar profile col-xs-12 col-sm-3">			
 				<% include RecentArticles %>
-        <article>
-        <p>Phone: $Phone</p>
-				<p>Mobile: $Mobile</p>
-				<p>Email: $Email</p>
-				<p>PA: $PA</p>
-				<p>Linkedin: $Linkedin</p>
+        <article class="details">
+        <p><strong>Phone:</strong> $Phone</p>
+				<p><strong>Mobile:</strong>  $Mobile</p>
+				<p><strong>Email:</strong>  $Email</p>
+				<p><strong>PA:</strong>  $PA</p>
+				<p><strong>Linkedin:</strong>  <a href="$Linkedin" target="_blank">$Linkedin</a></p>
         </article>
 			</div>
 		</div>
