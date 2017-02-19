@@ -1976,8 +1976,6 @@ div.page {
 }
 
 .page .header {
-    border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
    padding: 22px 50px;
    /*position: fixed;*/
    width: 100%;
@@ -7229,8 +7227,8 @@ div.sidebar input[type=submit]{
 /* PROFILE PAGE */
 
 div.image-holder{
-  width:100%;
-  min-height:358px;
+  width:110%;
+  min-height:550px;
   max-width:868px;
   margin-bottom:64px;
   margin-top:80px;
@@ -7247,7 +7245,7 @@ div.image-holder{
 
 
 .sidebar.profile{
-  margin-top:48px;
+  margin-top:60px;
 }
 
 .profile-article div#Breadcrumbs{
