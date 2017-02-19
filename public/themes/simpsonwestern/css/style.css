@@ -1263,11 +1263,10 @@ colored.btn-danger:hover,
   text-align: left;
   background-color: transparent;
   color:#343741;
-  font-family: 'gibsonregular', sans-serif;
+  font-family: 'gibsonlight', sans-serif;
   font-size:11px;
   padding:0 !important;
-  margin-left:18px;
-  margin-top:12px;
+  margin-left:36px;
 }
 
 .breadcrumb a {
@@ -2047,10 +2046,7 @@ div.page {
   margin-bottom:74px;
 }
 
-.other-links a{
-  font-family:'gibsonsemibold';
-  font-size:13px;
-}
+
 
 .main-content .page-description {
   text-align: center;
@@ -2762,7 +2758,7 @@ div.page {
   text-decoration: underline;
 }
 .sidebar {
-  /*padding-top: 55px;*/
+  padding-top: 55px;
   padding-bottom: 80px;
 }
 .sidebar img {
@@ -6933,12 +6929,6 @@ div.dark_square #pp_full_res .pp_inline {
   cursor: pointer;
 }
 
-/* BANNER */
-
-div.banner{
-  margin-bottom:64px;
-}
-
 
 /*REFLOW*/
 
@@ -7099,6 +7089,8 @@ ul.business-links li a{
 .portrait-thumb{
   float:left;
   margin-right:8px;
+  width: 30%;
+  margin-bottom: 5px;
 }
 
 .name-text{
@@ -7139,21 +7131,6 @@ a.contact-link{
 
 
 /* OUR PEOPLE PAGE */
-
-.our-people .sidebar {
-  padding-top: 18px;
-}
-
-.reflow p{
-  margin-bottom:64px;
-}
-
-h2.our-people-headline{
-  font-family:'gibsonsemibold';
-  font-size:30px;
-  color:#000;
-
-}
 
 ul.profile-list-holder{
   padding:0;
@@ -7238,19 +7215,21 @@ div#Breadcrumbs a{
   margin-bottom:8px;
 }
 
+.profile-article p{
+}
+
+div.bio-text{
+}
 
 /* HELPFUL READING */
 
 div.content.sky{
   background-color:#eaf6fa;
-  margin-top:80px;
-  height:450px;
 }
 
-.sky .breadcrumb {
-  margin-left:0 !important;
+#category_chzn{
+  width:50%;
 }
-
 
 /* FIND US */
 
@@ -8585,8 +8564,14 @@ div.middleColumn textarea {
 
 
 
-/* new styles 
+/* new styles */
 .main {
   padding:0 !important;
 }
-*/
+
+
+.nav li .recent-link{
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}

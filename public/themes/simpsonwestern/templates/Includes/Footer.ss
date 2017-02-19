@@ -12,6 +12,9 @@
                             <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                         </span>
                     <% end_loop %>
+                    <span class="col-sm-6 col-xm-12">
+                        <li class="link"><a href="/find-us" title="find us">Find Us</a></li>
+                    </span>
                 </ul>
             </div>
             <div class="col-sm-2 hidden-xs">
