@@ -12,8 +12,7 @@ class Article extends Page{
 	 * @var array
 	 */
 	private static $has_one = array(
-    'HeaderImage' => 'Image',
-    'OurPeople' => 'OurPeople'
+    'HeaderImage' => 'Image'
 	);
 
 	/**

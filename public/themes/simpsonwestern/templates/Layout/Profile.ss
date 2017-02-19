@@ -5,8 +5,7 @@
 			<article class="profile-article">
         <% include BreadCrumbs %>
         <!-- $ProfileImage -->				
-				<img class="portrait-large" alt="$Title.XML" src="$ProfileImage.URL" />
-						
+				<img class="portrait-large" alt="$Title.XML" src="$ProfileImage.URL" />						
         <h1>$Name</h1>
         <p>$Position</p>
         <div class="bio-text">$Bio</div>
@@ -16,6 +15,10 @@
 				<% include RecentArticles %>
         <article>
         <p>Phone: $Phone</p>
+				<p>Mobile: $Mobile</p>
+				<p>Email: $Email</p>
+				<p>PA: $PA</p>
+				<p>Linkedin: $Linkedin</p>
         </article>
 			</div>
 		</div>

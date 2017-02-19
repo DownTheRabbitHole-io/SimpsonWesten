@@ -51,4 +51,7 @@ class Page_Controller extends ContentController {
         Requirements::javascript("{$this->ThemeDir()}/javascript/script.js");
 		Requirements::javascript("{$this->ThemeDir()}/javascript/quick.js");
 	}
+
+
+
 }
