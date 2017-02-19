@@ -102,7 +102,7 @@ class Profile extends Page {
 		$Bio->Required();
 		$Bio->setCustomValidationMessage('A Bio is required.');
 
-    $uploadField = UploadField::create('ProfileImage',  'Profile Image');
+    $uploadField = UploadField::create('ProfileImage',  'Profile Image (must be 663px x 464px)');
     $uploadField->setFolderName('profiles');
 		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
