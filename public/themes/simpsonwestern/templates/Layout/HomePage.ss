@@ -19,7 +19,7 @@
 								</div>
 
 								<div class="col-sm-6  personal">
-									<h2><a href="/personal-law/" title="Personal">Personal</a><h2>
+									<h2><a href="/personal-law/" title="Personal">Personal</a></h2>
 								</div>
 
 							</div>
@@ -39,6 +39,9 @@
 		<div class="homepage photo2">
 			<img src="$ThemeDir/images/homepage2.png" />
 		</div>
+        <div class="col-xs-12 visible-xs">
+			<% include RecentArticlesHome %>
+        </div>
 	</div>
 	<!-- END CONTENT WRAPPER -->
 		

@@ -7729,12 +7729,38 @@ div.middleColumn textarea {
 }
 @media (max-width: 480px) {
 
+  .page .header {
+    padding: 20px;
+  }
+
+  .header .phone-icon {
+    margin-right: 15px;
+  }
+
+  .main-content {
+    margin: 0;
+  }
+
+  .main-content .page-links {
+    margin-top:0;
+  }
+
+  .main-content .page-description {
+    font-size: 20px;
+  }
+
+  .main-content .page-description .business a,
+  .main-content .page-description .personal a {
+    font-size: 30px;
+
+  }
+
    .homepage.photo1{
-    margin-top:80px;
+    margin-top:70px;
   }
 
   .nav-menu{
-    margin-top:80px;
+    margin-top:70px;
     width:100% !important;
     height:320px !important;
   }

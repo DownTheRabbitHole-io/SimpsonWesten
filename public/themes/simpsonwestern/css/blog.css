@@ -19,7 +19,7 @@
   color:#000 !important;
 }
 
-.content{
+.content.blog{ /* conflict with home page css  */
   padding: 0 50px;
 }
 
