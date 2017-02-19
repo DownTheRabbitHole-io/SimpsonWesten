@@ -15,3 +15,6 @@ Blog_Controller:
 BlogPost:
   extensions:
     - BlogPostExtension
+BlogPost_Controller:
+  extensions:
+    - BlogPost_ControllerExtension

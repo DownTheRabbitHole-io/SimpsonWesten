@@ -8,12 +8,18 @@
 						<% include BreadCrumbs %>					
         </div>
 				<h1>$Name <span class="t2-plus" style="margin-left:30px;">Position</span></h1>
-        
+        <article class="details-mobile visible-xs">
+        <p><strong>Phone:</strong> $Phone</p>
+				<p><strong>Mobile:</strong>  $Mobile</p>
+				<p><strong>Email:</strong>  $Email</p>
+				<p><strong>PA:</strong>  $PA</p>
+				<p><strong>Linkedin:</strong>  <a href="$Linkedin" target="_blank">$Linkedin</a></p>
+        </article>
         <div class="bio-text">$Bio</div>
 			</div>
 			<div class="sidebar profile col-xs-12 col-sm-3">			
 				<% include RecentArticles %>
-        <article class="details">
+        <article class="details  hidden-xs">
         <p><strong>Phone:</strong> $Phone</p>
 				<p><strong>Mobile:</strong>  $Mobile</p>
 				<p><strong>Email:</strong>  $Email</p>

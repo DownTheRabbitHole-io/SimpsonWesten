@@ -4,7 +4,7 @@
   </div>
   <div class="popular-posts">
     <ul class="nav">
-    <% if $PaginatedList.Exists %>
+    <% if $getPopular.Exists %>
      <% loop $getPopular %>   
 			<li class="article">
         <a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
