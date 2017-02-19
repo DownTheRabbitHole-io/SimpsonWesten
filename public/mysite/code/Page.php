@@ -51,4 +51,13 @@ class Page_Controller extends ContentController {
         Requirements::javascript("{$this->ThemeDir()}/javascript/script.js");
 		Requirements::javascript("{$this->ThemeDir()}/javascript/quick.js");
 	}
+
+	public function getRecentArticles(){
+    
+    $recent = Article::get()->limit(3);
+		return $recent;
+    
+	}
+
+
 }

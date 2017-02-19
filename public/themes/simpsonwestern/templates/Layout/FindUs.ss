@@ -14,7 +14,7 @@
 			</div>			
 		</div>
 		<div class="row">
-			<div class="main col-sm-12">
+			<div class="main col-sm-12 expando">
 				<div id="map"></div>
         <script>
           function initMap() {
@@ -35,7 +35,7 @@
 		</div>
     <style>
        #map {
-        height: 400px;
+        height: 600px;
         width: 100%;
        }
     </style>

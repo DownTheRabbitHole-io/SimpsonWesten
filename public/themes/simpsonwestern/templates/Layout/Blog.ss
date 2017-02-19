@@ -1,13 +1,15 @@
 <div class="content sky">
 	<div class="container-fluid main-content">
-		<div class="row" style="padding-top:110px;">
-			<div class="col-sm-7">
-				<div class="breadcrumb">
+		<div class="row">
+			<div class="col-xs-12 col-sm-7">
+			
 				<% include BreadCrumbs %>
-				</div>
+				
 			</div>
-			<div class="col-sm-5">
+			<div class="col-xs-12 col-sm-5">
 				<form>
+					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
+				
 					<div class="category-filter">
 						<select name="category" id="category">
 						<% loop $getCategories %>
@@ -15,8 +17,7 @@
 						<% end_loop %>
 						</select>
 					</div>
-					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
-				</form>
+					</form>
 			</div>
 		</div>
 		<div class="row">		 
