@@ -1,7 +1,7 @@
 <footer id="footer">
     <div class="container-fluid footer-content">
         <div class="row">
-            <div class="col-sm-3 col-xm-12 phone-number">
+            <div class="col-sm-3 col-xm-12 hidden-xs phone-number">
                 <img src="$ThemeDir/images/logo.png" alt="SIMPSONWESTERN" />
                 <h2>09 486 3058</h2>
             </div>

@@ -39,7 +39,7 @@
 		<div class="homepage photo2">
 			<img src="$ThemeDir/images/homepage2.png" />
 		</div>
-        <div class="col-xs-12 visible-xs">
+        <div class="visible-xs">
 			<% include RecentArticlesHome %>
         </div>
 	</div>

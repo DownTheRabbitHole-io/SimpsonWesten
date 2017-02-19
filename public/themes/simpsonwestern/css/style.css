@@ -7888,7 +7888,20 @@ body.FindUs #footer{
   .main-content .page-description .business a,
   .main-content .page-description .personal a {
     font-size: 30px;
+  }
 
+  .recent-article {
+    padding: 40px 15px;
+  }
+
+  #footer {
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  #footer .footer-content {
+    padding: 0;
+    border: none;
   }
 
    .homepage.photo1{
