@@ -37,6 +37,7 @@ class Page_Controller extends ContentController {
         Requirements::css("{$this->ThemeDir()}/css/bootstrap.min.css");
         Requirements::css("{$this->ThemeDir()}/css/style.css");
 				Requirements::css("{$this->ThemeDir()}/css/blog.css");
+				Requirements::css("{$this->ThemeDir()}/css/editor.css");
 
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/modernizr.js");
 
