@@ -42,7 +42,8 @@ class OurPeople extends Page{
 class OurPeople_Controller extends Page_Controller{
 	
 	private static $allowed_actions = array (
-    'FilterForm'
+    'FilterForm',
+    'filter',
 	);
 
   public function init() {
@@ -111,6 +112,17 @@ class OurPeople_Controller extends Page_Controller{
     
     return Profile::get()->filter($filter);
   }
+
+
+  function filter($data, $form){
+    if($data['category'] == 'category'){
+      return $this->redirect('/helpful-reading');
+    }else{
+      return $this->redirect('/helpful-reading/category/'.$data['category']);
+    }
+        
+        
+    }
 
 
 
