@@ -8682,6 +8682,23 @@ body.FindUs #footer{
   color: #000;
 }
 
+.details-mobile{
+  border-bottom: 2px solid #686870;
+  border-top: 2px solid #686870;
+}
+
+.details-mobile p {
+  font-family: 'gibsonregular';
+  font-size: 13px;
+  color:#333333;
+}
+
+.details-mobile p strong{
+  font-family: 'gibsonsemibold';
+  font-size: 13px;
+  color:#333333;
+}
+
 .details{
   margin-top: 120px;
 }
