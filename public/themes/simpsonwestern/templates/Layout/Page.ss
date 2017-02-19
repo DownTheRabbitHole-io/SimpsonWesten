@@ -7,44 +7,14 @@
 				$Form
 			</div>
 			<div class="main col-sm-3">
-				<div class="our-people-component">
-					<h2 class="our-people-title">Our People</h2>
-
-					<div class="our-people-tile-container">
-						<a class="$LinkingMode" href="$Link">
-							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						</a>
-						<div class="people-info clearfix">
-							<h3 class="name-text"><a class="$LinkingMode" href="$Link">James Kirk</a></h3>
-							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
-						</div>
-					</div>
-
-					<div class="our-people-tile-container">
-						<a class="$LinkingMode" href="$Link">
-							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						</a>
-						<div class="people-info clearfix">
-							<h3 class="name-text"><a class="$LinkingMode" href="$Link">Jean Luc Picard</a></h3>
-							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
-						</div>
-					</div>
-
-					<div class="our-people-tile-container">
-						<a class="$LinkingMode" href="$Link">
-							<img class="portrait-thumb" src="$ThemeDir/images/portrait-thumb.jpg" />
-						</a>
-						<div class="people-info clearfix">
-							<h3 class="name-text"><a class="$LinkingMode" href="$Link">Benjamin Sisko</a></h3>
-							<p>Duis arcu odio, vulputate eu velit at, mattis ullamcorper ex. Quisque nec neque vel arcu commodo condimentum.</p>
-						</div>
-					</div>
-
-				</div><!-- component -->
+				<% include RecentArticles %>
 				<div class="support-message-container">
-					<p>Sed ut risus nec nisi pellentesque suscipit. Phasellus porta molestie sem vitae suscipit. Donec dapibus diam at odio volutpat pharetra et id ante. Aliquam erat volutpat.</p>
+					<p><Strong>We’re here to help</strong>
+We’ve had some great success stories
+helping our clients with employment issues.
+See how we can do the same for you.</p>
 				
-					<p><a class="contact-link" href="#" title="Contact Us">Contact us now</a></p>
+					<p><a class="contact-link" href="/contact" title="Contact Us">Contact us now</a></p>
 				</div><!-- support-message-container -->
 			</div>
 		</div>

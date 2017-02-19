@@ -12,6 +12,7 @@ class Profile extends Page {
         'PA' => 'Varchar(400)',
         'Email' => 'Varchar(400)',
         'Linkedin' => 'Varchar(400)',
+        'ShortText' => 'Varchar(4000)',
         'Bio' => 'HTMLText'
     );
 
@@ -92,6 +93,10 @@ class Profile extends Page {
 			->setShouldLazyLoad(true) // tags should be lazy loaded
 			->setCanCreate(true);     // new tag DataObjects can be created
 
+    $ShortText = TextareaField::create('ShortText', 'Short Text');
+		$ShortText->Required();
+		$ShortText->setCustomValidationMessage('A ShortText is required.');
+
 
     $Bio = HtmlEditorField::create('Bio', 'Bio');
 		$Bio->Required();
@@ -114,6 +119,7 @@ class Profile extends Page {
       $Team,
       $tagField,
       $uploadField,
+      $ShortText,
       $Bio
 		);
 

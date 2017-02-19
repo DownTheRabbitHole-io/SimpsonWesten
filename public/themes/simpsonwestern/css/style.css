@@ -7089,6 +7089,8 @@ ul.business-links li a{
 .portrait-thumb{
   float:left;
   margin-right:8px;
+  width: 30%;
+  margin-bottom: 5px;
 }
 
 .name-text{
