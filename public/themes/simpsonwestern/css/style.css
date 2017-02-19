@@ -538,6 +538,12 @@ colored.btn-danger:hover,
   margin-left:32px;
 }
 
+.sky .page-title{
+  margin-left:0;
+  font-size:64px;
+  margin-bottom:24px;
+}
+
 
 .text-highlight {
   background-color: #202833;
@@ -7268,6 +7274,23 @@ div#Breadcrumbs a{
 
 /* HELPFUL READING */
 
+.helpful-reading .post-summary{
+  width:100% !important;
+}
+
+.sky li.article a {
+  text-decoration:none !important;
+}
+
+.title h5{
+  border-bottom:2px solid #000;
+  margin-top:-5px;
+}
+
+.date{
+  font-family:'gibsonlight'
+}
+
 .content.blog-post{
   padding:0 !important;
   margin-top:24px;
@@ -7276,7 +7299,7 @@ div#Breadcrumbs a{
 div.content.sky{
   background-color:#eaf6fa;
   margin-top:80px;
-  height:420px;
+  height:auto;
 }
 
 .sky #Breadcrumbs{
@@ -7293,14 +7316,21 @@ div.content.sky{
   float:right !important;
 }
 
-input.filter-btn{
+input.email{
+  margin-left:12px;
+  height:34px;
+  width:93%;
+}
+
+input.filter-btn, 
+input.subscribe{
   background-color:#c4cfd5 !important;
   width:115px !important;
   height:34px !important;
   margin-top:24px;
   margin-right:4px;
   margin-left:24px;
-  color:#74777c;
+  color:#74777c !important;
   float:right;
 }
 
@@ -7387,7 +7417,7 @@ body.FindUs #footer{
 
   .nav-menu{
     width:288px !important;
-    height:747px !important;
+    height:auto !important;
   }
 
   nav.navbar{
@@ -7407,7 +7437,7 @@ body.FindUs #footer{
 
   .nav-menu{
     width:288px !important;
-    height:595px !important;
+    height:auto !important;
   }
 
   nav.navbar{
@@ -7787,7 +7817,7 @@ body.FindUs #footer{
    .nav-menu{
      margin-top:80px;
     width:100% !important;
-    height:320px !important;
+    height:auto !important;
   }
 
   .nav-menu.open{
@@ -7840,7 +7870,7 @@ body.FindUs #footer{
   .nav-menu{
     margin-top:80px;
     width:100% !important;
-    height:320px !important;
+    height:auto !important;
   }
 
   .nav-menu.open{

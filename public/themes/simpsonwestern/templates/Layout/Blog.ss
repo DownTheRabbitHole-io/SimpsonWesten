@@ -4,6 +4,8 @@
 			<div class="col-xs-12 col-sm-7">
 			
 				<% include BreadCrumbs %>
+
+				<h1 class="page-title">$Title</h1>
 				
 			</div>
 			<div class="col-xs-12 col-sm-5">
@@ -21,7 +23,7 @@
 					</form>
 			</div>
 		</div>
-		
+
 		<div class="row">		 
 			<div>
 			<% loop $getFeatured %>
@@ -48,6 +50,12 @@
 			<% end_loop %>
 				<div class="col-sm-3">				
 					<% include PopularPosts %>
+
+					<form>
+						<input class="email" type="text" name="email" value="email address">
+						<input class="subscribe" type="submit" value="Subscribe">
+					</form>
+					
 				</div>
 			</div>
 		</div>
@@ -60,6 +68,7 @@
 		<div class="row">
 			<div class="main col-sm-9">						
 				<article>
+				<div class="row">
 					<% if $PaginatedList.Exists %>
 						<% loop $PaginatedList %>
 							<% include PostSummary %>
@@ -67,6 +76,7 @@
 					<% else %>
 						<p><%t Blog.NoPosts 'There are no posts' %></p>
 					<% end_if %>
+				</div>
 				</article>
 			</div>			
 			<div class="sidebar col-sm-3">
