@@ -10,7 +10,7 @@
 						<p class="post-image">$FeaturedImage.setWidth(795)</p>
 					<% end_if %>
 
-					<div class="content">$Content</div>
+					<div class="content blog-post">$Content</div>
 
 					<% include EntryMeta %>
 				</article>
