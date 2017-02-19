@@ -355,8 +355,11 @@ class Form extends RequestHandler {
 			$vars = $request->requestVars();
 		}
 
+		// Ensure we only process saveable fields (non structural, readonly, or disabled)
+		$allowedFields = array_keys($this->Fields()->saveableFields());
+
 		// Populate the form
-		$this->loadDataFrom($vars, true);
+		$this->loadDataFrom($vars, true, $allowedFields);
 
 		// Protection against CSRF attacks
 		$token = $this->getSecurityToken();
@@ -480,13 +483,9 @@ class Form extends RequestHandler {
 			return true;
 		}
 
-		// Always allow actions which map to buttons. See httpSubmission() for further access checks.
-		$fields = $this->fields->dataFields() ?: array();
-		$actions = $this->actions->dataFields() ?: array();
-
-		$fieldsAndActions = array_merge($fields, $actions);
- 		foreach ($fieldsAndActions as $fieldOrAction) {
-			if ($fieldOrAction instanceof FormAction && $fieldOrAction->actionName() === $action) {
+		$actions = $this->getAllActions();
+ 		foreach ($actions as $formAction) {
+			if ($formAction->actionName() === $action) {
 				return true;
 			}
 		}
@@ -1383,7 +1382,7 @@ class Form extends RequestHandler {
 	 *  For backwards compatibility reasons, this parameter can also be set to === true, which is the same as passing
 	 *  CLEAR_MISSING
 	 *
-	 * @param FieldList $fieldList An optional list of fields to process.  This can be useful when you have a
+	 * @param array $fieldList An optional list of fields to process.  This can be useful when you have a
 	 * form that has some fields that save to one object, and some that save to another.
 	 * @return Form
 	 */
@@ -1405,6 +1404,7 @@ class Form extends RequestHandler {
 		if(is_object($data)) $this->record = $data;
 
 		// dont include fields without data
+		/** @var FormField[] $dataFields */
 		$dataFields = $this->Fields()->dataFields();
 		if($dataFields) foreach($dataFields as $field) {
 			$name = $field->getName();
@@ -1437,15 +1437,31 @@ class Form extends RequestHandler {
 					$val = $data[$name];
 				}
 				// If field is in array-notation we need to access nested data
-				else if(strpos($name,'[')) {
-					// First encode data using PHP's method of converting nested arrays to form data
-					$flatData = urldecode(http_build_query($data));
-					// Then pull the value out from that flattened string
-					preg_match('/' . addcslashes($name,'[]') . '=([^&]*)/', $flatData, $matches);
+				else if(preg_match_all('/(.*)\[(.*)\]/U', $name, $matches)) {
+					//discard first match which is just the whole string
+					array_shift($matches);
 
-					if (isset($matches[1])) {
-						$exists = true;
-						$val = $matches[1];
+					$keys = array_pop($matches);
+					$name = array_shift($matches);
+					$name = array_shift($name);
+
+					if (array_key_exists($name, $data)) {
+						$tmpData = &$data[$name];
+						// drill down into the data array looking for the corresponding value
+						foreach ($keys as $arrayKey) {
+							if ($arrayKey !== '') {
+								$tmpData = &$tmpData[$arrayKey];
+							} else {
+								//empty square brackets means new array
+								if (is_array($tmpData)) {
+									$tmpData = array_shift($tmpData);
+								}
+							}
+						}
+						if ($tmpData) {
+							$val = $tmpData;
+							$exists = true;
+						}
 					}
 				}
 			}
@@ -1648,21 +1664,31 @@ class Form extends RequestHandler {
 	 * @return FormAction
 	 */
 	public function buttonClicked() {
-		$fields = $this->fields->dataFields() ?: array();
-		$actions = $this->actions->dataFields() ?: array();
-
- 		if(!$actions && !$fields) {
-			return null;
-		}
-
-		$fieldsAndActions = array_merge($fields, $actions);
- 		foreach ($fieldsAndActions as $fieldOrAction) {
-			if ($fieldOrAction instanceof FormAction && $this->buttonClickedFunc === $fieldOrAction->actionName()) {
-				return $fieldOrAction;
+		$actions = $this->getAllActions();
+ 		foreach ($actions as $action) {
+			if ($this->buttonClickedFunc === $action->actionName()) {
+				return $action;
 			}
 		}
 
 		return null;
+	}
+
+	/**
+	 * Get a list of all actions, including those in the main "fields" FieldList
+	 *
+	 * @return array
+	 */
+	protected function getAllActions() {
+		$fields = $this->fields->dataFields() ?: array();
+		$actions = $this->actions->dataFields() ?: array();
+
+		$fieldsAndActions = array_merge($fields, $actions);
+		$actions = array_filter($fieldsAndActions, function($fieldOrAction) {
+			return $fieldOrAction instanceof FormAction;
+		});
+
+		return $actions;
 	}
 
 	/**

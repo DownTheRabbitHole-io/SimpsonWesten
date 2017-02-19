@@ -1,0 +1,12 @@
+#Form_FilterForm label{
+  display:none;
+}
+
+.category-filter{
+  float:left;
+  width:40%;
+}
+
+.filter-btn{
+  float:left;
+}

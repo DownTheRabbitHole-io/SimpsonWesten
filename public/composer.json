@@ -3,12 +3,13 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "3.4.1",
-		"silverstripe/framework": "3.4.1",
-		"silverstripe/reports": "3.4.1",
-		"silverstripe/siteconfig": "3.4.1",
+		"silverstripe/cms": "3.5.*",
+		"silverstripe/framework": "3.5.*",
+		"silverstripe/reports": "3.5.*",
+		"silverstripe/siteconfig": "3.5.*",
 		"silverstripe-themes/simple": "3.1.*",
-		"silverstripe/blog": "dev-master"
+		"silverstripe/blog": "2.4.x",
+		"thezenmonkey/silverstripe-amp": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

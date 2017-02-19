@@ -1,6 +1,6 @@
 <% include Banner %>
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="main col-sm-8">						
 				<article>
@@ -16,7 +16,7 @@
 				</article>
 			</div>
 			
-			<div class="sidebar gray col-sm-4">
+			<div class="sidebar col-sm-4">
 				<% include BlogSideBar %>
 			</div>
 		</div>

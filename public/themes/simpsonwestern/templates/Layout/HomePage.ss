@@ -4,22 +4,22 @@
 		<div class="homepage photo1">
 			<img src="$ThemeDir/images/homepage1.png" />
 		</div>
-		<div class="container main-content">
+		<div class="container-fluid main-content">
 			<div class="row">
 				<!-- BEGIN MAIN CONTENT -->
 				<div class="col-sm-8 col-xm-12 page-description">
-					<p>
+					<p class="hero-text">
 						Everyone wants the good life - smooth sailing, afffairs in order, business matters sorted, our families and assets protected. That's why having a legal representative who is in your corner means a lot. That's our focus at Simpson Western. Tobe on your side, so that you can get on with business and life.
 					</p>
 					<div class="page-links">
 						<%--<div class="container">--%>
 							<div class="row">
-								<div class="col-sm-6 col-xs-12 business">
-									<a href="#" title="Business">Business</a>
+								<div class="col-sm-6  business">
+									<h2><a href="/business-law/" title="Business">Business</a></h2>
 								</div>
 
-								<div class="col-sm-6 col-xs-12 personal">
-									<a href="#" title="Personal">Personal</a>
+								<div class="col-sm-6  personal">
+									<h2><a href="/personal-law/" title="Personal">Personal</a><h2>
 								</div>
 
 							</div>
@@ -31,8 +31,9 @@
 				</div>
 				<!-- END MAIN CONTENT -->
 				<div class="col-sm-4 hidden-xs">
-					<% include RecentArticles %>
+					<% include RecentArticlesHome %>
 				</div>
+				
 			</div>
 		</div>
 		<div class="homepage photo2">

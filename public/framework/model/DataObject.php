@@ -531,7 +531,9 @@ class DataObject extends ViewableData implements DataObjectInterface, i18nEntity
 	 */
 	public function duplicate($doWrite = true) {
 		$className = $this->class;
-		$clone = new $className( $this->toMap(), false, $this->model );
+		$map = $this->toMap();
+		unset($map['Created']);
+		$clone = new $className( $map, false, $this->model );
 		$clone->ID = 0;
 
 		$clone->invokeWithExtensions('onBeforeDuplicate', $this, $doWrite);
@@ -3503,7 +3505,7 @@ class DataObject extends ViewableData implements DataObjectInterface, i18nEntity
 	 * @uses DataExtension->requireDefaultRecords()
 	 */
 	public function requireDefaultRecords() {
-		$defaultRecords = $this->stat('default_records');
+		$defaultRecords = $this->config()->get('default_records', Config::UNINHERITED);
 
 		if(!empty($defaultRecords)) {
 			$hasData = DataObject::get_one($this->class);

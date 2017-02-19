@@ -1,11 +1,14 @@
-<div class="parallax colored-bg pattern-bg" data-stellar-background-ratio="0.5">
+<div class="parallax colored-bg business-banner"  style="background: url($ThemeDir/images/business-banner.jpg);">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="page-title">$Title</h1>
+
 				<div class="breadcrumb">
 					$Breadcrumbs
 				</div>
+				
+				<h1 class="page-title">$Title</h1>
+				
 			</div>
 		</div>
 	</div>

@@ -1,22 +1,25 @@
 <% include Banner %>
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="main col-sm-8">
+			<div class="main col-sm-9">
 				$Content
 				$Form
 			</div>
-			<div class="sidebar gray col-sm-4">
-				<% if $Menu(2) %>
-				<h2 class="section-title">In this section</h2>
-				<ul class="categories subnav">
-					<% loop $Menu(2) %>
-						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-					<% end_loop %>
-				</ul>
-				<% end_if %>
+			<div class="main col-sm-3">
+				<% include RecentArticles %>
+				<div class="support-message-container">
+					<p><Strong>We’re here to help</strong>
+We’ve had some great success stories
+helping our clients with employment issues.
+See how we can do the same for you.</p>
+				
+					<p><a class="contact-link" href="/contact" title="Contact Us">Contact us now</a></p>
+				</div><!-- support-message-container -->
 			</div>
 		</div>
 	</div>
 </div>
+<!-- END CONTENT -->
+
 <!-- END CONTENT -->

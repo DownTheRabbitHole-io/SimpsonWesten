@@ -23,6 +23,7 @@ class DataListTest extends SapphireTest {
 		'DataObjectTest_EquipmentCompany',
 		'DataObjectTest_SubEquipmentCompany',
 		'DataObjectTest\NamespacedClass',
+		'DataObjectTest_Sortable',
 		'DataObjectTest_Company',
 		'DataObjectTest_Fan',
 		'ManyManyListTest_Product',
@@ -362,6 +363,24 @@ class DataListTest extends SapphireTest {
 		$this->assertEquals($otherExpected, $otherMap);
 	}
 
+	public function testAmbiguousAggregate() {
+		// Test that we avoid ambiguity error when a field exists on two joined tables
+		// Fetch the sponsors in a round-about way to simulate this
+		$teamID = $this->idFromFixture('DataObjectTest_Team','team2');
+		$sponsors = DataObjectTest_EquipmentCompany::get()->filter('SponsoredTeams.ID', $teamID);
+		$this->assertNotNull($sponsors->Max('ID'));
+		$this->assertNotNull($sponsors->Min('ID'));
+		$this->assertNotNull($sponsors->Avg('ID'));
+		$this->assertNotNull($sponsors->Sum('ID'));
+
+		// Test non-orm many_many_extraFields
+		$company = $this->objFromFixture('DataObjectTest_EquipmentCompany', 'equipmentcompany1');
+		$this->assertNotNull($company->SponsoredTeams()->Max('SponsorFee'));
+		$this->assertNotNull($company->SponsoredTeams()->Min('SponsorFee'));
+		$this->assertNotNull($company->SponsoredTeams()->Avg('SponsorFee'));
+		$this->assertNotNull($company->SponsoredTeams()->Sum('SponsorFee'));
+	}
+
 	public function testEach() {
 		$list = DataObjectTest_TeamComment::get();
 
@@ -531,6 +550,66 @@ class DataListTest extends SapphireTest {
 		$list = $list->sort(array('TeamID'=>'asc','Name'=>'desc'));
 		$this->assertEquals('Joe', $list->first()->Name, 'First comment should be from Bob');
 		$this->assertEquals('Phil', $list->last()->Name, 'Last comment should be from Phil');
+	}
+
+	public function testSortNumeric() {
+		$list = DataObjectTest_Sortable::get();
+		$list1 = $list->sort('Sort', 'ASC');
+		$this->assertEquals(array(
+			-10,
+			-2,
+			-1,
+			0,
+			1,
+			2,
+			10
+		), $list1->column('Sort'));
+	}
+
+	public function testSortMixedCase() {
+		$list = DataObjectTest_Sortable::get();
+		$list1 = $list->sort('Name', 'ASC');
+		$this->assertEquals(array(
+            'Bob',
+            'bonny',
+            'jane',
+            'John',
+            'sam',
+            'Steve',
+            'steven'
+		), $list1->column('Name'));
+	}
+
+	/**
+	 * Test DataList->canFilterBy()
+	 */
+	public function testCanFilterBy() {
+		// Basic check
+		$team = DataObjectTest_Team::get();
+		$this->assertTrue($team->canFilterBy("Title"));
+		$this->assertFalse($team->canFilterBy("SomethingElse"));
+
+		// Has one
+		$this->assertTrue($team->canFilterBy("CaptainID"));
+		$this->assertTrue($team->canFilterBy("Captain.ShirtNumber"));
+		$this->assertFalse($team->canFilterBy("SomethingElse.ShirtNumber"));
+		$this->assertFalse($team->canFilterBy("Captain.SomethingElse"));
+		$this->assertTrue($team->canFilterBy("Captain.FavouriteTeam.Captain.ShirtNumber"));
+
+		// Has many
+		$this->assertTrue($team->canFilterBy("Fans.Name"));
+		$this->assertFalse($team->canFilterBy("SomethingElse.Name"));
+		$this->assertFalse($team->canFilterBy("Fans.SomethingElse"));
+
+		// Many many
+		$this->assertTrue($team->canFilterBy("Players.FirstName"));
+		$this->assertFalse($team->canFilterBy("SomethingElse.FirstName"));
+		$this->assertFalse($team->canFilterBy("Players.SomethingElse"));
+
+		// Subclasses
+		$subteam = DataObjectTest_SubTeam::get();
+		$this->assertTrue($subteam->canFilterBy("Title"));
+		$this->assertTrue($subteam->canFilterBy("SubclassDatabaseField"));
 	}
 
 	/**
