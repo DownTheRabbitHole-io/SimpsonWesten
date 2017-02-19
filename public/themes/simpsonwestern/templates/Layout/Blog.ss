@@ -1,6 +1,6 @@
 <div class="content sky">
 	<div class="container-fluid main-content">
-		<div class="row" style="padding-top:110px;">
+		<div class="row">
 			<div class="col-sm-7">
 				<div class="breadcrumb">
 				<% include BreadCrumbs %>

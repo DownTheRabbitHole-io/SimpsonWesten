@@ -1263,10 +1263,11 @@ colored.btn-danger:hover,
   text-align: left;
   background-color: transparent;
   color:#343741;
-  font-family: 'gibsonlight', sans-serif;
+  font-family: 'gibsonregular', sans-serif;
   font-size:11px;
   padding:0 !important;
-  margin-left:36px;
+  margin-left:18px;
+  margin-top:12px;
 }
 
 .breadcrumb a {
@@ -2046,7 +2047,10 @@ div.page {
   margin-bottom:74px;
 }
 
-
+.other-links a{
+  font-family:'gibsonsemibold';
+  font-size:13px;
+}
 
 .main-content .page-description {
   text-align: center;
@@ -2758,7 +2762,7 @@ div.page {
   text-decoration: underline;
 }
 .sidebar {
-  padding-top: 55px;
+  /*padding-top: 55px;*/
   padding-bottom: 80px;
 }
 .sidebar img {
@@ -6929,6 +6933,12 @@ div.dark_square #pp_full_res .pp_inline {
   cursor: pointer;
 }
 
+/* BANNER */
+
+div.banner{
+  margin-bottom:64px;
+}
+
 
 /*REFLOW*/
 
@@ -7130,6 +7140,21 @@ a.contact-link{
 
 /* OUR PEOPLE PAGE */
 
+.our-people .sidebar {
+  padding-top: 18px;
+}
+
+.reflow p{
+  margin-bottom:64px;
+}
+
+h2.our-people-headline{
+  font-family:'gibsonsemibold';
+  font-size:30px;
+  color:#000;
+
+}
+
 ul.profile-list-holder{
   padding:0;
   margin-left:0;
@@ -7213,21 +7238,19 @@ div#Breadcrumbs a{
   margin-bottom:8px;
 }
 
-.profile-article p{
-}
-
-div.bio-text{
-}
 
 /* HELPFUL READING */
 
 div.content.sky{
   background-color:#eaf6fa;
+  margin-top:80px;
+  height:450px;
 }
 
-#category_chzn{
-  width:50%;
+.sky .breadcrumb {
+  margin-left:0 !important;
 }
+
 
 /* FIND US */
 
@@ -8562,7 +8585,8 @@ div.middleColumn textarea {
 
 
 
-/* new styles */
+/* new styles 
 .main {
   padding:0 !important;
 }
+*/
