@@ -2,11 +2,13 @@
   float:left;
   width:33%;
   padding-right: 25px;
+  margin-bottom: 50px;
 }
 
 .author{
   border-bottom: solid 2px #000;
   color:#000 !important;
+  padding-bottom: 4px;
 }
 
 .author .name a{
@@ -25,4 +27,29 @@
 
 .content .main-content{
   padding: 0;
+}
+
+.most-popular h5{
+  padding-bottom: 4px;
+}
+
+.popular-posts .nav li{
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+}
+
+.popular-posts .nav li a{
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.subscribe-form{
+  margin-top: 20px;
+}
+
+.subscribe-form input.email{
+  height:34px;
+  width: 100%;
+  margin: 0;
 }

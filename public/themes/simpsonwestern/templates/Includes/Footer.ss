@@ -20,7 +20,8 @@
             <div class="col-sm-2 hidden-xs">
             </div>
             <div class="col-sm-3 col-xm-12">
-                <p class="address">Takapuna Level3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna Silverdale Cnr Millwater Parkway & Polarity Rise, SIlverdale</p>
+                <p class="address"><Strong>Takapuna</strong> Level3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna </br>
+                <Strong>Silverdale</strong> Cnr Millwater Parkway & Polarity Rise, Silverdale</p>
                 <div class="social-networks">
                     <%--style testing code start--%>
                     <a href="#"><img class="fa-nzlaw" src="$ThemeDir/images/NZLaw_icon.png"></a>

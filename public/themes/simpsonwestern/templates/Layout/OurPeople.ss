@@ -1,5 +1,5 @@
 <% include Banner %>
-<div class="content">
+<div class="content our-people">
 	<div class="container-fluid">
 		<div class="row">
 			
@@ -12,11 +12,12 @@
 			</div>
 
 			<div class="main col-sm-9 reflow">
+				<h2 class="our-people-headline">Meet your team</h2>
 				$Content
 			<article>
 			<div class="row">
 				<ul class="profile-list-holder">
-				<% if $profileList %>
+				<% if $profileList.Exists %>
 				<% loop $profileList %>				
 				<div class="profileThumb people-tile-medium col-sm-4">
 					<li class="$LinkingMode profile-list">
@@ -30,7 +31,9 @@
 							
 					</li>
 				</div>	
-				<% end_loop %>
+				<% end_loop %>					
+				<% else %>
+					<p>No Matching Results</p>
 				<% end_if %>
 				<div class="clearfix sneak"></div>
 				</ul>

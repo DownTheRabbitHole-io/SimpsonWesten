@@ -538,6 +538,12 @@ colored.btn-danger:hover,
   margin-left:32px;
 }
 
+.sky .page-title{
+  margin-left:0;
+  font-size:64px;
+  margin-bottom:24px;
+}
+
 
 .text-highlight {
   background-color: #202833;
@@ -1259,19 +1265,33 @@ colored.btn-danger:hover,
   padding: 20px 0 0;
 }
 
-.breadcrumb {
+div#Breadcrumbs{
+  color:#343741;
+  font-family: 'gibsonlight', sans-serif;
+  font-size:11px;
+  margin-left:14px;
+}
+
+.breadcrumb{
   text-align: left;
   background-color: transparent;
   color:#343741;
   font-family: 'gibsonlight', sans-serif;
   font-size:11px;
   padding:0 !important;
-  margin-left:36px;
+  margin-left:18px;
+  margin-top:16px;
 }
 
 .breadcrumb a {
   color: #343741;
   text-decoration:none;
+}
+
+.breadcrumb-1{
+  color:#343741;
+  font-family: 'gibsonlight', sans-serif;
+  font-size:11px;
 }
 
 .breadcrumb a:hover,
@@ -1962,8 +1982,6 @@ div.page {
 }
 
 .page .header {
-    border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
    padding: 22px 50px;
    /*position: fixed;*/
    width: 100%;
@@ -2432,11 +2450,11 @@ div.page {
   height: 4px;
 }
 
-
+/*
 .main {
   padding-top: 16px;
   padding-bottom: 16px;
-}
+}*/
 
 .feature {
   /* display:inline-block; */
@@ -2758,7 +2776,7 @@ div.page {
   text-decoration: underline;
 }
 .sidebar {
-  padding-top: 55px;
+  padding-top: 18px;
   padding-bottom: 80px;
 }
 .sidebar img {
@@ -6222,6 +6240,10 @@ a.tp-caption.btn-lg {
     line-height: 20px;
 }
 
+#footer .address strong{
+  font-family: 'gibsonsemibold';
+}
+
 #footer .social-networks {
     margin: 0;
     padding: 0;
@@ -6930,6 +6952,19 @@ div.dark_square #pp_full_res .pp_inline {
 }
 
 
+.other-links{
+  font-family:'gibsonsemibold';
+  font-size:13px;
+}
+
+/* Banner */
+
+.banner{
+  margin-bottom:64px;
+}
+
+
+
 /*REFLOW*/
 
 div.reflow{
@@ -6938,6 +6973,18 @@ div.reflow{
 
 
 /* Nav - Menu */
+
+.dropdown-menu{
+  position: static !important;
+  background-color: transparent !important;
+  border: 0 none !important;
+  box-shadow: none !important;
+  float:none !important;
+}
+
+a.sub-link:hover{
+  background-color:transparent !important;
+}
 
 a.home-link{
   color:#000;
@@ -6955,7 +7002,7 @@ div.container.page{
 .nav-menu.open{
   width:288px;
   height:884px;
-  background-color:rgba(235, 247, 250, 0.66);
+  background-color:rgba(235, 247, 250, .8);
   position:absolute;
   top:0px;
   right:0px;
@@ -7047,7 +7094,7 @@ nav.navbar{
 
 .subnav a{
     color:#000 !important;
-    font-family:'gibsonsemibold', sans-serif;
+    font-family:'gibsonregular', sans-serif;
     font-size:19px;
     text-decoration:none;
 }
@@ -7189,22 +7236,33 @@ div.sidebar input[type=submit]{
 
 /* PROFILE PAGE */
 
-.portrait-large{
-  width:100%;
-  height:100%;
+div.image-holder{
+  width:110%;
+  min-height:550px;
   max-width:868px;
-  margin-bottom:8px;
-  margin-left: -50px;
+  margin-bottom:64px;
+  margin-top:80px;
+  margin-left: -65px;
+  position:relative;
 }
 
+.image-holder #Breadcrumbs{
+  position:absolute;
+  top:16px;
+  left:18px;
+  z-index:1000;
+}
+
+
 .sidebar.profile{
-  margin-top:48px;
+  margin-top:60px;
 }
 
 .profile-article div#Breadcrumbs{
   position:absolute;
   top:94px;
   left:-30px;
+  z-index:1000;
 }
 
 div#Breadcrumbs a{
@@ -7215,24 +7273,75 @@ div#Breadcrumbs a{
   margin-bottom:8px;
 }
 
-.profile-article p{
-}
-
-div.bio-text{
-}
 
 /* HELPFUL READING */
 
-div.content.sky{
-  background-color:#eaf6fa;
+.helpful-reading .post-summary{
+  width:100% !important;
 }
 
-#category_chzn{
-  width:50%;
+.sky li.article a {
+  text-decoration:none !important;
+}
+
+.title h5{
+  border-bottom:2px solid #000;
+  margin-top:-5px;
+}
+
+.date{
+  font-family:'gibsonlight'
+}
+
+.content.blog-post{
+  padding:0 !important;
+  margin-top:24px;
+}
+
+div.content.sky{
+  background-color:#eaf6fa;
+  margin-top:80px;
+  height:auto;
+}
+
+.sky #Breadcrumbs{
+  margin-left:0;
+  margin-top:16px;
+}
+
+.sky .breadcrumb{
+  margin-left:0;
+}
+
+.category-filter{
+  margin-top:24px;
+  float:right !important;
+}
+
+input.email{
+  margin-left:12px;
+  height:34px;
+  width:93%;
+}
+
+input.filter-btn,
+input.subscribe{
+  background-color:#c4cfd5 !important;
+  width:115px !important;
+  height:34px !important;
+  margin-top:24px;
+  margin-right:4px;
+  margin-left:24px;
+  color:#74777c !important;
+  float:right;
 }
 
 /* FIND US */
 
+.expando{
+  padding:0 !important;
+  margin-top:40px;
+}
 
 /* CONTACT US */
 
@@ -7282,6 +7391,10 @@ div.middleColumn textarea {
   font-family: 'gibsonsemibold';
 }
 
+body.FindUs #footer{
+  margin-top:0 !important;
+}
+
 
 /* #Media Queries
 ================================================== */
@@ -7306,7 +7419,7 @@ div.middleColumn textarea {
 
   .nav-menu{
     width:288px !important;
-    height:747px !important;
+    height:auto !important;
   }
 
   nav.navbar{
@@ -7326,7 +7439,7 @@ div.middleColumn textarea {
 
   .nav-menu{
     width:288px !important;
-    height:595px !important;
+    height:auto !important;
   }
 
   nav.navbar{
@@ -7377,16 +7490,16 @@ div.middleColumn textarea {
   }
 }
 @media (max-width: 992px) {
-
+  
   .profile .nav{
     display:block !important;
 
   }
-
+  
   /* .nav {
     display: none;
   } */
-
+  
 
   .sb-search {
     display: none;
@@ -7523,10 +7636,16 @@ div.middleColumn textarea {
     width: 100%;
   }
 
-
+  
 
 }
 @media (max-width: 767px) {
+
+/*.profile-article{
+    width:768px;
+    margin-left:0 !important;
+  }*/
+
   .colored:before,
   .gray:before {
     background-color: transparent !important;
@@ -7700,7 +7819,7 @@ div.middleColumn textarea {
    .nav-menu{
      margin-top:80px;
     width:100% !important;
-    height:320px !important;
+    height:auto !important;
   }
 
   .nav-menu.open{
@@ -7726,8 +7845,25 @@ div.middleColumn textarea {
     font-size:64px !important;
   }
 
+  div.image-holder{
+    width:113% !important;
+  }
+
 }
 @media (max-width: 480px) {
+
+  /*.profile-article{
+    width:480px;
+    margin-left:0 !important;
+  }*/
+
+  div.image-holder{
+    width:150% !important;
+  }
+
+  .portrait-large{
+    margin-top:80px;
+  }
 
   .page .header {
     padding: 20px;
@@ -7762,7 +7898,7 @@ div.middleColumn textarea {
   .nav-menu{
     margin-top:70px;
     width:100% !important;
-    height:320px !important;
+    height:auto !important;
   }
 
   .nav-menu.open{

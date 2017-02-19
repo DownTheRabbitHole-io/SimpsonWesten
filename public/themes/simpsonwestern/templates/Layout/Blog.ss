@@ -1,24 +1,30 @@
 <div class="content sky">
 	<div class="container-fluid main-content">
-		<div class="row" style="padding-top:110px;">
-			<div class="col-sm-7">
-				<div class="breadcrumb">
+		<div class="row">
+			<div class="col-xs-12 col-sm-7">
+			
 				<% include BreadCrumbs %>
-				</div>
+
+				<h1 class="page-title">$Title</h1>
+				
 			</div>
-			<div class="col-sm-5">
-				<form>
+			<div class="col-xs-12 col-sm-5">
+
+				<form id="blogform" method="Post" action="/our-people/filter" enctype="application/x-www-form-urlencoded">
+					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
+				
 					<div class="category-filter">
 						<select name="category" id="category">
+							<option value="category">Category</option>
 						<% loop $getCategories %>
 							<option value="$Title.LowerCase">$Title</option>
 						<% end_loop %>
 						</select>
 					</div>
-					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
-				</form>
+					</form>
 			</div>
 		</div>
+
 		<div class="row">		 
 			<div>
 			<% loop $getFeatured %>
@@ -43,8 +49,14 @@
 					<p>$Excerpt</p>
 				</div>
 			<% end_loop %>
-				<div class="col-sm-3">				
+				<div class="col-sm-3 hidden-xs">				
 					<% include PopularPosts %>
+
+					<form class="subscribe-form">
+						<input class="email" type="text" name="email" value="email address">
+						<input class="subscribe" type="submit" value="Subscribe">
+					</form>
+					
 				</div>
 			</div>
 		</div>
@@ -57,6 +69,7 @@
 		<div class="row">
 			<div class="main col-sm-9">						
 				<article>
+				<div class="row">
 					<% if $PaginatedList.Exists %>
 						<% loop $PaginatedList %>
 							<% include PostSummary %>
@@ -64,6 +77,7 @@
 					<% else %>
 						<p><%t Blog.NoPosts 'There are no posts' %></p>
 					<% end_if %>
+				</div>
 				</article>
 			</div>			
 			<div class="sidebar col-sm-3">

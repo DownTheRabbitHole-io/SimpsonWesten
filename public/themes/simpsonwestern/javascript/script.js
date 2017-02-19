@@ -12,5 +12,22 @@ jQuery.noConflict();
 			officeMap.setZoom(16);
 			marker.info.open(officeMap, marker);
 		});
+
+		$("#Form_FilterForm_Team").on("change", function(){
+			$('#Form_FilterForm').submit();
+		});
+
+		$("#Form_FilterForm_Office").on("change", function(){
+			$('#Form_FilterForm').submit();
+		});
+
+		$("#Form_FilterForm_Expertise").on("change", function(){
+			$('#Form_FilterForm').submit();
+		});
+
+
+});
+
+
 	});
 }(jQuery));
