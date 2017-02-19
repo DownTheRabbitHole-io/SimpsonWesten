@@ -6234,6 +6234,10 @@ a.tp-caption.btn-lg {
     line-height: 20px;
 }
 
+#footer .address strong{
+  font-family: 'gibsonsemibold';
+}
+
 #footer .social-networks {
     margin: 0;
     padding: 0;
@@ -8676,4 +8680,20 @@ body.FindUs #footer{
   padding: 0;
   text-decoration: none;
   color: #000;
+}
+
+.details{
+  margin-top: 120px;
+}
+
+.details p {
+  font-family: 'gibsonregular';
+  font-size: 13px;
+  color:#333333;
+}
+
+.details p strong{
+  font-family: 'gibsonsemibold';
+  font-size: 13px;
+  color:#333333;
 }
