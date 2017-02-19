@@ -6966,6 +6966,18 @@ div.reflow{
 
 /* Nav - Menu */
 
+.dropdown-menu{
+  position: static !important;
+  background-color: transparent !important;
+  border: 0 none !important;
+  box-shadow: none !important;
+  float:none !important;
+}
+
+a.sub-link:hover{
+  background-color:transparent !important;
+}
+
 a.home-link{
   color:#000;
   text-decoration:none;
@@ -6982,7 +6994,7 @@ div.container.page{
 .nav-menu.open{
   width:288px;
   height:884px;
-  background-color:rgba(235, 247, 250, 0.66);
+  background-color:rgba(235, 247, 250, .8);
   position:absolute;
   top:0px;
   right:0px;
