@@ -17,7 +17,7 @@
 			<article>
 			<div class="row">
 				<ul class="profile-list-holder">
-				<% if $profileList %>
+				<% if $profileList.Exists %>
 				<% loop $profileList %>				
 				<div class="profileThumb people-tile-medium col-sm-4">
 					<li class="$LinkingMode profile-list">
@@ -31,7 +31,9 @@
 							
 					</li>
 				</div>	
-				<% end_loop %>
+				<% end_loop %>					
+				<% else %>
+					<p>No Matching Results</p>
 				<% end_if %>
 				<div class="clearfix sneak"></div>
 				</ul>

@@ -10,11 +10,12 @@
 			</div>
 			<div class="col-xs-12 col-sm-5">
 
-				<form>
+				<form id="blogform" method="Post" action="/our-people/filter" enctype="application/x-www-form-urlencoded">
 					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
 				
 					<div class="category-filter">
 						<select name="category" id="category">
+							<option value="category">Category</option>
 						<% loop $getCategories %>
 							<option value="$Title.LowerCase">$Title</option>
 						<% end_loop %>
@@ -48,10 +49,10 @@
 					<p>$Excerpt</p>
 				</div>
 			<% end_loop %>
-				<div class="col-sm-3">				
+				<div class="col-sm-3 hidden-xs">				
 					<% include PopularPosts %>
 
-					<form>
+					<form class="subscribe-form">
 						<input class="email" type="text" name="email" value="email address">
 						<input class="subscribe" type="submit" value="Subscribe">
 					</form>

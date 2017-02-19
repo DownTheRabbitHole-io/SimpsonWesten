@@ -1,6 +1,11 @@
 <?php
 class Blog_ControllerExtension extends Extension
 {  
+
+    private static $allowed_actions = array (
+        'filter'
+	);
+
     public function getFeatured() {
         $post = BlogPost::get()->filter(array('Featured' => 1))->limit(1);
         return $post;
@@ -16,5 +21,11 @@ class Blog_ControllerExtension extends Extension
       return $categories;
     }
 
+
+    function filter($data, $form){
+        //print_r($data['category']);
+        $this->redirect('/helpful-reading/category/'.$data['category']);
+        //exit();
+    }
    
 }
