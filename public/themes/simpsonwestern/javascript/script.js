@@ -24,10 +24,6 @@ jQuery.noConflict();
 		$("#Form_FilterForm_Expertise").on("change", function(){
 			$('#Form_FilterForm').submit();
 		});
-
-	
-});
 		
-
-	});
+});
 }(jQuery));
