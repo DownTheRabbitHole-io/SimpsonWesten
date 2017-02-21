@@ -2024,8 +2024,6 @@ div.page {
 }
 
 .recent-article .article-links {
-    border-top: 2px solid #686870;
-    border-bottom: 2px solid #686870;
     padding: 5px 0;
     margin-bottom: 25px;
 }
@@ -2242,7 +2240,7 @@ div.page {
 .parallax {
   position: relative;
   text-align: center;
-  padding: 85px 0;
+  padding-bottom: 0;
   overflow: hidden;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
@@ -6957,9 +6955,42 @@ div.dark_square #pp_full_res .pp_inline {
   font-size:13px;
 }
 
+/* Home Fix*/
+
+.homepage{
+  position: relative;
+}
+
+.down-arrow{
+  position:absolute;
+  bottom:24px;
+  left:48%;
+  z-index:20000;
+}
+
+.down-arrow a img{
+  width:54px;
+  height:54px;
+}
+
+.sw-logo{
+    width: 240px;
+    height: 18px;
+    overflow: hidden;
+    font-size: 1px;
+    text-indent: -9999px;
+    position:absolute;
+    top:34px;
+    left:50px;
+    background: url(../images/sw-logo.png) no-repeat ;
+}
+
+
+
 /* Banner */
 
 .banner{
+  margin-top:80px;
   margin-bottom:64px;
 }
 
@@ -7065,7 +7096,14 @@ nav.navbar{
   width:100%;
   max-width:1168px;
   margin:0 auto;
+  height:80px;
 }
+
+.content.homepage{
+  margin-top:80px;
+}
+
+
 
 /* Article Holder */
 
@@ -7226,7 +7264,6 @@ div.sneak{
   color:#343741;
   width:100%;
   display:inline-block;
-  border-bottom:1px solid  #343741;
   margin-bottom:8px;
 }
 
@@ -7285,7 +7322,7 @@ div#Breadcrumbs a{
 }
 
 .title h5{
-  border-bottom:2px solid #000;
+  
   margin-top:-5px;
 }
 
@@ -7334,6 +7371,10 @@ input.subscribe{
   margin-left:24px;
   color:#74777c !important;
   float:right;
+}
+
+.popular-posts .nav li{
+  border-bottom:0 none !important;
 }
 
 /* FIND US */
@@ -7419,7 +7460,7 @@ body.FindUs #footer{
 
   .nav-menu{
     width:288px !important;
-    height:auto !important;
+    
   }
 
   nav.navbar{
@@ -7849,6 +7890,8 @@ body.FindUs #footer{
     width:113% !important;
   }
 
+  
+
 }
 @media (max-width: 480px) {
 
@@ -7856,6 +7899,28 @@ body.FindUs #footer{
     width:480px;
     margin-left:0 !important;
   }*/
+
+ 
+
+  .content.homepage,
+  .row.header
+  {
+    padding:0 !important;
+  }
+
+  .phone-icon,
+  .header button{
+    margin-top:26px !important;
+    margin-right:4px !important;
+  }
+
+  .sw-logo{
+    width: 195px;
+    height: 15px;
+    background: url(../images/sw-logo-mobile.png) no-repeat !important;
+    clear:both;
+    left:16px;
+  }
   
   div.image-holder{
     width:150% !important;

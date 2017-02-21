@@ -1,8 +1,9 @@
 
 	<!-- BEGIN CONTENT WRAPPER -->
-	<div class="content">
+	<div class="content homepage">
 		<div class="homepage photo1">
 			<img src="$ThemeDir/images/homepage1.png" />
+			<div class="down-arrow"><a href="#"><img src="$ThemeDir/images/down-arrow-circle.png" /></a></div>
 		</div>
 		<div class="container-fluid main-content">
 			<div class="row">

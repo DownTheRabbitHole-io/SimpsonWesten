@@ -11,7 +11,7 @@
         <article class="details-mobile visible-xs">
         <p><strong>Phone:</strong> $Phone</p>
 				<p><strong>Mobile:</strong>  $Mobile</p>
-				<p><strong>Email:</strong>  $Email</p>
+				<p><strong>Email:</strong><a href="mailto:$Email" title="Click to Email">$Email</a></p>
 				<p><strong>PA:</strong>  $PA</p>
 				<p><strong>Linkedin:</strong>  <a href="$Linkedin" target="_blank">$Linkedin</a></p>
         </article>
@@ -22,7 +22,7 @@
         <article class="details  hidden-xs">
         <p><strong>Phone:</strong> $Phone</p>
 				<p><strong>Mobile:</strong>  $Mobile</p>
-				<p><strong>Email:</strong>  $Email</p>
+				<p><strong>Email:</strong><a href="mailto:$Email" title="Click to Email">$Email</a></p>
 				<p><strong>PA:</strong>  $PA</p>
 				<p><strong>Linkedin:</strong>  <a href="$Linkedin" target="_blank">$Linkedin</a></p>
         </article>

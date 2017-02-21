@@ -3,8 +3,7 @@
     <div class="row header">
         <div class="header-content">
             <div class="title">
-                <a class="home-link" href="/home/">SIMPSONWESTERN</a>
-                
+                <a class="home-link sw-logo" href="/home/">SIMPSONWESTERN</a>
             </div>
 
             <!-- BEGIN MAIN MENU -->
