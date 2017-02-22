@@ -8809,3 +8809,7 @@ body.FindUs #footer{
   font-size: 13px;
   color:#333333;
 }
+
+.down-arrow a:hover{
+  opacity: 0.6;
+}

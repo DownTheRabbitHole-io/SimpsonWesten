@@ -25,9 +25,16 @@ jQuery.noConflict();
 			$('#Form_FilterForm').submit();
 		});
 
-	
-});
-		
+
+		$('#down').on("click", function(){
+			scrollToAnchor('contentAnchor', 100);
+		});
+
+		function scrollToAnchor(aid, adjustment){
+				var aTag = $("a[name='"+ aid +"']");
+				$('html,body').animate({scrollTop: aTag.offset().top - adjustment},'slow');
+		}
 
 	});
 }(jQuery));
+
