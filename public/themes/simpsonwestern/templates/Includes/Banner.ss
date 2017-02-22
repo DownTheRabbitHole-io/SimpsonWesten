@@ -1,4 +1,4 @@
-<div class="parallax colored-bg business-banner banner"  style="background: url($ThemeDir/images/business-banner.jpg);">
+<div class="parallax colored-bg business-banner banner" <% if $HeaderImage %> style="background-image: url($HeaderImage.URL);" <% end_if %>>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">

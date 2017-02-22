@@ -6959,6 +6959,7 @@ div.dark_square #pp_full_res .pp_inline {
 
 .homepage{
   position: relative;
+  margin-top: 80px;
 }
 
 .down-arrow{
@@ -7108,10 +7109,13 @@ nav.navbar{
 /* Article Holder */
 
 .business-banner{
-  height:383px;
+  height:369px;
   width:100%;
   max-width:1200px;
   background-color:transparent !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/themes/simpsonwestern/images/business-banner.jpg);
 }
 
 .section-title-right{

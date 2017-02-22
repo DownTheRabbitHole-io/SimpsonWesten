@@ -8,12 +8,6 @@ class Article extends Page{
 	private static $db = array(
 	);
 
-  /**
-	 * @var array
-	 */
-	private static $has_one = array(
-    'HeaderImage' => 'Image'
-	);
 
 	/**
 	 * @var array
@@ -56,12 +50,6 @@ class Article extends Page{
     ->setCanCreate(false);     // new tag DataObjects can be created
 
     $fields->insertBefore($tagField, 'Content');
-
-    $uploadField = UploadField::create('HeaderImage',  'Header Image');
-    $uploadField->setFolderName('article-headers');
-		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
-
-    $fields->insertBefore($uploadField, 'Content');
 
 
     return $fields;
