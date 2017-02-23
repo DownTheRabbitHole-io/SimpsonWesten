@@ -1,7 +1,7 @@
 
 	<!-- BEGIN CONTENT WRAPPER -->
 	<div class="homepage photo1">
-			<img src="$ThemeDir/images/homepage1.png" />
+			<img src="$HeaderImage.URL" />
 			<div class="down-arrow"><a href="#" id="down"><img src="$ThemeDir/images/down-arrow-circle.png" /></a></div>
 		</div>
 	<div class="content homepage">
