@@ -112,7 +112,7 @@ body {
   overflow: hidden;
   background-color: #fff;
   font-size: 14px;
-  font-family: 'gibsonregular', sans-serif;
+  font-family: 'gibsonlight', sans-serif;
 }
 
 ::selection {
@@ -2077,6 +2077,14 @@ div.page {
 .main-content h2{
   font-size:44px;
   margin-bottom:22px;
+}
+
+.business h2 {
+  text-align:right;
+}
+
+.personal h2 {
+  text-align:left;
 }
 
 
@@ -7221,6 +7229,15 @@ a.contact-link{
 
 /* OUR PEOPLE PAGE */
 
+.our-people-headline{
+  font-size:23px;
+}
+
+.reflow p{
+  margin-bottom:45px;
+  font-size:17px;
+}
+
 ul.profile-list-holder{
   padding:0;
   margin-left:0;
@@ -7269,6 +7286,7 @@ div.sneak{
   width:100%;
   display:inline-block;
   margin-bottom:8px;
+  font-size:13px !important;
 }
 
 div.sidebar input[type=submit]{
@@ -7317,6 +7335,33 @@ div#Breadcrumbs a{
 
 /* HELPFUL READING */
 
+.sky .main-content h2,
+.post-summary p{
+  font-size:23px;
+}
+
+.helpfulreading-title.lead-blog{
+  margin-top:16px;
+  margin-bottom:0 !important;
+}
+
+.helpfulreading-title.lead-blog a{
+  font-size:64px !important;
+}
+
+.helpfulreading-title a, 
+.helpfulreading-title{
+  font-size:23px !important;
+}
+
+.helpfulreading-title{
+  margin:0 !important;
+}
+
+.author h6{
+  text-transform: uppercase;
+}
+
 .helpful-reading .post-summary{
   width:100% !important;
 }
@@ -7326,7 +7371,7 @@ div#Breadcrumbs a{
 }
 
 .title h5{
-  
+  text-transform: uppercase;
   margin-top:-5px;
 }
 
@@ -7429,15 +7474,23 @@ div.middleColumn textarea {
 
 /* FOOTER */
 
+.footer-number{
+  font-size:14px;
+}
+
 .flinks li a{
   font-size:13px;
   color: #343741;
-  text-decoration:none;
   font-family: 'gibsonsemibold';
+  line-height: 1.6;
 }
 
 body.FindUs #footer{
   margin-top:0 !important;
+}
+
+#footer .address{
+  font-size:12px;
 }
 
 
@@ -7473,6 +7526,8 @@ body.FindUs #footer{
 
 }
 @media (min-width: 768px) and (max-width: 992px) {
+
+ 
 
   .footer-content .phone-number img{
     width:164px !important;
@@ -7651,6 +7706,8 @@ body.FindUs #footer{
 }
 @media (min-width: 768px) and (max-width: 1199px) {
 
+  
+
   .footer-content .phone-number img{
     width:164px !important;
   }
@@ -7685,6 +7742,18 @@ body.FindUs #footer{
 
 }
 @media (max-width: 767px) {
+
+  .down-arrow{
+    left:44%;
+  }
+
+   .business h2 {
+  text-align:center;
+}
+
+.personal h2 {
+  text-align:center;
+}
 
 /*.profile-article{
     width:768px;
@@ -7851,6 +7920,9 @@ body.FindUs #footer{
 }
 @media (min-width: 481px) and (max-width: 992px) {
 
+.content.homepage{
+    margin-top:20px !important;
+  }
 
 
  .homepage.photo1{
@@ -7899,12 +7971,22 @@ body.FindUs #footer{
 }
 @media (max-width: 480px) {
 
-  /*.profile-article{
-    width:480px;
-    margin-left:0 !important;
-  }*/
+  .reflow p{
+  margin-bottom:22px;
+  font-size:23px;
+}
 
- 
+  .main-content{
+    padding-top:0px;
+    margin-bottom:20px;
+  }
+
+
+
+ .down-arrow{
+    width:25px;
+    height:25px;
+  }
 
   .content.homepage,
   .row.header

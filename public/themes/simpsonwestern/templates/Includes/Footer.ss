@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-3 col-xm-12 phone-number">
                 <img src="$ThemeDir/images/logo.png" alt="SIMPSONWESTERN" />
-                <h2>09 486 3058</h2>
+                <p class="footer-number">09 486 3058</p>
             </div>
             <div class="col-sm-4 col-xm-12">
                 <ul class="nav flinks">
