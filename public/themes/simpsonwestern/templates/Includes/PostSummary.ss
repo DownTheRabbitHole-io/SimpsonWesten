@@ -21,7 +21,7 @@
 	<% if $Summary %>
 		$Summary
 	<% else %>
-		<p>$Excerpt</p>
+		<p>$Excerpt ></p>
 	<% end_if %>
 </div>
 </div>

@@ -2,7 +2,7 @@
 <div class="content">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="sidebar col-sm-3">
+			<div class="sidebar col-sm-3  hidden-xs">
 				<% if $Menu(2) %>
 				<h2 class="section-title-left">$Title</h2>
 				<ul class="categories subnav">

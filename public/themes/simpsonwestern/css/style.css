@@ -100,6 +100,8 @@ h6 {
   text-transform: none;
   font-family: 'gibsonsemibold', sans-serif;
 }
+
+
 /* #General
 ================================================== */
 html {
@@ -1494,6 +1496,7 @@ div#Breadcrumbs{
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   text-align: center;
+  color:#E2E3E5;
 }
 .chzn-container-single .chzn-single div b:before {
   content: "\f078";
@@ -1976,7 +1979,6 @@ div#Breadcrumbs{
 ================================================== */
 
 div.page {
-  border: 1px solid #eee;
   padding: 0;
   color: #333541;
 }
@@ -2024,7 +2026,7 @@ div.page {
 }
 
 .recent-article .article-links {
-    padding: 5px 0;
+    padding: 0;
     margin-bottom: 25px;
 }
 
@@ -2035,7 +2037,7 @@ div.page {
 /*}*/
 
 .recent-article .article-links li {
-    padding: 5px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #9a9a9c;
 }
 
@@ -7103,7 +7105,7 @@ nav.nav-mobile{
 
 nav.navbar{
   width:100%;
-  max-width:1168px;
+  max-width:1170px;
   margin:0 auto;
   height:80px;
 }
@@ -7138,6 +7140,13 @@ nav.navbar{
   color:#000;
 }
 
+.recent-article h5{
+  border-bottom: solid 1px #000;
+}
+
+.short-description{
+  font-size:13px;
+}
 .subnav li{
   border:0 none !important;
 }
@@ -7270,6 +7279,7 @@ p.people-tile--medium-position a{
   border-bottom:1px solid #343741;;
   width:100%;
   display:inline-block;
+  padding-bottom: 5px;
 }
 
 .people-tile-medium-name a:hover,
@@ -7286,7 +7296,7 @@ div.sneak{
   width:100%;
   display:inline-block;
   margin-bottom:8px;
-  font-size:13px !important;
+  font-size:14px !important;
 }
 
 div.sidebar input[type=submit]{
@@ -7308,7 +7318,7 @@ div.image-holder{
 .image-holder #Breadcrumbs{
   position:absolute;
   top:16px;
-  left:18px;
+  left:36px;
   z-index:1000;
 }
 
@@ -7338,25 +7348,20 @@ div#Breadcrumbs a{
 .sky .main-content h2,
 .post-summary p{
   font-size:23px;
+  line-height: 23px;
 }
 
 .helpfulreading-title.lead-blog{
-  margin-top:16px;
+  margin-top:30px;
   margin-bottom:0 !important;
 }
 
 .helpfulreading-title.lead-blog a{
-  font-size:64px !important;
+  font-size:60px !important;
 }
 
-.helpfulreading-title a, 
-.helpfulreading-title{
-  font-size:23px !important;
-}
 
-.helpfulreading-title{
-  margin:0 !important;
-}
+
 
 .author h6{
   text-transform: uppercase;
@@ -7373,7 +7378,9 @@ div#Breadcrumbs a{
 .title h5{
   text-transform: uppercase;
   margin-top:-5px;
+  border-bottom: 2px solid #000;
 }
+
 
 .date{
   font-family:'gibsonlight'
@@ -7422,9 +7429,6 @@ input.subscribe{
   float:right;
 }
 
-.popular-posts .nav li{
-  border-bottom:0 none !important;
-}
 
 /* FIND US */
 
@@ -7475,7 +7479,7 @@ div.middleColumn textarea {
 /* FOOTER */
 
 .footer-number{
-  font-size:14px;
+  font-size:18px;
 }
 
 .flinks li a{
@@ -7490,7 +7494,7 @@ body.FindUs #footer{
 }
 
 #footer .address{
-  font-size:12px;
+  font-size:13px;
 }
 
 
@@ -7753,6 +7757,10 @@ body.FindUs #footer{
 
 .personal h2 {
   text-align:center;
+}
+
+.our-people-component{
+  margin-top: 60px; !important;
 }
 
 /*.profile-article{
@@ -8864,14 +8872,17 @@ body.FindUs #footer{
 }
 
 .details-mobile{
-  border-bottom: 2px solid #686870;
-  border-top: 2px solid #686870;
+  border-bottom: 1px solid #686870;
+  border-top: 1px solid #686870;
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .details-mobile p {
   font-family: 'gibsonregular';
   font-size: 13px;
   color:#333333;
+  margin: 0 0 1px;
 }
 
 .details-mobile p strong{
@@ -8898,4 +8909,15 @@ body.FindUs #footer{
 
 .down-arrow a:hover{
   opacity: 0.6;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.people-tile-medium-name{
+  margin-top: 5px;
 }

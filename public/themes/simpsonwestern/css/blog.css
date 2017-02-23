@@ -1,14 +1,13 @@
 .post-summary{
   float:left;
   width:33%;
-  padding-right: 25px;
   margin-bottom: 50px;
 }
 
 .author{
   border-bottom: solid 2px #000;
   color:#000 !important;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .author .name a{
@@ -30,12 +29,12 @@
 }
 
 .most-popular h5{
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .popular-posts .nav li{
     padding: 5px 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .popular-posts .nav li a{
@@ -52,4 +51,50 @@
   height:34px;
   width: 100%;
   margin: 0;
+  padding: 0 0 0 7px;
+}
+
+.featured-text{
+  font-size: 60px;
+  line-height: 54px;
+}
+
+.lead-blog{
+  margin-top: 15px;
+}
+
+.post-summary h2 {
+  margin: 8px 0 0 0;
+  font-size:23px;
+  line-height: 23px;
+}
+
+#Form_FilterForm label{
+  display:none;
+}
+
+.category-filter{
+  float:left;
+  width:40%;
+}
+
+.filter-btn{
+  float:left;
+}
+
+@media (max-width: 767px) {
+  .helpfulreading-title.lead-blog a {
+    font-size: 36px !important;
+    line-height: 36px;
+  }
+  .featured-text {
+      font-size: 36px;
+      line-height: 30px;
+      padding-bottom: 30px;
+  }
+
+  .category-filter {
+    float: left;
+    width: 49%;
+}
 }

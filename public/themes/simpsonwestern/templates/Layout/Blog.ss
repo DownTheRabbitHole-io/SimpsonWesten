@@ -46,7 +46,7 @@
 							<% else %>$Title<% end_if %>
 						</a>
 					</h2>	
-					<p>$Excerpt</p>
+					<p class="featured-text">$Excerpt ></p>
 				</div>
 			<% end_loop %>
 				<div class="col-sm-3 hidden-xs">				
