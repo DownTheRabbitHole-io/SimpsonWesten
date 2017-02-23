@@ -14,7 +14,7 @@ class Page extends SiteTree {
 	public function getCMSFields(){
     $fields = parent::getCMSFields();
 
-    $uploadField = UploadField::create('HeaderImage',  'Header Image');
+    $uploadField = UploadField::create('HeaderImage',  'Header Image (must be 1157px x 369px)');
     $uploadField->setFolderName('headers');
 		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
