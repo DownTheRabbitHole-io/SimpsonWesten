@@ -4,8 +4,25 @@ class Page extends SiteTree {
 	private static $db = array(
 	);
 
+	/**
+	 * @var array
+	 */
 	private static $has_one = array(
+    'HeaderImage' => 'Image'
 	);
+
+	public function getCMSFields(){
+    $fields = parent::getCMSFields();
+
+    $uploadField = UploadField::create('HeaderImage',  'Header Image');
+    $uploadField->setFolderName('headers');
+		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+
+    $fields->insertBefore($uploadField, 'Content');
+
+
+    return $fields;
+  }
 
 }
 class Page_Controller extends ContentController {

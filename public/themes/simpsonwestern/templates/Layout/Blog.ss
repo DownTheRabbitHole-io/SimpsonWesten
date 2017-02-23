@@ -40,13 +40,13 @@
 						<span class="date">$PublishDate.Format('d M Y')</span>
 						</h6>
 					</div>
-					<h2 class="helpfulreading-title">
+					<h2 class="helpfulreading-title lead-blog">
 						<a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 							<% if $MenuTitle %>$MenuTitle
 							<% else %>$Title<% end_if %>
 						</a>
 					</h2>	
-					<p>$Excerpt</p>
+					<p class="featured-text">$Excerpt ></p>
 				</div>
 			<% end_loop %>
 				<div class="col-sm-3 hidden-xs">				

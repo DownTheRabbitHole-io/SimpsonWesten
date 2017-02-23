@@ -100,6 +100,8 @@ h6 {
   text-transform: none;
   font-family: 'gibsonsemibold', sans-serif;
 }
+
+
 /* #General
 ================================================== */
 html {
@@ -112,7 +114,7 @@ body {
   overflow: hidden;
   background-color: #fff;
   font-size: 14px;
-  font-family: 'gibsonregular', sans-serif;
+  font-family: 'gibsonlight', sans-serif;
 }
 
 ::selection {
@@ -1494,6 +1496,7 @@ div#Breadcrumbs{
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   text-align: center;
+  color:#E2E3E5;
 }
 .chzn-container-single .chzn-single div b:before {
   content: "\f078";
@@ -1976,7 +1979,6 @@ div#Breadcrumbs{
 ================================================== */
 
 div.page {
-  border: 1px solid #eee;
   padding: 0;
   color: #333541;
 }
@@ -2024,9 +2026,7 @@ div.page {
 }
 
 .recent-article .article-links {
-    border-top: 2px solid #686870;
-    border-bottom: 2px solid #686870;
-    padding: 5px 0;
+    padding: 0;
     margin-bottom: 25px;
 }
 
@@ -2037,7 +2037,7 @@ div.page {
 /*}*/
 
 .recent-article .article-links li {
-    padding: 5px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #9a9a9c;
 }
 
@@ -2079,6 +2079,14 @@ div.page {
 .main-content h2{
   font-size:44px;
   margin-bottom:22px;
+}
+
+.business h2 {
+  text-align:right;
+}
+
+.personal h2 {
+  text-align:left;
 }
 
 
@@ -2242,7 +2250,7 @@ div.page {
 .parallax {
   position: relative;
   text-align: center;
-  padding: 85px 0;
+  padding-bottom: 0;
   overflow: hidden;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
@@ -6957,9 +6965,43 @@ div.dark_square #pp_full_res .pp_inline {
   font-size:13px;
 }
 
+/* Home Fix*/
+
+.homepage{
+  position: relative;
+  margin-top: 80px;
+}
+
+.down-arrow{
+  position:absolute;
+  bottom:24px;
+  left:48%;
+  z-index:20000;
+}
+
+.down-arrow a img{
+  width:54px;
+  height:54px;
+}
+
+.sw-logo{
+    width: 240px;
+    height: 18px;
+    overflow: hidden;
+    font-size: 1px;
+    text-indent: -9999px;
+    position:absolute;
+    top:34px;
+    left:50px;
+    background: url(../images/sw-logo.png) no-repeat ;
+}
+
+
+
 /* Banner */
 
 .banner{
+  margin-top:80px;
   margin-bottom:64px;
 }
 
@@ -7063,17 +7105,27 @@ nav.nav-mobile{
 
 nav.navbar{
   width:100%;
-  max-width:1168px;
+  max-width:1170px;
   margin:0 auto;
+  height:80px;
 }
+
+.content.homepage{
+  margin-top:80px;
+}
+
+
 
 /* Article Holder */
 
 .business-banner{
-  height:383px;
+  height:369px;
   width:100%;
   max-width:1200px;
   background-color:transparent !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/themes/simpsonwestern/images/business-banner.jpg);
 }
 
 .section-title-right{
@@ -7088,6 +7140,13 @@ nav.navbar{
   color:#000;
 }
 
+.recent-article h5{
+  border-bottom: solid 1px #000;
+}
+
+.short-description{
+  font-size:13px;
+}
 .subnav li{
   border:0 none !important;
 }
@@ -7179,6 +7238,15 @@ a.contact-link{
 
 /* OUR PEOPLE PAGE */
 
+.our-people-headline{
+  font-size:23px;
+}
+
+.reflow p{
+  margin-bottom:45px;
+  font-size:17px;
+}
+
 ul.profile-list-holder{
   padding:0;
   margin-left:0;
@@ -7211,6 +7279,7 @@ p.people-tile--medium-position a{
   border-bottom:1px solid #343741;;
   width:100%;
   display:inline-block;
+  padding-bottom: 5px;
 }
 
 .people-tile-medium-name a:hover,
@@ -7226,8 +7295,8 @@ div.sneak{
   color:#343741;
   width:100%;
   display:inline-block;
-  border-bottom:1px solid  #343741;
   margin-bottom:8px;
+  font-size:14px !important;
 }
 
 div.sidebar input[type=submit]{
@@ -7249,7 +7318,7 @@ div.image-holder{
 .image-holder #Breadcrumbs{
   position:absolute;
   top:16px;
-  left:18px;
+  left:36px;
   z-index:1000;
 }
 
@@ -7276,6 +7345,28 @@ div#Breadcrumbs a{
 
 /* HELPFUL READING */
 
+.sky .main-content h2,
+.post-summary p{
+  font-size:23px;
+  line-height: 23px;
+}
+
+.helpfulreading-title.lead-blog{
+  margin-top:30px;
+  margin-bottom:0 !important;
+}
+
+.helpfulreading-title.lead-blog a{
+  font-size:60px !important;
+}
+
+
+
+
+.author h6{
+  text-transform: uppercase;
+}
+
 .helpful-reading .post-summary{
   width:100% !important;
 }
@@ -7285,9 +7376,11 @@ div#Breadcrumbs a{
 }
 
 .title h5{
-  border-bottom:2px solid #000;
+  text-transform: uppercase;
   margin-top:-5px;
+  border-bottom: 2px solid #000;
 }
+
 
 .date{
   font-family:'gibsonlight'
@@ -7335,6 +7428,7 @@ input.subscribe{
   color:#74777c !important;
   float:right;
 }
+
 
 /* FIND US */
 
@@ -7384,15 +7478,23 @@ div.middleColumn textarea {
 
 /* FOOTER */
 
+.footer-number{
+  font-size:18px;
+}
+
 .flinks li a{
   font-size:13px;
   color: #343741;
-  text-decoration:none;
   font-family: 'gibsonsemibold';
+  line-height: 1.6;
 }
 
 body.FindUs #footer{
   margin-top:0 !important;
+}
+
+#footer .address{
+  font-size:13px;
 }
 
 
@@ -7419,7 +7521,7 @@ body.FindUs #footer{
 
   .nav-menu{
     width:288px !important;
-    height:auto !important;
+    
   }
 
   nav.navbar{
@@ -7428,6 +7530,8 @@ body.FindUs #footer{
 
 }
 @media (min-width: 768px) and (max-width: 992px) {
+
+ 
 
   .footer-content .phone-number img{
     width:164px !important;
@@ -7606,6 +7710,8 @@ body.FindUs #footer{
 }
 @media (min-width: 768px) and (max-width: 1199px) {
 
+  
+
   .footer-content .phone-number img{
     width:164px !important;
   }
@@ -7640,6 +7746,22 @@ body.FindUs #footer{
 
 }
 @media (max-width: 767px) {
+
+  .down-arrow{
+    left:44%;
+  }
+
+   .business h2 {
+  text-align:center;
+}
+
+.personal h2 {
+  text-align:center;
+}
+
+.our-people-component{
+  margin-top: 60px; !important;
+}
 
 /*.profile-article{
     width:768px;
@@ -7806,6 +7928,9 @@ body.FindUs #footer{
 }
 @media (min-width: 481px) and (max-width: 992px) {
 
+.content.homepage{
+    margin-top:20px !important;
+  }
 
 
  .homepage.photo1{
@@ -7849,13 +7974,47 @@ body.FindUs #footer{
     width:113% !important;
   }
 
+  
+
 }
 @media (max-width: 480px) {
 
-  /*.profile-article{
-    width:480px;
-    margin-left:0 !important;
-  }*/
+  .reflow p{
+  margin-bottom:22px;
+  font-size:23px;
+}
+
+  .main-content{
+    padding-top:0px;
+    margin-bottom:20px;
+  }
+
+
+
+ .down-arrow{
+    width:25px;
+    height:25px;
+  }
+
+  .content.homepage,
+  .row.header
+  {
+    padding:0 !important;
+  }
+
+  .phone-icon,
+  .header button{
+    margin-top:26px !important;
+    margin-right:4px !important;
+  }
+
+  .sw-logo{
+    width: 195px;
+    height: 15px;
+    background: url(../images/sw-logo-mobile.png) no-repeat !important;
+    clear:both;
+    left:16px;
+  }
   
   div.image-holder{
     width:150% !important;
@@ -8713,14 +8872,17 @@ body.FindUs #footer{
 }
 
 .details-mobile{
-  border-bottom: 2px solid #686870;
-  border-top: 2px solid #686870;
+  border-bottom: 1px solid #686870;
+  border-top: 1px solid #686870;
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .details-mobile p {
   font-family: 'gibsonregular';
   font-size: 13px;
   color:#333333;
+  margin: 0 0 1px;
 }
 
 .details-mobile p strong{
@@ -8743,4 +8905,19 @@ body.FindUs #footer{
   font-family: 'gibsonsemibold';
   font-size: 13px;
   color:#333333;
+}
+
+.down-arrow a:hover{
+  opacity: 0.6;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.people-tile-medium-name{
+  margin-top: 5px;
 }
