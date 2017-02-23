@@ -24,7 +24,7 @@ class HomePage extends Page{
 
     $fields->insertBefore($uploadField, 'Content');
 
-    $uploadField2 = UploadField::create('BottonImage',  'Botton Image');
+    $uploadField2 = UploadField::create('BottonImage',  'Bottom Image');
     $uploadField2->setFolderName('homepage');
 		$uploadField2->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 

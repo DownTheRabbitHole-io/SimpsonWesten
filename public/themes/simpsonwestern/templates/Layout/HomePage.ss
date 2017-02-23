@@ -12,7 +12,7 @@
 				<div class="col-sm-9 col-xm-12 page-description">
 					<p class="hero-text">
 						<a name="contentAnchor"></a>
-						Everyone wants the good life - smooth sailing, afffairs in order, business matters sorted, our families and assets protected. That's why having a legal representative who is in your corner means a lot. That's our focus at Simpson Western. Tobe on your side, so that you can get on with business and life.
+						$Content
 					</p>
 					<div class="page-links">
 						<%--<div class="container">--%>
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="homepage photo2">
-			<img src="$ThemeDir/images/homepage2.png" />
+			<img src="$BottonImage.URL" />
 		</div>
 	</div>
 	<!-- END CONTENT WRAPPER -->
