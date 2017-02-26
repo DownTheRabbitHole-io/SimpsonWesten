@@ -7605,6 +7605,13 @@ body.FindUs #footer{
 }
 @media (max-width: 992px) {
   
+
+  .business-banner{
+    background-color:#E9F7F9 !important;
+    background-position: -200%;
+    background-image: url(/themes/simpsonwestern/images/business-banner.jpg);
+  }
+
   .profile .nav{
     display:block !important;
 
