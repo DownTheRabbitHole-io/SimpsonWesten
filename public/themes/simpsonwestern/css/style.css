@@ -232,7 +232,16 @@ textarea.form-control:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   outline: 0 none;
-  border-color: #adb2b6;
+  outline-color: none;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0 none;
+  outline-color: none;
 }
 .form-control-large,
 .form-control-small {
@@ -2005,7 +2014,7 @@ div.page {
 }
 
 .header .fa-bars {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: lighter;
   color: #333742;
 }
@@ -2068,7 +2077,7 @@ div.page {
 
 .main-content .page-description {
   text-align: center;
-  padding: 30px;
+  padding: 30px 130px;
   font-size: 26px;
 }
 
@@ -2174,9 +2183,7 @@ div.page {
   border-color: rgba(21, 22, 23, 0.8);
   color: #fff;
 }
-#home-search-buttons .form-control:focus {
-  border-color: #202833;
-}
+
 #home-search-buttons .input-group .btn-default {
   border: none;
   background-color: #202833;
@@ -2386,10 +2393,7 @@ div.page {
   border-color: rgba(255, 255, 255, 0);
   color: #fff;
 }
-.colored-bg #newsletter .form-control:focus,
-.action-box #newsletter .form-control:focus {
-  border-color: rgba(255, 255, 255, 0.2);
-}
+
 .colored-bg #newsletter .form-control::-webkit-input-placeholder,
 .action-box #newsletter .form-control::-webkit-input-placeholder {
   color: #fff;
@@ -3075,9 +3079,7 @@ div.page {
   box-shadow: none;
   margin: 20px 20px -21px 0;
 }
-#newsletter .form-control:focus {
-  border-color: rgba(0, 0, 0, 0.1);
-}
+
 #newsletter .form-control::-webkit-input-placeholder {
   color: #adb3b6;
 }
@@ -3149,9 +3151,7 @@ div.page {
   border-color: rgba(255, 255, 255, 0);
   color: #fff;
 }
-.sidebar.colored #newsletter .form-control:focus {
-  border-color: rgba(255, 255, 255, 0.2);
-}
+
 .sidebar.colored #newsletter .form-control::-webkit-input-placeholder {
   color: #fff;
 }
@@ -7525,13 +7525,23 @@ body.FindUs #footer{
   }
 
   nav.navbar{
-    max-width:968px !important;
+    max-width:970px !important;
+  }
+
+  .main-content .page-description {
+    text-align: center;
+    padding: 30px 80px;
+    font-size: 26px;
   }
 
 }
 @media (min-width: 768px) and (max-width: 992px) {
 
- 
+  .main-content .page-description {
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 26px;
+  }
 
   .footer-content .phone-number img{
     width:164px !important;
@@ -7547,7 +7557,7 @@ body.FindUs #footer{
   }
 
   nav.navbar{
-    max-width:748px !important;
+    max-width:750px !important;
   }
 
   .sidebar #newsletter h2 span {
@@ -7749,6 +7759,12 @@ body.FindUs #footer{
 
   .down-arrow{
     left:44%;
+  }
+
+  .main-content .page-description {
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 26px;
   }
 
    .business h2 {
