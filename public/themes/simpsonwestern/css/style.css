@@ -2071,15 +2071,14 @@ div.page {
 
 .main-content {
   padding: 55px;
-  margin-top:62px;
-  margin-bottom:74px;
+  margin-top:40px;  
 }
 
 
 
 .main-content .page-description {
   text-align: center;
-  padding: 30px 130px;
+  padding: 20px 130px;
   font-size: 26px;
 }
 
@@ -2790,7 +2789,6 @@ div.page {
   text-decoration: underline;
 }
 .sidebar {
-  padding-top: 18px;
   padding-bottom: 80px;
 }
 .sidebar img {
@@ -6971,7 +6969,7 @@ div.dark_square #pp_full_res .pp_inline {
 
 .homepage{
   position: relative;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .down-arrow{
@@ -7044,7 +7042,7 @@ div.container.page{
 }
 
 .nav-menu.open{
-  width:288px;
+  width:295px;
   height:884px;
   background-color:rgba(235, 247, 250, .8);
   position:absolute;
@@ -7078,7 +7076,7 @@ div.container.page{
 
 .inner-nav li a:hover, 
 .inner-nav li a:focus{
-  color:#2e3192;
+  font-family: 'gibsonsemibold', sans-serif;  
 }
 
 nav.inner-nav{
@@ -7113,7 +7111,7 @@ nav.navbar{
 }
 
 .content.homepage{
-  margin-top:80px;
+  margin-top:45px;
 }
 
 
@@ -7134,6 +7132,7 @@ nav.navbar{
   font-family:'gibsonsemibold', sans-serif;
   font-size:13px;
   color:#343741;
+  margin-bottom: 10px;
 }
 
 .section-title-left{
@@ -7185,6 +7184,11 @@ ul.business-links li a{
 
 /* Our People Component */
 
+.our-people-component h5 {
+    border-bottom: solid 1px #000;
+    text-transform: uppercase;
+}
+
 .our-people-title{
   font-size:13px;
   font-family:'gibsonsemibold', sans-serif;
@@ -7192,6 +7196,22 @@ ul.business-links li a{
   text-transform: uppercase;
   border-bottom:2px solid #343741;
   margin-bottom:8px;
+}
+
+.our-people-tile-container{
+  padding: 10px 0;
+}
+
+.support-message-container p {
+  font-size: 13px !important;
+}
+
+.support-message-container strong{
+  font-family:'gibsonsemibold', sans-serif;
+}
+
+.our-people-tile-container p {
+  font-size: 13px !important;
 }
 
 .portrait-thumb{
@@ -7228,6 +7248,7 @@ ul.business-links li a{
   font-size:13px;
   font-family:'gibsonregular', sans-serif;
   color:#343741;
+  margin-top: 15px;
 }
 
 a.contact-link{
@@ -7252,6 +7273,7 @@ a.contact-link{
 ul.profile-list-holder{
   padding:0;
   margin-left:0;
+  margin-top: 58px;
 }
 
 li.profile-list{
@@ -7435,7 +7457,6 @@ input.subscribe{
 /* FIND US */
 
 .expando{
-  padding:0 !important;
   margin-top:40px;
 }
 
@@ -7481,7 +7502,8 @@ div.middleColumn textarea {
 /* FOOTER */
 
 .footer-number{
-  font-size:18px;
+  font-size: 19px;
+    margin-top: 5px;
 }
 
 .flinks li a{
@@ -7532,7 +7554,7 @@ body.FindUs #footer{
 
   .main-content .page-description {
     text-align: center;
-    padding: 30px 80px;
+    padding: 30px 70px;
     font-size: 26px;
   }
 
@@ -8956,3 +8978,13 @@ body.FindUs #footer{
     margin-top: 60px;
   }
 
+  .main p {
+    font-size:17px;
+  }
+
+b, strong {
+    font-weight: 500 !important;
+}
+.filter-form-panel{
+  margin-bottom: 50px;
+}

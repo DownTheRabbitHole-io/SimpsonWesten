@@ -4,7 +4,7 @@
 		<div class="row">
 			
 			<div class="sidebar col-sm-3 reflow">			  
-				<article>
+				<article class="filter-form-panel">
 				<h4 class="sidebar-filters-title">Filters</h4>
 				$FilterForm 
 				</article>

@@ -1,5 +1,5 @@
 <div class="our-people-component">
-  <h2 class="our-people-title">Our People</h2>
+<h5>Our People</h5>
   <% loop $Profiles %>
     <div class="our-people-tile-container">
     <a class="$LinkingMode" href="$Link">
