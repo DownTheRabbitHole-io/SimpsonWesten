@@ -82,6 +82,23 @@
   float:left;
 }
 
+.subscribe-form .subscribe-btn{
+    background:none!important;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    color:#313b96;
+    /*border is optional*/
+    border-bottom:2px solid #313b96; 
+    cursor: pointer;
+    height: 18px;
+    text-align: left;
+    width: 83px;
+    font-family: 'gibsonsemibold';
+        margin-top: 10px;
+        font-size: 12px;
+}
+
 @media (max-width: 767px) {
   .helpfulreading-title.lead-blog a {
     font-size: 36px !important;

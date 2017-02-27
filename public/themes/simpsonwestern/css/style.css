@@ -1998,6 +1998,7 @@ div.page {
    width: 100%;
    z-index: 1001;
   margin: 0;
+      height: 80px;
 }
 
 .header .title {
@@ -2037,6 +2038,7 @@ div.page {
 .recent-article .article-links {
     padding: 0;
     margin-bottom: 25px;
+    border-bottom: solid 1px #000;
 }
 
 /*.recent-article .article-links ul{*/
@@ -8943,4 +8945,9 @@ body.FindUs #footer{
 
 .people-tile-medium-name{
   margin-top: 5px;
+}
+
+.mobile-recent{
+  padding: 0 50px;
+  margin-top: 60px;
 }

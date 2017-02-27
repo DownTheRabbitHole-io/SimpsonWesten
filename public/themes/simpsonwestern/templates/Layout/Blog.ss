@@ -53,8 +53,8 @@
 					<% include PopularPosts %>
 
 					<form class="subscribe-form">
-						<input class="email" type="text" name="email" value="email address">
-						<input class="subscribe" type="submit" value="Subscribe">
+						<input class="email" type="text" name="email" value="Email">
+						<input class="subscribe-btn" type="submit" value="Subscribe now">
 					</form>
 					
 				</div>

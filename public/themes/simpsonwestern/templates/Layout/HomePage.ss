@@ -42,6 +42,13 @@
 		<div class="homepage photo2">
 			<img src="$BottonImage.URL" />
 		</div>
+		<div class="visible-xs mobile-recent">
+			<div class="row">
+				<div class="col-sm-12">
+					<% include RecentArticlesHome %>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- END CONTENT WRAPPER -->
 		
