@@ -8004,6 +8004,11 @@ body.FindUs #footer{
 }
 @media (max-width: 480px) {
 
+  .mobile-recent{
+    padding: 0 50px;
+    margin-top: 60px;
+  }
+
   .reflow p{
   margin-bottom:22px;
   font-size:23px;
@@ -8947,7 +8952,7 @@ body.FindUs #footer{
   margin-top: 5px;
 }
 
-.mobile-recent{
-  padding: 0 50px;
-  margin-top: 60px;
-}
+  .mobile-recent{
+    margin-top: 60px;
+  }
+
