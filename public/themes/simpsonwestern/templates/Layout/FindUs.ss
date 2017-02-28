@@ -9,7 +9,7 @@
         $Content
 			</div>
       <% end_loop %>
-			<div class="main col-sm-3">
+			<div class="main col-sm-3 hidden-xs">
 				$Content
 			</div>			
 		</div>

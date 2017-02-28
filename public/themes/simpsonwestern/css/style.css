@@ -91,12 +91,12 @@ h4 {
   font-weight: 500;
 }
 h5 {
-  font-size: 14px;
+  font-size: 13px;
   text-transform: none;
   line-height: 1.4;
 }
 h6 {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: none;
   font-family: 'gibsonsemibold', sans-serif;
 }
@@ -545,8 +545,10 @@ colored.btn-danger:hover,
   color: #303B95;
   text-align: left;
   font-size:100px;
-  margin-top:80px;
+  line-height: 100px;
+  margin-top:112px;
   margin-left:32px;
+  margin-right: 40%;
 }
 
 .sky .page-title{
@@ -1434,11 +1436,11 @@ div#Breadcrumbs{
   height: 35px;
   background-color: #fff;
   background-clip: padding-box;
-  color: #74777c;
+  color: #000;
   text-decoration: none;
   white-space: nowrap;
   line-height: 35px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #000;
 }
 .chzn-container-single .chzn-default {
   color: #74777c;
@@ -1505,7 +1507,7 @@ div#Breadcrumbs{
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   text-align: center;
-  color:#E2E3E5;
+  color:#000;
 }
 .chzn-container-single .chzn-single div b:before {
   content: "\f078";
@@ -2049,7 +2051,7 @@ div.page {
 
 .recent-article .article-links li {
     padding: 10px 0;
-    border-bottom: 1px solid #9a9a9c;
+    border-bottom: 1px solid #56565a;
 }
 
 .recent-article .article-links li:last-child {
@@ -2789,7 +2791,7 @@ div.page {
   text-decoration: underline;
 }
 .sidebar {
-  padding-bottom: 80px;
+  
 }
 .sidebar img {
   max-width: 100%;
@@ -5970,7 +5972,6 @@ a.tp-caption.btn-lg {
   padding: 0 15px;
 }
 .categories li {
-  margin: 8px 0;
 }
 /*
 .categories li:before {
@@ -7013,6 +7014,10 @@ div.reflow{
   float:right;
 }
 
+div.filter-reflow{
+  float:right;
+}
+
 
 /* Nav - Menu */
 
@@ -7129,7 +7134,7 @@ nav.navbar{
 }
 
 .section-title-right{
-  font-family:'gibsonsemibold', sans-serif;
+  font-family:'gibsonregular', sans-serif;
   font-size:13px;
   color:#343741;
   margin-bottom: 10px;
@@ -7137,16 +7142,23 @@ nav.navbar{
 
 .section-title-left{
   font-family:'gibsonsemibold', sans-serif;
-  font-size:19px;
+  font-size:17px;
   color:#000;
 }
 
 .recent-article h5{
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #56565a;
+  color: #56565a !important;
+}
+
+.recent-article h6{
+  color: #56565a !important;
 }
 
 .short-description{
   font-size:13px;
+  color: #56565a !important;
+  
 }
 .subnav li{
   border:0 none !important;
@@ -7155,7 +7167,7 @@ nav.navbar{
 .subnav a{
     color:#000 !important;
     font-family:'gibsonregular', sans-serif;
-    font-size:19px;
+    font-size:16px;
     text-decoration:none;
 }
 
@@ -7173,16 +7185,21 @@ ul.subnav{
 
 ul.business-links li{
   list-style-type: none;
+  margin-top: 5px;
 }
 
 ul.business-links li a{
     color:#303B95 !important;
-    font-family:'gibsonlight', sans-serif;
+    font-family:'gibsonsemibold', sans-serif;
     font-size:13px;
     text-decoration:underline;
 }
 
 /* Our People Component */
+
+.ourpeople-top{
+  padding-bottom: 30px;
+}
 
 .our-people-component h5 {
     border-bottom: solid 1px #000;
@@ -7200,6 +7217,7 @@ ul.business-links li a{
 
 .our-people-tile-container{
   padding: 10px 0;
+  margin-top: 5px;
 }
 
 .support-message-container p {
@@ -7233,7 +7251,7 @@ ul.business-links li a{
 }
 
 .people-info{
-  border-bottom:2px solid #343741;
+  border-bottom:1px solid #343741;
   margin-bottom:8px;
 }
 
@@ -7273,7 +7291,6 @@ a.contact-link{
 ul.profile-list-holder{
   padding:0;
   margin-left:0;
-  margin-top: 40px;
 }
 
 li.profile-list{
@@ -7346,6 +7363,13 @@ div.image-holder{
   z-index:1000;
 }
 
+.profile h1 {
+  color:#000;
+}
+
+.bio-text p {
+  color:#000;
+}
 
 .sidebar.profile{
   margin-top:78px;
@@ -7416,7 +7440,7 @@ div#Breadcrumbs a{
 }
 
 div.content.sky{
-  background-color:#eaf6fa;
+  background-color:#ebf7f7;
   margin-top:80px;
   height:auto;
 }
@@ -7432,7 +7456,6 @@ div.content.sky{
 
 .category-filter{
   margin-top:24px;
-  float:right !important;
 }
 
 input.email{
@@ -7444,13 +7467,10 @@ input.email{
 input.filter-btn, 
 input.subscribe{
   background-color:#c4cfd5 !important;
-  width:115px !important;
+  width:100% !important;
   height:34px !important;
   margin-top:24px;
-  margin-right:4px;
-  margin-left:24px;
   color:#74777c !important;
-  float:right;
 }
 
 
@@ -7504,6 +7524,15 @@ div.middleColumn textarea {
 .footer-number{
   font-size: 19px;
     margin-top: 5px;
+}
+
+.footer-links-container{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.flinks{
+  margin-top: -4px;
 }
 
 .flinks li a{
@@ -7565,6 +7594,10 @@ body.FindUs #footer{
     text-align: center;
     padding: 30px 30px;
     font-size: 26px;
+  }
+
+  .featured-row{
+    margin-top: 30px;
   }
 
   .footer-content .phone-number img{
@@ -7629,6 +7662,10 @@ body.FindUs #footer{
 }
 @media (max-width: 992px) {
   
+  input.filter-btn, 
+  input.subscribe{
+    margin-top:0;
+  }
 
   .business-banner{
     background-color:#E9F7F9 !important;
@@ -7754,7 +7791,7 @@ body.FindUs #footer{
   
 
   .footer-content .phone-number img{
-    width:164px !important;
+    width:145px !important;
   }
 
   .footer-listings li {
@@ -7790,20 +7827,66 @@ body.FindUs #footer{
 
   .down-arrow{
     left:44%;
+    display: none;
+  }
+
+
+
+  .featured-row{
+    margin-top: 10px;
+  }
+
+  .csfrm-elm{
+    margin: 40px 0;
+  }
+
+  .content.homepage{
+    margin-top: 0;
+  }
+
+  #footer {
+      margin-top: 50px;
+  }
+
+  .footer-links-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .flinks li a{
+    text-decoration: none;
+  }
+
+  .section-title-right{
+    margin-top:40px;
+  }
+
+  .recent-article{
+    margin-top: 40px;
+  }
+
+  div.filter-reflow{
+    float:none;
   }
 
   .main-content .page-description {
     text-align: center;
-    padding: 30px 30px;
-    font-size: 26px;
+    padding: 0 30px;
+    font-size: 19px;
+  }
+
+  .main-content .page-links {
+    margin-top: 40px;
   }
 
    .business h2 {
   text-align:center;
+  font-size:30px;
 }
 
 .personal h2 {
   text-align:center;
+  font-size:30px;
 }
 
 .our-people-component{
@@ -8015,6 +8098,7 @@ body.FindUs #footer{
 
   h1.page-title{
     font-size:64px !important;
+    line-height: 64px;
   }
 
   div.image-holder{
@@ -8041,7 +8125,9 @@ body.FindUs #footer{
     margin-bottom:20px;
   }
 
-
+.business-banner{
+  height: 200px;
+}
 
  .down-arrow{
     width:25px;
@@ -8091,7 +8177,9 @@ body.FindUs #footer{
   }
 
   h1.page-title{
-    font-size:64px !important;
+    font-size:38px !important;
+    line-height: 38px;
+    margin-top:42px;
   }
 
   .header .title{
@@ -8932,7 +9020,7 @@ body.FindUs #footer{
 
 .details-mobile p {
   font-family: 'gibsonregular';
-  font-size: 13px;
+  font-size: 13px !important;
   color:#333333;
   margin: 0 0 1px;
 }
@@ -8975,7 +9063,7 @@ body.FindUs #footer{
 }
 
   .mobile-recent{
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .main p {

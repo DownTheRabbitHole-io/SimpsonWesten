@@ -7,51 +7,60 @@ body.mceContentBody{font-size:13px;}
 
 .t1{
   font-family: 'gibsonsemibold';
-  font-size: 133px;
+  font-size: 133px !important;
   color:#303B95;
 }
 .t2{
   font-family: 'gibsonsemibold';
-  font-size: 25px;
+  font-size: 25px !important;
   color:#000;
   margin: 0px !important;
 }
 .t2-plus{
   font-family: 'gibsonlight';
-  font-size: 25px;
+  font-size: 25px !important;
   color:#000;
 }
 .t3{
   font-family: 'gibsonregular';
-  font-size:24px;
+  font-size:24px !important;
   color:#000;
   margin-bottom: 20px !important;
 }
 .t3-plus{
   font-family: 'gibsonregular';
-  font-size:24px;
+  font-size:24px !important;
   color:#303B95;
 }
 .t4{
   font-family: 'gibsonsemibold';
-  font-size:19px;
+  font-size:19px !important;
   color:#000;
   margin: 0px !important;
 }
 .t5{
   font-family: 'gibsonlight';
-  font-size:19px;
+  font-size:19px !important;
   color:#000;
   margin-bottom: 20px !important;
 }
 .t6{
   font-family: 'gibsonregular';
-  font-size:19px;
+  font-size:19px !important;
   color:#000;
 }
 .t7{
   font-family: 'gibsonsemibold';
-  font-size:19px;
+  font-size:19px !important;
   color:#303B95;
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .t3{
+  font-family: 'gibsonregular';
+  font-size:19px !important;
+  color:#000;
+  margin-bottom: 20px !important;
+}
 }
