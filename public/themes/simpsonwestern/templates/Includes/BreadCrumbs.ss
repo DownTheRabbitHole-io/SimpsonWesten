@@ -1,4 +1,4 @@
-<div id="Breadcrumbs">
+<div id="Breadcrumbs" class="hidden-xs">
  	$Breadcrumbs
 </div>
 

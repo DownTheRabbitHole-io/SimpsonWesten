@@ -1,19 +1,17 @@
 <div class="content sky">
 	<div class="container-fluid main-content">
 		<div class="row">
-			<div class="col-xs-12 col-sm-7">
+			<div class="col-xs-12 col-md-7">
 			
 				<% include BreadCrumbs %>
 
-				<h1 class="page-title">$Title</h1>
+				<h1 class="page-title blog-title">$Title</h1>
 				
 			</div>
-			<div class="col-xs-12 col-sm-5">
-
+			<div class="col-xs-12 col-md-5">
+				<div class="row">
 				<form id="blogform" method="Post" action="/our-people/filter" enctype="application/x-www-form-urlencoded">
-					<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
-				
-					<div class="category-filter">
+					<div class="category-filter col-md-7">
 						<select name="category" id="category">
 							<option value="category">Category</option>
 						<% loop $getCategories %>
@@ -21,15 +19,19 @@
 						<% end_loop %>
 						</select>
 					</div>
+					<div class="col-md-5">
+						<input name="filterBtn" id="filterBtn" class="filter-btn" type="submit" value="filter"/>
+					</div>
 					</form>
+					</div>
 			</div>
 		</div>
 
-		<div class="row">		 
+		<div class="row featured-row">		 
 			<div>
 			<% loop $getFeatured %>
 				<div class="col-sm-9">
-					<div class="author">
+					<div class="author hidden-xs">
 						<h6>
 						<span class="name">
 						<% if $Credits %>
@@ -82,6 +84,17 @@
 			</div>			
 			<div class="sidebar col-sm-3">
 				<% include BlogSideBar %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 visible-xs">				
+				<% include PopularPosts %>
+
+				<form class="subscribe-form">
+					<input class="email" type="text" name="email" value="Email">
+					<input class="subscribe-btn" type="submit" value="Subscribe now">
+				</form>
+				
 			</div>
 		</div>
 	</div>
