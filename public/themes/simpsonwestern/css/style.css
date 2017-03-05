@@ -9076,3 +9076,9 @@ b, strong {
 .filter-form-panel{
   margin-bottom: 50px;
 }
+
+.contact-phone{
+  color: #000;
+  font-family: 'gibsonregular';
+  text-decoration: none;
+}
