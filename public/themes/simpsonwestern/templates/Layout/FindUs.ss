@@ -5,7 +5,7 @@
       <% loop $getOffices %>	
       <div class="main col-sm-3 office-box" style="cursor:pointer;" id="$ID">
 				<h3>$Name</h3>
-        </br>
+        
         $Content
 			</div>
       <% end_loop %>

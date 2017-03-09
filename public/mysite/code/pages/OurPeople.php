@@ -58,7 +58,7 @@ class OurPeople_Controller extends Page_Controller{
       $teamDDL->setEmptyString('Team');
       $teamDDL->setValue($data['Team']);
 
-      $expertiseDDL = new DropdownField('Expertise', 'Expertise', Dataobject::get("Expertise")->map("ID", "Title"));
+      $expertiseDDL = new DropdownField('Expertise', 'Position', Dataobject::get("Expertise")->map("ID", "Title"));
       $expertiseDDL->setEmptyString('Expertise');
       $expertiseDDL->setValue($data['Expertise']);
 
