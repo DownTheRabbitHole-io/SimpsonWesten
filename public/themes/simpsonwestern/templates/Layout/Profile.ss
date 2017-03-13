@@ -7,7 +7,7 @@
 				<div class="image-holder portrait-large" style="background: url($ProfileImage.URL) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">				
 						<% include BreadCrumbs %>					
         </div>
-				<h1>$Name <span class="t2-plus" style="margin-left:30px;">Position</span></h1>
+				<h1>$Name <span class="t2-plus" style="margin-left:30px;">$Position.Title</span></h1>
         <article class="details-mobile visible-xs">
         <p><strong>Phone:</strong> $Phone</p>
 				

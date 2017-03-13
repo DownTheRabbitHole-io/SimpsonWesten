@@ -58,9 +58,9 @@ class OurPeople_Controller extends Page_Controller{
       $teamDDL->setEmptyString('Team');
       $teamDDL->setValue($data['Team']);
 
-      $expertiseDDL = new DropdownField('Expertise', 'Position', Dataobject::get("Expertise")->map("ID", "Title"));
-      $expertiseDDL->setEmptyString('Expertise');
-      $expertiseDDL->setValue($data['Expertise']);
+      $positionDDL = new DropdownField('Position', 'Position', Dataobject::get("Position")->map("ID", "Title"));
+      $positionDDL->setEmptyString('Position');
+      $positionDDL->setValue($data['Position']);
 
       $officeDDL = new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Name"));
       $officeDDL->setEmptyString('Office');
@@ -68,7 +68,7 @@ class OurPeople_Controller extends Page_Controller{
 
       $fields = new FieldList(
           $teamDDL,
-          $expertiseDDL,
+          $positionDDL,
           $officeDDL
       );
 
@@ -103,8 +103,8 @@ class OurPeople_Controller extends Page_Controller{
           if($id == 'Team'){
             $filter['TeamID'] = $item;
           }
-          if($id == 'Expertise'){
-            $filter['Expertises.ID'] = $item;
+          if($id == 'Position'){
+            $filter['PositionID'] = $item;
           }
         }
       }

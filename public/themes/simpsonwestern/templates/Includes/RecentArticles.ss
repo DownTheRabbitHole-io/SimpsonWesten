@@ -7,7 +7,7 @@
                 <a href="$Link" class="recent-link">
 				<h6 class="article-title">$Title</h6>
 				<div class="short-description">
-					$Excerpt
+					$Summary.LimitWordCount(30)
 				</div>
                 </a>
 			</li>

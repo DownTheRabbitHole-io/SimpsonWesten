@@ -5,25 +5,17 @@
  * @package silverstripe
  */
 
-class Expertise extends DataObject {
+class Position extends DataObject {
 	/**
 	 * @var array
 	 */
 	private static $db = array(
-		'Title' => 'Varchar(255)',
-		'Content' => 'Varchar(4000)'
+		'Title' => 'Varchar(255)'
 	);
 
 
 	/**
-	 * @var array
-	 */
-	private static $belongs_many_many = array(
-		'ProfileExpertise' => 'Profile'
-	);
-
-	/**
-	 * The default sorting lists Expertise by title alpha.
+	 * The default sorting lists Position by title alpha.
 	 *
 	 * @var string
 	 */
@@ -41,13 +33,9 @@ class Expertise extends DataObject {
 		$title->Required();
 		$title->setCustomValidationMessage('A title is required.');
 
-		$content = TextareaField::create('Content', 'Content');
-		$content->Required();
-		$content->setCustomValidationMessage('Content is required.');
 
 		$fields = new FieldList(
-			$title,
-			$content
+			$title
 		);
 
 		$this->extend('updateCMSFields', $fields);

@@ -2,6 +2,8 @@
 class Page extends SiteTree {
 
 	private static $db = array(
+		'ExtraLink' => 'Varchar(400)',
+		'ExtraLink2' => 'Varchar(400)'
 	);
 
 	/**
@@ -17,6 +19,17 @@ class Page extends SiteTree {
     $uploadField = UploadField::create('HeaderImage',  'Header Image (must be 1157px x 369px)');
     $uploadField->setFolderName('headers');
 		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+
+		$ExtraLink = TextField::create('ExtraLink', 'ExtraLink');
+		$ExtraLink->Required();
+		$ExtraLink->setCustomValidationMessage('A ExtraLink is required.');
+
+		$ExtraLink2 = TextField::create('ExtraLink2', 'ExtraLink 2');
+		$ExtraLink2->Required();
+		$ExtraLink2->setCustomValidationMessage('A ExtraLink2 is required.');
+
+		$fields->insertAfter($ExtraLink2, 'Content');
+		$fields->insertAfter($ExtraLink, 'Content');
 
     $fields->insertBefore($uploadField, 'Content');
 
