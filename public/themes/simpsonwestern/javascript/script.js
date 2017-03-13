@@ -21,7 +21,7 @@ jQuery.noConflict();
 			$('#Form_FilterForm').submit();
 		});
 
-		$("#Form_FilterForm_Expertise").on("change", function(){
+		$("#Form_FilterForm_Position").on("change", function(){
 			$('#Form_FilterForm').submit();
 		});
 
