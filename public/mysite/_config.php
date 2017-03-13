@@ -3,7 +3,7 @@
 global $project;
 $project = 'mysite';
 
-Security::setDefaultAdmin("admin","password");
+//Security::setDefaultAdmin("admin","password");
 
 global $databaseConfig;
 /*
