@@ -6,7 +6,6 @@ class Profile extends Page {
      */
     private static $db = array(
         'Name' => 'Varchar(400)',
-        'Position' => 'Varchar(400)',
         'Phone' => 'Varchar(400)',
         'Mobile' => 'Varchar(400)',
         'PA' => 'Varchar(400)',
@@ -22,22 +21,24 @@ class Profile extends Page {
     private static $has_one = array(
         'ProfileImage' => 'Image',
         'Office' => 'Office',
-        'Team' => 'Team'
-    );
-
-    private static $many_many = array(
-      'Expertises' => 'Expertise'
+        'Team' => 'Team',
+        'Position' => 'Position'
     );
 
     static $belongs_many_many = array(
         'Articles' => 'Article'
     );
 
+    static $defaults = array (
+      'ShowInMenus' => false,
+      'ShowInSearch' => false
+    );
+
     /**
      *
      * @var string
      */
-	private static $default_sort = '"Position" ASC';
+	private static $default_sort = '"PositionID" ASC';
 
   /**
 	 * {@inheritdoc}
@@ -50,9 +51,9 @@ class Profile extends Page {
 		$Name->Required();
 		$Name->setCustomValidationMessage('A Name is required.');
 
-    $Positionlist = array(''=>'Select Position','Partner' => 'Partner','Junior' => 'Junior');
+    $Positionlist = Dataobject::get("Position")->map("ID", "Title", "Please Select");
     
-    $Position = DropdownField::create('Position','Position',$Positionlist);
+    $Position = DropdownField::create('PositionID','Position',$Positionlist);
     $Position->Required();
     $Position->setCustomValidationMessage('A Position is required.');
 
@@ -82,21 +83,11 @@ class Profile extends Page {
     
     $Team = DropdownField::create('TeamID','Team',$Teamlist);
     $Team->Required();
-    $Team->setCustomValidationMessage('A Team is required.');
-
-    $tagField = TagField::create(
-				'Expertises',
-				'Expertise',
-				Expertise::get(),
-				$this->Expertises()
-			)
-			->setShouldLazyLoad(true) // tags should be lazy loaded
-			->setCanCreate(true);     // new tag DataObjects can be created
+    $Team->setCustomValidationMessage('A Team is required.');   
 
     $ShortText = TextareaField::create('ShortText', 'Short Text');
 		$ShortText->Required();
 		$ShortText->setCustomValidationMessage('A ShortText is required.');
-
 
     $Bio = HtmlEditorField::create('Bio', 'Bio');
 		$Bio->Required();
@@ -117,7 +108,6 @@ class Profile extends Page {
       $Linkedin,
       $Office,
       $Team,
-      $tagField,
       $uploadField,
       $ShortText,
       $Bio

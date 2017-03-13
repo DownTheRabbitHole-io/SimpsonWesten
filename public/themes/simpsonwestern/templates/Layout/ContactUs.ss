@@ -5,7 +5,7 @@
 			<div class="row">
         <div class="col-md-3">
         <h3>Call us on<br/>
-        $ContactNumber</h3>
+        <a class="contact-phone" href="tel:09-486-3058">$ContactNumber</a></h3>
         </div>				
 				<div class="col-md-6">
 					

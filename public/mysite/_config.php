@@ -3,6 +3,8 @@
 global $project;
 $project = 'mysite';
 
+Security::setDefaultAdmin("admin","password");
+
 global $databaseConfig;
 /*
 $databaseConfig = array(

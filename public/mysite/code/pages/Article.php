@@ -6,6 +6,7 @@ class Article extends Page{
 	 */
 
 	private static $db = array(
+		'Summary' => 'Text'
 	);
 
 
@@ -39,6 +40,8 @@ class Article extends Page{
   public function getCMSFields(){
     $fields = parent::getCMSFields();
 
+		$Summary = TextareaField::create('Summary', 'Summary');
+
 
     $tagField = TagField::create(
       'Profiles',
@@ -50,6 +53,8 @@ class Article extends Page{
     ->setCanCreate(false);     // new tag DataObjects can be created
 
     $fields->insertBefore($tagField, 'Content');
+
+		$fields->insertAfter($Summary, 'Content');
 
 
     return $fields;

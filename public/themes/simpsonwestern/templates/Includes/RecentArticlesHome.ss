@@ -7,7 +7,7 @@
 				<a href="$Link" class="recent-link">
 				<h6 class="article-title">$Title</h6>
 				<div class="short-description">
-					$Excerpt
+					$Summary.LimitWordCount(30)
 				</div>
 				</a>
 			</li>
@@ -16,7 +16,7 @@
 
 	</div>
 	<div class="other-links">
-		<a href="/helpful-reading" title="Read more articles">Read more articles</a> <br />
-		<a href="#" title="Subscribe to our newsletter">Subscribe to our newsletter</a>
+		<a href="$ExtraLink" title="Read more articles">Read more articles</a> <br />
+		<a href="$ExtraLink2" title="Subscribe to our newsletter">Subscribe to our newsletter</a>
 	</div>
 </div>

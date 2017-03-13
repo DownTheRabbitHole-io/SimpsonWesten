@@ -7006,6 +7006,9 @@ div.dark_square #pp_full_res .pp_inline {
   margin-bottom:64px;
 }
 
+p strong{
+  font-family: 'gibsonsemibold';
+}
 
 
 /*REFLOW*/
@@ -7478,6 +7481,10 @@ input.subscribe{
 
 .expando{
   margin-top:40px;
+}
+
+.office-box h3{
+  margin-bottom:16px;
 }
 
 /* CONTACT US */
@@ -8058,6 +8065,11 @@ body.FindUs #footer{
 }
 @media (min-width: 481px) and (max-width: 992px) {
 
+ .office-box h3{
+  margin-top:16px;  
+  margin-bottom:16px;
+}
+
 .content.homepage{
     margin-top:20px !important;
   }
@@ -8109,6 +8121,11 @@ body.FindUs #footer{
 
 }
 @media (max-width: 480px) {
+
+  .office-box h3{
+  margin-top:16px;  
+  margin-bottom:16px;
+}
 
   .mobile-recent{
     padding: 0 50px;
@@ -9075,4 +9092,10 @@ b, strong {
 }
 .filter-form-panel{
   margin-bottom: 50px;
+}
+
+.contact-phone{
+  color: #000;
+  font-family: 'gibsonregular';
+  text-decoration: none;
 }
