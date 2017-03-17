@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="homepage photo2">
-			<img src="$BottonImage.URL" />
+			<a href="/our-people"><img src="$BottonImage.URL" /></a>
 		</div>
 		<div class="visible-xs mobile-recent">
 			<div class="row">
