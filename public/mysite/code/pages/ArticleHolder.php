@@ -13,9 +13,33 @@ class ArticleHolder extends Page{
 	private static $has_one = array(
 	);
 
+		/**
+	 * @var array
+	 */
+	private static $many_many = array(
+		'Profiles' => 'Profile',
+	);
+
 	private static $allowed_children = array(
 		'Article'
 	);
+
+	public function getCMSFields(){
+    $fields = parent::getCMSFields();
+
+    $tagField = TagField::create(
+      'Profiles',
+      'Linked Profiles',
+      Profile::get(),
+      $this->Profiles()
+    )
+    ->setShouldLazyLoad(true) // tags should be lazy loaded
+    ->setCanCreate(false);     // new tag DataObjects can be created
+
+    $fields->insertBefore($tagField, 'Content');
+
+    return $fields;
+  }
 
 	
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar">
 
     <div class="row header">
         <div class="header-content">

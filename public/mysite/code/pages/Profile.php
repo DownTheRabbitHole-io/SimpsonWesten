@@ -12,21 +12,28 @@ class Profile extends Page {
         'Email' => 'Varchar(400)',
         'Linkedin' => 'Varchar(400)',
         'ShortText' => 'Varchar(4000)',
-        'Bio' => 'HTMLText'
+        'Bio' => 'HTMLText',
     );
 
     /**
      * @var array
      */
     private static $has_one = array(
-        'ProfileImage' => 'Image',
-        'Office' => 'Office',
-        'Team' => 'Team',
-        'Position' => 'Position'
+        'ProfileImage' => 'Image',        
+    );
+
+    /**
+     * @var array
+     */
+    private static $many_many = array(
+        'TeamList' => 'Team',
+        'OfficeList' => 'Office',
+        'PositionList' => 'Position',
     );
 
     static $belongs_many_many = array(
-        'Articles' => 'Article'
+        'Articles' => 'Article',
+        'Posts' => 'BlogPost',
     );
 
     static $defaults = array (
@@ -34,11 +41,6 @@ class Profile extends Page {
       'ShowInSearch' => false
     );
 
-    /**
-     *
-     * @var string
-     */
-	private static $default_sort = '"PositionID" ASC';
 
   /**
 	 * {@inheritdoc}
@@ -51,11 +53,23 @@ class Profile extends Page {
 		$Name->Required();
 		$Name->setCustomValidationMessage('A Name is required.');
 
+    $Position = TagField::create(
+      'Positionlist',
+      'Positionlist',
+      Position::get(),
+      $this->Positionlist()
+      )
+    ->setShouldLazyLoad(true) // tags should be lazy loaded
+    ->setCanCreate(true);     // new tag DataObjects can be created
+
+    /*
+
     $Positionlist = Dataobject::get("Position")->map("ID", "Title", "Please Select");
     
     $Position = DropdownField::create('PositionID','Position',$Positionlist);
     $Position->Required();
     $Position->setCustomValidationMessage('A Position is required.');
+    */
 
     $Phone = TextField::create('Phone', 'Phone');
 		$Phone->Required();
@@ -73,17 +87,38 @@ class Profile extends Page {
 		$Linkedin->Required();
 		$Linkedin->setCustomValidationMessage('A Linkedin is required.');
 
-    $Officelist = Dataobject::get("Office")->map("ID", "Name", "Please Select");
     
-    $Office = DropdownField::create('OfficeID','Office',$Officelist);
-    $Office->Required();
-    $Office->setCustomValidationMessage('A Office is required.');
 
-    $Teamlist = Dataobject::get("Team")->map("ID", "Name", "Please Select");
+    $Office = TagField::create(
+      'Officelist',
+      'Officelist',
+      Office::get(),
+      $this->Officelist()
+      )
+    ->setShouldLazyLoad(true) // tags should be lazy loaded
+    ->setCanCreate(true);     // new tag DataObjects can be created
+
+    //$Officelist = Dataobject::get("Office")->map("ID", "Name", "Please Select");
     
-    $Team = DropdownField::create('TeamID','Team',$Teamlist);
-    $Team->Required();
-    $Team->setCustomValidationMessage('A Team is required.');   
+    //$Office = DropdownField::create('OfficeID','Office',$Officelist);
+    //$Office->Required();
+    //$Office->setCustomValidationMessage('A Office is required.');
+
+    $Team = TagField::create(
+      'TeamList',
+      'TeamList',
+      Team::get(),
+      $this->TeamList()
+      )
+    ->setShouldLazyLoad(true) // tags should be lazy loaded
+    ->setCanCreate(true);     // new tag DataObjects can be created
+
+
+    //$Teamlist = Dataobject::get("Team")->map("ID", "Name", "Please Select");
+    
+    //$Team = DropdownField::create('TeamID','Team',$Teamlist);
+    //$Team->Required();
+    //$Team->setCustomValidationMessage('A Team is required.');   
 
     $ShortText = TextareaField::create('ShortText', 'Short Text');
 		$ShortText->Required();

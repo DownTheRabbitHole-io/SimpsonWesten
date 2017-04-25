@@ -10,9 +10,14 @@ class Team extends DataObject {
 	 * @var array
 	 */
 	private static $db = array(
-    'Name' => 'Varchar(255)',
-		'Content' => 'Varchar(4000)'
+    'Title' => 'Varchar(255)',
+		'Content' => 'Varchar(4000)',
+		'Sort' => 'Int',
 	);
+
+	static $belongs_many_many = array(
+      'Profiles' => 'Profile',
+  );
 
 
 	/**
@@ -20,17 +25,17 @@ class Team extends DataObject {
 	 *
 	 * @var string
 	 */
-	private static $default_sort = 'Name ASC';
+	private static $default_sort = 'Sort ASC';
 
 	private static $hide_preview_panel = true;
-
+	
 
 	/**
 	 * {@inheritdoc}
 	 */
 	public function getCMSFields() {
 
-    $name = TextField::create('Name', 'Name');
+    $name = TextField::create('Title', 'Name');
 		$name->Required();
 		$name->setCustomValidationMessage('A Name is required.');
 
