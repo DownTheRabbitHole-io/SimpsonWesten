@@ -8,7 +8,12 @@ class BlogPostExtension extends DataExtension
 
     private static $has_one = [];
 
-    private static $many_many = [];
+	/**
+	 * @var array
+	 */
+	private static $many_many = array(
+		'Profiles' => 'Profile',
+	);
 
     private static $belongs_many_many = [];
 
@@ -16,6 +21,17 @@ class BlogPostExtension extends DataExtension
     public function updateCMSFields(FieldList $fields) {
           $fields->insertAfter(new CheckBoxField('Featured', 'Featured'), 'Title');
           $fields->insertAfter(new CheckBoxField('Popular', 'Most Popular'), 'Title');
+
+        $tagField = TagField::create(
+            'Profiles',
+            'Linked Profiles',
+            Profile::get(),
+            $this->owner->Profiles()
+            )
+            ->setShouldLazyLoad(true) // tags should be lazy loaded
+            ->setCanCreate(false);     // new tag DataObjects can be created
+
+        $fields->insertBefore($tagField, 'Tags');
     }
 
 

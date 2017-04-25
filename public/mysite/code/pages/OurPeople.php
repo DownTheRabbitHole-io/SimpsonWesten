@@ -54,7 +54,7 @@ class OurPeople_Controller extends Page_Controller{
   {
       $data = Session::get('filter');
       // Create fields 
-      $teamDDL = new DropdownField('Team', 'Team', Dataobject::get("Team")->map("ID", "Name"));
+      $teamDDL = new DropdownField('Team', 'Team', Dataobject::get("Team")->map("ID", "Title"));
       $teamDDL->setEmptyString('Team');
       $teamDDL->setValue($data['Team']);
 
@@ -62,14 +62,20 @@ class OurPeople_Controller extends Page_Controller{
       $positionDDL->setEmptyString('Position');
       $positionDDL->setValue($data['Position']);
 
-      $officeDDL = new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Name"));
+      $officeDDL = new DropdownField('Office', 'Office', Dataobject::get("Office")->map("ID", "Title"));
       $officeDDL->setEmptyString('Office');
       $officeDDL->setValue($data['Office']);
+
+      $search = new TextField('Search', 'Search');      
+      $search->setAttribute('placeholder', 'Search');
+      $search->addExtraClass('filter-search');
+      $search->setValue($data['Search']);
 
       $fields = new FieldList(
           $teamDDL,
           $positionDDL,
-          $officeDDL
+          $officeDDL,
+          $search
       );
 
       // Create actions
@@ -80,7 +86,7 @@ class OurPeople_Controller extends Page_Controller{
       return new Form($this, 'FilterForm', $fields, $actions);
   }
 
-  public function doFilterForm($data, $form) {
+  public function doFilterForm($data, $form) {    
     Session::set('filter',$data);
     return $this->redirectBack();
   }
@@ -98,17 +104,24 @@ class OurPeople_Controller extends Page_Controller{
           unset($data[$id]);
         }else{
           if($id == 'Office'){
-            $filter['OfficeID'] = $item;
+            $filter['OfficeList.ID'] = $item;
           }
           if($id == 'Team'){
-            $filter['TeamID'] = $item;
+            $filter['TeamList.ID'] = $item;
           }
           if($id == 'Position'){
-            $filter['PositionID'] = $item;
+            $filter['PositionList.ID'] = $item;
+          }
+          if($id == 'Search'){
+            $filter['Name:PartialMatch'] = $item;
+            //$filter['Bio:PartialMatch'] = $item;
           }
         }
       }
     }
+
+    //var_dump($filter);
+    //exit();
     
     return Profile::get()->filter($filter);
   }

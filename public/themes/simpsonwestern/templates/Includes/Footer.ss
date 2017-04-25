@@ -12,17 +12,14 @@
                         <div class="col-sm-6">
                             <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                         </div>
-                    <% end_loop %>
-                    <div class="col-sm-6">
-                        <li class="link"><a href="/find-us" title="find us">Find Us</a></li>
-                    </div>
+                    <% end_loop %>                    
                 </ul>
                 </div>
             </div>
             <div class="col-sm-2 hidden-xs">
             </div>
             <div class="col-sm-3 col-xm-12">
-                <p class="address"><Strong>Takapuna</strong> Level3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna </br>
+                <p class="address"><Strong>Takapuna</strong> Level 3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna </br>
                 <Strong>Silverdale</strong> Cnr Millwater Parkway & Polarity Rise, Silverdale</p>
                 <div class="social-networks">
                     <a href="#"><img class="fa-nzlaw" src="$ThemeDir/images/NZLaw_icon.png"></a>

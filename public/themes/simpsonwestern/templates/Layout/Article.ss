@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="sidebar col-sm-3 hidden-xs">
 				<% if $Menu(2) %>
-				<h2 class="section-title-left">$Parent.Title</h2>
+				<h2 class="section-title-left"><a class="$LinkingMode" href="$Parent.Link">$Parent.Title</a></h2>
 				<ul class="categories subnav">
 					<% loop $Menu(2) %>
 						<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>

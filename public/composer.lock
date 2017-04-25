@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6f743abf5272fa2c23bc667637912ad",
-    "content-hash": "4b12234f14900c4bf207c5e85d6d701e",
+    "hash": "045b1b4454abf846d92955909b080790",
+    "content-hash": "74134a4f2bcbff532674126c99efee0a",
     "packages": [
         {
             "name": "composer/installers",
@@ -514,6 +514,46 @@
                 "silverstripe"
             ],
             "time": "2016-03-23 01:32:02"
+        },
+        {
+            "name": "undefinedoffset/sortablegridfield",
+            "version": "0.6.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UndefinedOffset/SortableGridField.git",
+                "reference": "1750b7b45a3b140cbcdac76707c17fc98eb8e99c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/1750b7b45a3b140cbcdac76707c17fc98eb8e99c",
+                "reference": "1750b7b45a3b140cbcdac76707c17fc98eb8e99c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "sortablegridfield"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Chipman",
+                    "homepage": "http://www.edchipman.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds drag and drop functionality to SilverStripe 3.0's GridField",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2017-04-21 12:32:43"
         }
     ],
     "packages-dev": [

@@ -10,8 +10,13 @@ class Position extends DataObject {
 	 * @var array
 	 */
 	private static $db = array(
-		'Title' => 'Varchar(255)'
+		'Title' => 'Varchar(255)',
+		'Sort' => 'Int',
 	);
+
+	static $belongs_many_many = array(
+      'Profiles' => 'Profile',
+  );
 
 
 	/**
@@ -19,7 +24,7 @@ class Position extends DataObject {
 	 *
 	 * @var string
 	 */
-	private static $default_sort = 'Title ASC';
+	private static $default_sort = 'Sort ASC';
 
 	private static $hide_preview_panel = true;
 

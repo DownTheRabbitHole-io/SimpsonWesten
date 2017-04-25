@@ -2,6 +2,7 @@
 class ContactUs extends Page{
 	static $db = array(
         'ContactNumber' => 'Varchar(40)',
+        'ContactEmail' => 'Varchar(100)',
         'Mailto' => 'Varchar(100)',
         'SubmitText' => 'Text'
     );
@@ -10,8 +11,9 @@ class ContactUs extends Page{
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab("Root.Contact", new TextField('ContactNumber', 'Contact Number'));
-        $fields->addFieldToTab("Root.OnSubmission", new TextField('Mailto', 'Email submissions to'));
-        $fields->addFieldToTab("Root.OnSubmission", new TextareaField('SubmitText', 'Text on Submission'));
+        $fields->addFieldToTab("Root.Contact", new TextField('ContactEmail', 'Contact Email'));
+        //$fields->addFieldToTab("Root.OnSubmission", new TextField('Mailto', 'Email submissions to'));
+        //$fields->addFieldToTab("Root.OnSubmission", new TextareaField('SubmitText', 'Text on Submission'));
 
         return $fields;
     }
@@ -22,6 +24,11 @@ class ContactUs_Controller extends Page_Controller{
 	static $allowed_actions = array(
         'Form',
     );
+
+    function getOffices(){
+		return Office::get();
+	}
+	
 
     function Form() {
         // Create fields

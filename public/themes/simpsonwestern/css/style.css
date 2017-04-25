@@ -2073,7 +2073,6 @@ div.page {
 
 .main-content {
   padding: 55px;
-  margin-top:40px;  
 }
 
 
@@ -7002,7 +7001,6 @@ div.dark_square #pp_full_res .pp_inline {
 /* Banner */
 
 .banner{
-  margin-top:80px;
   margin-bottom:64px;
 }
 
@@ -7116,6 +7114,7 @@ nav.navbar{
   max-width:1170px;
   margin:0 auto;
   height:80px;
+  z-index: 1030;
 }
 
 .content.homepage{
@@ -7147,6 +7146,11 @@ nav.navbar{
   font-family:'gibsonsemibold', sans-serif;
   font-size:17px;
   color:#000;
+}
+
+.section-title-left a{
+  text-decoration: none;
+  color: #000;
 }
 
 .recent-article h5{
@@ -7205,8 +7209,9 @@ ul.business-links li a{
 }
 
 .our-people-component h5 {
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #56565a;
     text-transform: uppercase;
+    color:#56565a;
 }
 
 .our-people-title{
@@ -7243,14 +7248,14 @@ ul.business-links li a{
 }
 
 .name-text{
-  font-size:13px;
+  font-size:12px;
   font-family:'gibsonsemibold', sans-serif;
-  color:#343741;
+  color:#56565a;
 }
 
 .name-text a{
   text-decoration:none;
-  color:#343741;
+  color:#56565a;
 }
 
 .people-info{
@@ -7261,14 +7266,14 @@ ul.business-links li a{
 .people-info p{
   font-size:13px;
   font-family:'gibsonregular', sans-serif;
-  color:#343741;
+  color:#56565a;
   
 }
 
 .support-message-container{
   font-size:13px;
   font-family:'gibsonregular', sans-serif;
-  color:#343741;
+  color:#56565a;
   margin-top: 15px;
 }
 
@@ -7352,10 +7357,9 @@ div.sidebar input[type=submit]{
 div.image-holder{
   width:110%;
   min-height:550px;
-  max-width:868px;
+  max-width:853px;
   margin-bottom:64px;
-  margin-top:80px;
-  margin-left: -65px;
+  margin-left: -50px;
   position:relative;
 }
 
@@ -7375,7 +7379,6 @@ div.image-holder{
 }
 
 .sidebar.profile{
-  margin-top:78px;
 }
 
 .profile-article div#Breadcrumbs{
@@ -7429,7 +7432,17 @@ div#Breadcrumbs a{
 .title h5{
   text-transform: uppercase;
   margin-top:-5px;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #56565a;
+  color:#56565a;
+}
+
+.article-title{
+  color:#56565a;
+}
+
+.popular-posts .nav li {
+    padding: 5px 0;
+    border-bottom: 1px solid #56565a !important;
 }
 
 
@@ -7444,7 +7457,6 @@ div#Breadcrumbs a{
 
 div.content.sky{
   background-color:#ebf7f7;
-  margin-top:80px;
   height:auto;
 }
 
@@ -9098,4 +9110,20 @@ b, strong {
   color: #000;
   font-family: 'gibsonregular';
   text-decoration: none;
+}
+
+.filter-search{
+  position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    margin: 0 !important;
+    height: 35px;
+    background-color: #fff;
+    background-clip: padding-box;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 35px;
+    border: 1px solid #000;
 }

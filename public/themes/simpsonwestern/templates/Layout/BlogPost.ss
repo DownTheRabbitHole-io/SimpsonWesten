@@ -11,7 +11,7 @@
 				</article>
 			</div>			
 			<div class="sidebar col-sm-3">
-				<% include PopularPosts %>
+			<% include ShortProfiles %>	
 			</div>
 		</div>
 	</div>

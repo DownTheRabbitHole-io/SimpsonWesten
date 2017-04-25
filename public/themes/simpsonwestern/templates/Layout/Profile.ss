@@ -24,7 +24,7 @@
 				
 				<p><strong>Email:</strong> <a href="mailto:$Email" title="Click to Email">Click to Email</a></p>
 				<p><strong>PA:</strong>  $PA</p>
-				<p><strong>Linkedin:</strong> <a href="$Linkedin" target="_blank">$Linkedin</a></p>
+				<p><strong>Linkedin:</strong> <a href="$Linkedin" target="_blank">Linkedin</a></p>
         </article>
 			</div>
 		</div>
