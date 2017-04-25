@@ -25,7 +25,7 @@
                     <% if Children %>
                     <li class="link dropdown horizontal-drop">
                     <a href="$Link" title="$Title.XML">$MenuTitle.XML</a>
-                    <a class="plus-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"> + </a>
+                    <a class="plus-link dropdown-toggle" data-toggle="dropdown" role="button"  aria-expanded="false" href="#"> + </a>
                     <ul class="dropdown-menu clearfix horizontal-drop-menu">
                         <!-- Sub Menu -->
                         <% control Children %>
