@@ -33,6 +33,7 @@
 			</div>
       <% end_loop %>
       <div class="main col-sm-3 office-box">
+        <h3>Postal</h3>
         $PostBox
 			</div>				
 		</div>
