@@ -4,7 +4,8 @@ class ContactUs extends Page{
         'ContactNumber' => 'Varchar(40)',
         'ContactEmail' => 'Varchar(100)',
         'Mailto' => 'Varchar(100)',
-        'SubmitText' => 'Text'
+        'SubmitText' => 'Text',
+        'PostBox' => 'Varchar(200)',
     );
 
     function getCMSFields() {
@@ -12,6 +13,7 @@ class ContactUs extends Page{
 
         $fields->addFieldToTab("Root.Contact", new TextField('ContactNumber', 'Contact Number'));
         $fields->addFieldToTab("Root.Contact", new TextField('ContactEmail', 'Contact Email'));
+        $fields->addFieldToTab("Root.Contact", new TextareaField('PostBox', 'PostBox'));
         //$fields->addFieldToTab("Root.OnSubmission", new TextField('Mailto', 'Email submissions to'));
         //$fields->addFieldToTab("Root.OnSubmission", new TextareaField('SubmitText', 'Text on Submission'));
 

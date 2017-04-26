@@ -9090,13 +9090,17 @@ body.FindUs #footer{
   margin-top: 5px;
 }
 
-  .mobile-recent{
-    margin-top: 40px;
-  }
+.mobile-recent{
+  margin-top: 40px;
+}
 
-  .main p {
-    font-size:17px;
-  }
+.main p {
+  font-size:17px;
+}
+
+.main h2{
+  padding-bottom: 10px !important;
+}
 
 b, strong {
     font-weight: 500 !important;

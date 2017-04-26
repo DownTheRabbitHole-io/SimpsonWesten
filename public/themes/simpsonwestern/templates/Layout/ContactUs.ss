@@ -28,11 +28,13 @@
 		<div class="row">
       <% loop $getOffices %>	
       <div class="main col-sm-3 office-box" style="cursor:pointer;" id="$ID">
-				<h3>$Name</h3>
-        
+				<h3>$Title</h3>        
         $Content
 			</div>
-      <% end_loop %>				
+      <% end_loop %>
+      <div class="main col-sm-3 office-box">
+        $PostBox
+			</div>				
 		</div>
 		<div class="row">
 			<div class="main col-sm-12 expando">
