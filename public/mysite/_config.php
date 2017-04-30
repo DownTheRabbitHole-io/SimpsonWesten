@@ -1,9 +1,9 @@
 <?php
 
 global $project;
-$project = 'mysite';
+$project = 'Simpson Western';
 
-//Security::setDefaultAdmin("admin","password");
+Security::setDefaultAdmin("admin","password");
 
 global $databaseConfig;
 /*
