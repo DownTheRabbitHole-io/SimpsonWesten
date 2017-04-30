@@ -4,7 +4,6 @@ class Blog_ControllerExtension extends Extension
 
     private static $allowed_actions = array (
         'filter',
-        'subscribeForm'
 	);
 
     public function getFeatured() {
@@ -22,18 +21,6 @@ class Blog_ControllerExtension extends Extension
       return $categories;
     }
 
-
-    function subscribeForm($data){
-        try{
-            $MCSubscription = new MCSubscription();
-            $MCSubscription->Email = $data['email'];
-            $MCSubscription->MCListID = 3;
-            $MCSubscription->write();
-        }catch(exception $e){
-
-        }
-        $this->owner->redirect('/helpful-reading');
-    }
 
     function filter($data, $form){
         //print_r($data['category']);

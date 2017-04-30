@@ -5,9 +5,12 @@ class HomePage extends Page{
   /**
   * @var array
   */
-  private static $has_one = array(      
-      'HeaderImage' => 'Image',
+  private static $has_one = array(  
       'BottonImage' => 'Image'
+  );
+
+  private static $has_many = array(
+    'MediaSlides' => 'MediaSlide',
   );
 
   /**
@@ -17,12 +20,13 @@ class HomePage extends Page{
 
     $fields = parent::getCMSFields();
 
-
-    $uploadField = UploadField::create('HeaderImage',  'Header Image');
-    $uploadField->setFolderName('homepage-headers');
-		$uploadField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
-
-    $fields->insertBefore($uploadField, 'Content');
+    $fields->addFieldToTab('Root.Carousel',
+      GridField::create('MediaSlide', 'MediaSlide',
+              $this->MediaSlides(),
+              GridFieldConfig_RecordEditor::create()
+              ->addComponent(new GridFieldSortableRows('SortID')) //u		se addComponent() function to add SortableGridFieldRows
+          )
+      );
 
     $uploadField2 = UploadField::create('BottonImage',  'Bottom Image');
     $uploadField2->setFolderName('homepage');

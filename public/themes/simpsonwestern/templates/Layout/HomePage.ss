@@ -1,7 +1,25 @@
 
 	<!-- BEGIN CONTENT WRAPPER -->
 	<div class="homepage photo1">
-			<img src="$HeaderImage.URL" />
+			<div id="carousel-homepage" class="carousel slide" data-ride="carousel">	
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+				<% loop $MediaSlides %>
+        	<% if $First %>		
+						<div class="item active">
+							<img src="$CarouselImage.URL" alt="$Name">
+						</div>
+					<% else %>
+						<div class="item">
+							<img src="$CarouselImage.URL" alt="$Name">
+						</div>
+					<% end_if %>
+				<% end_loop %>
+				</div>
+			</div>
+
+			<!--<img src="$HeaderImage.URL" />-->
 			<div class="down-arrow"><a href="#" id="down"><img src="$ThemeDir/images/down-arrow-circle.png" /></a></div>
 		</div>
 	<div class="content homepage">
