@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "045b1b4454abf846d92955909b080790",
-    "content-hash": "74134a4f2bcbff532674126c99efee0a",
+    "hash": "2476d5af85ea35bddce7c2811a8de5e3",
+    "content-hash": "ac9a96ef602cdce14a763eadeb40e9a8",
     "packages": [
         {
             "name": "composer/installers",
@@ -113,6 +113,109 @@
                 "zikula"
             ],
             "time": "2016-08-13 20:53:52"
+        },
+        {
+            "name": "quadra-digital/silverstripe-mailchimp-module",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Quadra-Digital/silverstripe-mailchimp-module.git",
+                "reference": "a69d874790a130c4c3924db967e44e24b0ca3de4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Quadra-Digital/silverstripe-mailchimp-module/zipball/a69d874790a130c4c3924db967e44e24b0ca3de4",
+                "reference": "a69d874790a130c4c3924db967e44e24b0ca3de4",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe-australia/gridfieldextensions": "~1.1",
+                "silverstripe/cms": "~3.1"
+            },
+            "require-dev": {
+                "fojuth/readmegen": "~1.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "mailchimp-module"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Harvey",
+                    "email": "joe.harvey@quadradigital.co.uk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Leonardo Melo",
+                    "email": "leonardo.melo@quadradigital.co.uk",
+                    "homepage": "http://leomeloxp.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Silverstripe Mailchimp Module enables you to keep your Mailchimp mailing list in sync with the subscribers and/or members of your Silverstripe website.",
+            "homepage": "https://github.com/Quadra-Digital/silverstripe-mailchimp-module",
+            "keywords": [
+                "mailchimp",
+                "silverstripe"
+            ],
+            "time": "2016-09-08 08:39:48"
+        },
+        {
+            "name": "silverstripe-australia/gridfieldextensions",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
+                "reference": "a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe",
+                "reference": "a4d15e4ca428b3a8c96e085a7caaeb25c1f737fe",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "gridfieldextensions",
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                },
+                "screenshots": [
+                    "docs/en/_images/editable-rows.png",
+                    "docs/en/_images/add-existing-search.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                },
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                }
+            ],
+            "description": "A collection of useful grid field components",
+            "homepage": "http://github.com/silverstripe-australia/silverstripe-gridfieldextensions",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2016-08-19 08:28:30"
         },
         {
             "name": "silverstripe-themes/simple",

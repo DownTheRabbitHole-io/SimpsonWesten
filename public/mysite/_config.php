@@ -28,3 +28,4 @@ $databaseConfig = array(
 	'path' => ''
 );
 
+define('SS_ENVIRONMENT_TYPE', 'dev');

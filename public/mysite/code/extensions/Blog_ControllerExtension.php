@@ -3,7 +3,7 @@ class Blog_ControllerExtension extends Extension
 {  
 
     private static $allowed_actions = array (
-        'filter'
+        'filter',
 	);
 
     public function getFeatured() {
@@ -24,7 +24,7 @@ class Blog_ControllerExtension extends Extension
 
     function filter($data, $form){
         //print_r($data['category']);
-        $this->redirect('/helpful-reading/category/'.$data['category']);
+        $this->owner->redirect('/helpful-reading/category/'.$data['category']);
         //exit();
     }
    
