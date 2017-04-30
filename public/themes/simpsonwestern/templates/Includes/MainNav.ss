@@ -9,7 +9,8 @@
             <!-- BEGIN MAIN MENU -->
             <button class="nav-button"><i class="fa fa-bars"></i></button>
             <div class="phone-icon">
-                <a href="tel:09-486-3058"><img src="$ThemeDir/images/phone_icon.png" /></a>
+                <a href="tel:09-486-3058"><span class="glyphicon glyphicon-phone-alt" style="color:#54555A; font-size:26px" ></span></a>
+                <!-- <a href="tel:09-486-3058"><img src="$ThemeDir/images/phone_icon.png" /></a> -->
             </div>
         </div>
     </div>

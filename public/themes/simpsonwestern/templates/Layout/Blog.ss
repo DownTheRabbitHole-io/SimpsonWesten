@@ -53,9 +53,8 @@
 			<% end_loop %>
 				<div class="col-sm-3 hidden-xs">				
 					<% include PopularPosts %>
-
-					<form class="subscribe-form">
-						<input class="email" type="text" name="email" value="Email">
+					<form class="subscribe-form" action="/helpful-reading/subscribeForm" method="post" enctype="application/x-www-form-urlencoded">
+						<input class="email" type="text" name="email" placeholder="Email">
 						<input class="subscribe-btn" type="submit" value="Subscribe now">
 					</form>
 					
