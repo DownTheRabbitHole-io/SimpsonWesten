@@ -1013,7 +1013,8 @@ class LeftAndMain extends Controller implements PermissionProvider {
 			}
 
 			$link = Controller::join_links($recordController->Link("show"), $record->ID);
-			$html = LeftAndMain_TreeNode::create($record, $link, $this->isCurrentPage($record))->forTemplate();
+			$html = LeftAndMain_TreeNode::create($record, $link, $this->isCurrentPage($record))
+				->forTemplate() . '</li>';
 
 			$data[$id] = array(
 				'html' => $html,
@@ -2034,7 +2035,7 @@ class LeftAndMain_TreeNode extends ViewableData {
 			}
 			$classes .= ' ' . $filterClasses;
 		}
-		return $classes;
+		return $classes ?: '';
 	}
 
 	public function getObj() {
