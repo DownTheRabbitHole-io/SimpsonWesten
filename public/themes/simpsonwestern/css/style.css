@@ -7222,8 +7222,7 @@ ul.business-links li a{
 }
 
 .our-people-tile-container{
-  padding: 10px 0;
-  margin-top: 5px;
+  padding: 10px 0 0 0;
 }
 
 .support-message-container p {
@@ -7242,7 +7241,7 @@ ul.business-links li a{
   float:left;
   margin-right:8px;
   width: 30%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .name-text{
