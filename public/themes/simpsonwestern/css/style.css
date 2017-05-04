@@ -9117,6 +9117,10 @@ b, strong {
   text-decoration: none;
 }
 
+#Form_FilterForm{
+  font-size: 14px;
+}
+
 .filter-search{
   position: relative;
     display: block;
