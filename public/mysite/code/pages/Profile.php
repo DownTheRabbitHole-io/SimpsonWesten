@@ -6,6 +6,7 @@ class Profile extends Page {
      */
     private static $db = array(
         'Name' => 'Varchar(400)',
+        'Jobtitle' => 'Varchar(400)',
         'Phone' => 'Varchar(400)',
         'Mobile' => 'Varchar(400)',
         'PA' => 'Varchar(400)',
@@ -52,6 +53,10 @@ class Profile extends Page {
 		$Name = TextField::create('Name', 'Name');
 		$Name->Required();
 		$Name->setCustomValidationMessage('A Name is required.');
+
+    $Jobtitle = TextField::create('Jobtitle', 'Jobtitle');
+		$Jobtitle->Required();
+		$Jobtitle->setCustomValidationMessage('A Jobtitle is required.');
 
     $Position = TagField::create(
       'Positionlist',
@@ -135,6 +140,7 @@ class Profile extends Page {
 
 		$fieldlist = new FieldList(
 			$Name,
+      $Jobtitle,
       $Position,
       $Email,
       $Phone,
