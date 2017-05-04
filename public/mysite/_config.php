@@ -1,11 +1,12 @@
 <?php
 
 global $project;
-$project = 'mysite';
+$project = 'SimpsonWestern';
 
-Security::setDefaultAdmin("admin","password");
+//Security::setDefaultAdmin("admin","password");
 
 global $databaseConfig;
+/*
 $databaseConfig = array(
 	'type' => 'MySQLPDODatabase',
 	'server' => 'localhost',
@@ -14,5 +15,15 @@ $databaseConfig = array(
 	'database' => 'Simpsonwestern',
 	'path' => ''
 );
+*/
 
-define('SS_ENVIRONMENT_TYPE', 'dev');
+$databaseConfig = array(
+	'type' => 'MySQLPDODatabase',
+	'server' => 'localhost',
+	'username' => 'simp_west_law',
+	'password' => 'Qf5u8j?4',
+	'database' => 'simp_west_law',
+	'path' => ''
+);
+
+//define('SS_ENVIRONMENT_TYPE', 'dev');
