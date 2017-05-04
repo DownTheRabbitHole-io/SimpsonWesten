@@ -20,6 +20,8 @@ class HomePage extends Page{
 
     $fields = parent::getCMSFields();
 
+    $fields->removeFieldFromTab("Root.Main", "HeaderImage");
+    
     $fields->addFieldToTab('Root.Carousel',
       GridField::create('MediaSlide', 'MediaSlide',
               $this->MediaSlides(),

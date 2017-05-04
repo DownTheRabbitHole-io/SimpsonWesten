@@ -46,21 +46,26 @@ class Profile extends Page {
   /**
 	 * {@inheritdoc}
 	 */
-	public function getCMSFields() {
+	public function getCMSFields() {    
 
     $fields = parent::getCMSFields();
+
+    $fields->removeFieldFromTab("Root.Main", "HeaderImage");
+    $fields->removeFieldFromTab("Root.Main", "ExtraLink");
+    $fields->removeFieldFromTab("Root.Main", "ExtraLink2");
+    $fields->removeFieldFromTab("Root.Main", "Content");
 
 		$Name = TextField::create('Name', 'Name');
 		$Name->Required();
 		$Name->setCustomValidationMessage('A Name is required.');
 
-    $Jobtitle = TextField::create('Jobtitle', 'Jobtitle');
+    $Jobtitle = TextField::create('Jobtitle', 'Job title');
 		$Jobtitle->Required();
-		$Jobtitle->setCustomValidationMessage('A Jobtitle is required.');
+		$Jobtitle->setCustomValidationMessage('A Job title is required.');
 
     $Position = TagField::create(
       'Positionlist',
-      'Positionlist',
+      'Position list',
       Position::get(),
       $this->Positionlist()
       )
@@ -96,7 +101,7 @@ class Profile extends Page {
 
     $Office = TagField::create(
       'Officelist',
-      'Officelist',
+      'Office list',
       Office::get(),
       $this->Officelist()
       )
@@ -111,7 +116,7 @@ class Profile extends Page {
 
     $Team = TagField::create(
       'TeamList',
-      'TeamList',
+      'Team List',
       Team::get(),
       $this->TeamList()
       )
