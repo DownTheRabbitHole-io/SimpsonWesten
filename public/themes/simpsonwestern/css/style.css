@@ -113,7 +113,7 @@ body {
   color: #333541;
   overflow: hidden;
   background-color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'gibsonlight', sans-serif;
 }
 
@@ -7258,7 +7258,6 @@ ul.business-links li a{
 
 .people-info{
   border-bottom:1px solid #343741;
-  margin-bottom:8px;
 }
 
 .people-info p{

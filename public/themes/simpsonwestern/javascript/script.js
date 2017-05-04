@@ -25,6 +25,10 @@ jQuery.noConflict();
 			$('#Form_FilterForm').submit();
 		});
 
+		$("#Form_FilterForm_Search").on("blur", function(){
+			$('#Form_FilterForm').submit();
+		});
+
 
 		$('#down').on("click", function(){
 			scrollToAnchor('contentAnchor', 100);

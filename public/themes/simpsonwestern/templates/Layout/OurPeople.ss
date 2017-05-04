@@ -34,7 +34,7 @@
 									<img class="portrait-medium" alt="$Title.XML" src="$ProfileImage.URL" />
 								</a>
 									<h4 class="people-tile-medium-name"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Name</a></h4>
-									<p class="people-tile--medium-position"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Position.Title</a></p>
+									<p class="people-tile--medium-position"><a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">$Jobtitle</a></p>
 									
 							</li>
 						</div>	
