@@ -117,6 +117,10 @@ body {
   font-family: 'gibsonlight', sans-serif;
 }
 
+input{
+  font-size: 14px;
+}
+
 ::selection {
   background: #202833;
   color: #fff;
