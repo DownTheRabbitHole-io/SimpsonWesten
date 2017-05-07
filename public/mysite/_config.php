@@ -27,3 +27,5 @@ $databaseConfig = array(
 );
 
 //define('SS_ENVIRONMENT_TYPE', 'dev');
+
+HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sub', 'sup', 'separator');
