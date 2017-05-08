@@ -12,7 +12,7 @@
 				</ul>
 				<% end_if %>
 			</div>
-			<div class="main col-sm-6">
+			<div class="main col-sm-6 content-style">
 				$Content
 				$Form
 			</div>

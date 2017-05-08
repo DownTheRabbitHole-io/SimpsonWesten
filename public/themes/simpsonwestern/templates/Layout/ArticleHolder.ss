@@ -18,11 +18,13 @@
 			</div>
 			<div class="main col-sm-3">
 				<% include ShortProfiles %>		
-				<h2 class="section-title-right">We publish a free quarterly newsletter for our business clients.</h2>
-				<ul class="business-links">
-					<li><a href="$ExtraLink">Click here to read the latest issue</a></li>
-					<li><a href="$ExtraLink2">Subscribe to our newsletter</a></li>
-				</ul>
+				<div class="support-message-container">
+						<h2 class="section-title-right">We publish a free quarterly newsletter for our business clients.</h2>
+					<ul class="business-links">
+						<li><a href="$ExtraLink">Click here to read the latest issue</a></li>
+						<li><a href="$ExtraLink2">Subscribe to our newsletter</a></li>
+					</ul>
+				</div><!-- support-message-container -->				
 			</div>
 		</div>
 	</div>

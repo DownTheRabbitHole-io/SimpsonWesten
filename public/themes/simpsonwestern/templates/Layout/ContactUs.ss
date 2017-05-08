@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<!-- contact data row -->
 			<div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9 content-style">
 					$Content          
 				</div>
         <div class="col-md-3">

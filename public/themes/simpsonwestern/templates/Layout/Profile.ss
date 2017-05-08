@@ -15,7 +15,7 @@
 				<p><strong>PA:</strong>  $PA</p>
 				<p><strong>Linkedin:</strong> <a href="$Linkedin" target="_blank">$Linkedin</a></p>
         </article>
-        <div class="bio-text">$Bio</div>
+        <div class="bio-text content-style">$Bio</div>
 			</div>
 			<div class="sidebar profile col-xs-12 col-sm-3">			
 				<% include RecentArticles %>
