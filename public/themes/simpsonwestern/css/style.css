@@ -7424,6 +7424,7 @@ div#Breadcrumbs a{
 
 .helpful-reading .post-summary{
   width:100% !important;
+  min-height: 250px;
 }
 
 .sky li.article a {
