@@ -7,7 +7,7 @@
 					$Content          
 				</div>
         <div class="col-md-3">
-        <h3 stye="margin-bottom: 6px;">Contact us on</h3>
+        <h3 style="margin-bottom: 6px;">Contact us on</h3>
 				<p>
 					<a class="contact-phone" href="tel:$ContactNumber">$ContactNumber</a><br/>
 					<a class="contact-phone" href="mailto:$ContactEmail">$ContactEmail</a>
