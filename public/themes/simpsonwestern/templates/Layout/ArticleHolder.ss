@@ -19,7 +19,10 @@
 			<div class="main col-sm-3">
 				<% include ShortProfiles %>		
 				<div class="support-message-container">
-						<h2 class="section-title-right">We publish a free quarterly newsletter for our business clients.</h2>
+						<p><Strong>We’re here to help</strong><br/>
+						We’ve had some great success stories
+						helping our clients with employment issues.
+						See how we can do the same for you.</p>
 					<ul class="business-links">
 						<li><a href="$ExtraLink">Click here to read the latest issue</a></li>
 						<li><a href="$ExtraLink2">Subscribe to our newsletter</a></li>

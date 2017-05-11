@@ -1,4 +1,4 @@
-<% include Banner %>
+<% include BannerBlog %>
 <div class="content">
 	<div class="container-fluid">
 		<div class="row">

@@ -1,5 +1,5 @@
 <div class="recent-article">
-	<h5>RECENT ARTICLES</h5>
+	<h5>RELATED ARTICLES</h5>
 	<div class="article-links">
 		<ul class="nav">
         <% loop $getRecentArticles %>        

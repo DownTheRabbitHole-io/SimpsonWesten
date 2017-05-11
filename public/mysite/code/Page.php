@@ -85,7 +85,7 @@ class Page_Controller extends ContentController {
 
 	public function getRecentArticles(){
     
-    $recent = Article::get()->limit(3);
+    $recent = BlogPost::get()->limit(3);
 		return $recent;
     
 	}

@@ -7,7 +7,7 @@
 					$Content          
 				</div>
         <div class="col-md-3">
-        <h3 style="margin-bottom: 6px;">Contact us on</h3>
+        <h3 style="margin-bottom: 11px;    margin-top: 6px;">Contact us on</h3>
 				<p>
 					<a class="contact-phone" href="tel:$ContactNumber">$ContactNumber</a><br/>
 					<a class="contact-phone" href="mailto:$ContactEmail">$ContactEmail</a>
@@ -30,6 +30,10 @@
       <div class="main col-sm-3 office-box" style="cursor:pointer;" id="$ID">
 				<h3>$Title</h3>        
         $Content
+        <div class="phone">
+        <p><span class="phone-letter">p.</span>$Phone</p>
+        <p><span class="fax-letter">f.</span>$Fax</p>
+        </div>
 			</div>
       <% end_loop %>
       <div class="main col-sm-3 office-box">
