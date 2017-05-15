@@ -68,7 +68,7 @@ h4,
 h5,
 h6 {
   font-family: 'gibsonsemibold', sans-serif;
-  color: #333541;
+  color: #000;
   /*font-weight: 300;*/
   margin: 0;
   /*text-rendering: optimizelegibility;*/
@@ -110,7 +110,7 @@ html {
 body {
   padding: 0;
   height: 100%;
-  color: #333541;
+  color: #000;
   overflow: hidden;
   background-color: #fff;
   font-size: 17px;
@@ -553,6 +553,16 @@ colored.btn-danger:hover,
   margin-top:112px;
   margin-left:32px;
   margin-right: 40%;
+}
+
+.page-title-blog {
+  color: #303B95;
+  text-align: left;
+  font-size:100px;
+  line-height: 100px;
+  margin-top:112px;
+  margin-left:32px;
+  margin-right: 0;
 }
 
 .sky .page-title{
@@ -1995,7 +2005,7 @@ div#Breadcrumbs{
 
 div.page {
   padding: 0;
-  color: #333541;
+  color: #000;
 }
 
 .page .header {
@@ -7052,7 +7062,6 @@ div.container.page{
 
 .nav-menu.open{
   width:295px;
-  height:884px;
   background-color:rgba(235, 247, 250, .8);
   position:absolute;
   top:0px;
@@ -7413,6 +7422,7 @@ div#Breadcrumbs a{
 
 .helpfulreading-title.lead-blog a{
   font-size:60px !important;
+  line-height: 54px;
 }
 
 
@@ -7424,7 +7434,7 @@ div#Breadcrumbs a{
 
 .helpful-reading .post-summary{
   width:100% !important;
-  min-height: 250px;
+  min-height: 315px;
 }
 
 .sky li.article a {
@@ -7453,8 +7463,7 @@ div#Breadcrumbs a{
 }
 
 .content.blog-post{
-  padding:0 !important;
-  margin-top:24px;
+  padding:0 !important;  
 }
 
 div.content.sky{
@@ -7498,7 +7507,24 @@ input.subscribe{
 }
 
 .office-box h3{
-  margin-bottom:16px;
+  margin-bottom:10px;
+}
+
+.phone{
+  margin-top:10px;
+}
+
+.phone p{
+  font-family: 'gibsonregular';
+  margin: 0;
+}
+
+.phone-letter{
+  margin-right: 5px;
+}
+
+.fax-letter{
+  margin-right: 10px;
 }
 
 /* CONTACT US */
@@ -7606,6 +7632,12 @@ body.FindUs #footer{
     text-align: center;
     padding: 30px 70px;
     font-size: 26px;
+  }
+
+  .page-title-blog {
+    margin-top: 150px;
+    font-size:80px;
+    line-height: 80px;
   }
 
 }
@@ -8127,6 +8159,12 @@ body.FindUs #footer{
     line-height: 64px;
   }
 
+    .page-title-blog {
+      margin-top: 80px;
+    font-size:64px;
+    line-height: 64px;
+  }
+
   div.image-holder{
     width:113% !important;
   }
@@ -8211,6 +8249,12 @@ body.FindUs #footer{
     font-size:38px !important;
     line-height: 38px;
     margin-top:42px;
+  }
+
+  .page-title-blog {
+    font-size:38px;
+    line-height: 38px;
+    margin-top:25px;
   }
 
   .header .title{
@@ -9101,7 +9145,7 @@ body.FindUs #footer{
   font-size:17px;
 }
 
-.main h1, .main h2, .main h3, .main h4{
+.content-style h1, .content-style h2, .content-style h3, .content-style h4{
   padding-bottom: 10px !important;
 }
 
@@ -9136,4 +9180,8 @@ b, strong {
     white-space: nowrap;
     line-height: 35px;
     border: 1px solid #000;
+}
+
+.navbar{
+  border:none;
 }

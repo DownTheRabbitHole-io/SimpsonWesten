@@ -15,7 +15,7 @@
 						<select name="category" id="category">
 							<option value="category">Category</option>
 						<% loop $getCategories %>
-							<option value="$Title.LowerCase">$Title</option>
+							<option value="$Link">$Title</option>
 						<% end_loop %>
 						</select>
 					</div>
@@ -48,7 +48,12 @@
 							<% else %>$Title<% end_if %>
 						</a>
 					</h2>	
-					<p class="featured-text">$Excerpt ></p>
+					<div class="featured-text">
+					<% if $Summary %>
+						$Summary
+					<% else %>
+						$Excerpt >
+					<% end_if %></div>
 				</div>
 			<% end_loop %>
 				<div class="col-sm-3 hidden-xs">				

@@ -29,7 +29,6 @@ jQuery.noConflict();
 			$('#Form_FilterForm').submit();
 		});
 
-
 		$('#down').on("click", function(){
 			scrollToAnchor('contentAnchor', 100);
 		});

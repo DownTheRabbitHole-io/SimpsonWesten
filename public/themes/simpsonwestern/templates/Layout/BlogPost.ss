@@ -1,8 +1,8 @@
-<% include Banner %>
+<% include BannerBlog %>
 <div class="content">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="main col-sm-9">						
+			<div class="main col-sm-9 content-style">						
 				<article>				
 
 					<div class="content blog-post">$Content</div>

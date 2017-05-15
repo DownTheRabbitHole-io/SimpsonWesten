@@ -12,6 +12,7 @@
                 <a href="tel:09-486-3058"><span class="glyphicon glyphicon-phone-alt" style="color:#54555A; font-size:26px" ></span></a>
                 <!-- <a href="tel:09-486-3058"><img src="$ThemeDir/images/phone_icon.png" /></a> -->
             </div>
+
         </div>
     </div>
 
@@ -25,7 +26,7 @@
                     <% if Children %>
                     <li class="link dropdown horizontal-drop">
                     <a href="$Link" title="$Title.XML">$MenuTitle.XML</a>
-                    <a class="plus-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"> + </a>
+                    <a class="plus-link dropdown-toggle" data-toggle="dropdown" role="button"  aria-expanded="false" href="#"> + </a>
                     <ul class="dropdown-menu clearfix horizontal-drop-menu">
                         <!-- Sub Menu -->
                         <% control Children %>

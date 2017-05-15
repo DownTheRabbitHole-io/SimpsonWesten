@@ -59,6 +59,11 @@
   line-height: 54px;
 }
 
+.featured-text p{
+  font-size: 60px;
+  line-height: 54px;
+}
+
 .lead-blog{
   margin-top: 15px;
 }
@@ -118,6 +123,12 @@
       line-height: 30px;
       padding-bottom: 30px;
   }
+
+    .featured-text p {
+      font-size: 36px;
+      line-height: 30px;
+      padding-bottom: 30px;
+   }
 /*
   .category-filter {
     float: left;

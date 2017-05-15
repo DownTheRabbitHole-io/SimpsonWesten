@@ -15,6 +15,8 @@ class Office extends DataObject {
     'Lat' => 'Varchar(40)',
     'Lng' => 'Varchar(40)',
 		'Content' => 'Varchar(4000)',
+		'Phone' => 'Varchar(400)',
+		'Fax' => 'Varchar(400)',
 		'Sort' => 'Int',
 	);
 
@@ -57,12 +59,24 @@ class Office extends DataObject {
 		$Lng->Required();
 		$Lng->setCustomValidationMessage('A Lng is required.');
 
+		$Phone = TextField::create('Phone', 'Phone');
+		$Phone->Required();
+		$Phone->setCustomValidationMessage('A Phone is required.');
+
+
+		$Fax = TextField::create('Fax', 'Fax');
+		$Fax->Required();
+		$Fax->setCustomValidationMessage('A Fax is required.');
+
+
 		$fields = new FieldList(
 			$title,
       $Address,
       $Lat,
       $Lng,
-			$content
+			$content,
+			$Phone,
+			$Fax
 		);
 
 		$this->extend('updateCMSFields', $fields);

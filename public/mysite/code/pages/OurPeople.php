@@ -127,11 +127,12 @@ class OurPeople_Controller extends Page_Controller{
   }
 
 
+
   function filter($data, $form){
     if($data['category'] == 'category'){
       return $this->redirect('/helpful-reading');
     }else{
-      return $this->redirect('/helpful-reading/category/'.$data['category']);
+      return $this->redirect($data['category']);
     }
         
         

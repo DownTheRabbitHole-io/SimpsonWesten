@@ -172,7 +172,7 @@ class Profile extends Page {
 class Profile_Controller extends Page_Controller{
 	
 	public function getRecentArticles(){
-    $recent = $this->Articles()->limit(3);    
+    $recent = $this->Posts()->limit(3);    
 		return $recent;
 	}
 	
