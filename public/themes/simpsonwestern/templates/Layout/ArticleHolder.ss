@@ -21,11 +21,10 @@
 				<div class="support-message-container">
 						<p><Strong>We’re here to help</strong><br/>
 						We’ve had some great success stories
-						helping our clients with employment issues.
+						helping our clients.
 						See how we can do the same for you.</p>
 					<ul class="business-links">
-						<li><a href="$ExtraLink">Click here to read the latest issue</a></li>
-						<li><a href="$ExtraLink2">Subscribe to our newsletter</a></li>
+						<li><a href="/contact">Contact us now</a></li>
 					</ul>
 				</div><!-- support-message-container -->				
 			</div>

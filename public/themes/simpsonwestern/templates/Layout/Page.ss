@@ -11,7 +11,7 @@
 				<div class="support-message-container">
 					<p><Strong>We’re here to help</strong><br/>
 We’ve had some great success stories
-helping our clients with employment issues.
+helping our clients.
 See how we can do the same for you.</p>
 				
 					<p><a class="contact-link" href="/contact" title="Contact Us">Contact us now</a></p>
