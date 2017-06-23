@@ -22,9 +22,9 @@
                 <p class="address"><Strong>Takapuna</strong> Level 3, Takapuna Finance Centre, 159 Hurstmere Road, Takapuna </br>
                 <Strong>Silverdale</strong> Cnr Millwater Parkway & Polarity Rise, Silverdale</p>
                 <div class="social-networks">
-                    <a href="#"><img class="fa-nzlaw" src="$ThemeDir/images/NZLaw_icon.png"></a>
-                    <a href="#"><img class="fa-linkedin" src="$ThemeDir/images/linkedin_icon.png"></a>
-                    <a href="#"><img class="fa-twitter" src="$ThemeDir/images/twitter_icon.png"></a>
+                    <a href="http://www.nzlaw.co.nz/" target="_blank"><img class="fa-nzlaw" src="$ThemeDir/images/NZLaw_icon.png"></a>
+                    <a href="https://www.linkedin.com/company-beta/2377436/" target="_blank"><img class="fa-linkedin" src="$ThemeDir/images/linkedin_icon.png"></a>
+                    <a href="https://twitter.com/SimpsonWestern?lang=en" target="_blank"><img class="fa-twitter" src="$ThemeDir/images/twitter_icon.png"></a>
                 </div>
             </div>
         </div>
