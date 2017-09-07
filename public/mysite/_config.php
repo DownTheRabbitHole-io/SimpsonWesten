@@ -30,6 +30,6 @@ $databaseConfig = array(
 
 //define('SS_ENVIRONMENT_TYPE', 'dev');
 
-require_once 'conf/ConfigureFromEnv.php';
+//require_once 'conf/ConfigureFromEnv.php';
 
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sub', 'sup', 'separator');
