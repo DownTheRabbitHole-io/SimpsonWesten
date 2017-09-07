@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "045b1b4454abf846d92955909b080790",
-    "content-hash": "74134a4f2bcbff532674126c99efee0a",
+    "hash": "8942d8e4a49356db2c3b1b690e95dafa",
+    "content-hash": "04d6d363c61e1463732aba78f4f6f8a7",
     "packages": [
         {
             "name": "composer/installers",
@@ -120,6 +120,165 @@
                 "zikula"
             ],
             "time": "2017-04-24 06:37:16"
+        },
+        {
+            "name": "graphiques-digitale/silverstripe-seo-icons",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Graphiques-Digitale/silverstripe-seo-icons.git",
+                "reference": "a30e454487fa87e3cfcd08a5686dce5fe621030f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Graphiques-Digitale/silverstripe-seo-icons/zipball/a30e454487fa87e3cfcd08a5686dce5fe621030f",
+                "reference": "a30e454487fa87e3cfcd08a5686dce5fe621030f",
+                "shasum": ""
+            },
+            "require": {
+                "graphiques-digitale/silverstripe-seo-metadata": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-seo-icons",
+                "screenshots": [
+                    "screenshot-1.png",
+                    "screenshot-2.png",
+                    "screenshot-3.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Gerber",
+                    "email": "atari@graphiquesdigitale.net"
+                }
+            ],
+            "description": "Enhanced SEO favicon and application icon module for the SilverStripe framework",
+            "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-icons",
+            "keywords": [
+                "application",
+                "engine",
+                "favicon",
+                "icon",
+                "metadata",
+                "module",
+                "optimisation",
+                "optimization",
+                "search",
+                "seo",
+                "silverstripe",
+                "touch",
+                "web"
+            ],
+            "time": "2016-07-07 21:53:32"
+        },
+        {
+            "name": "graphiques-digitale/silverstripe-seo-metadata",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Graphiques-Digitale/silverstripe-seo-metadata.git",
+                "reference": "f92128688a60b6c6b514b6efb1486ac60f4a8e03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Graphiques-Digitale/silverstripe-seo-metadata/zipball/f92128688a60b6c6b514b6efb1486ac60f4a8e03",
+                "reference": "f92128688a60b6c6b514b6efb1486ac60f4a8e03",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-seo-metadata",
+                "screenshots": [
+                    "screenshot-1.png",
+                    "screenshot-2.png",
+                    "screenshot-3.png",
+                    "screenshot-4.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Gerber",
+                    "email": "atari@graphiquesdigitale.net"
+                }
+            ],
+            "description": "Enhanced SEO metadata module for the SilverStripe framework.",
+            "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-metadata",
+            "keywords": [
+                "engine",
+                "metadata",
+                "module",
+                "optimisation",
+                "optimization",
+                "search",
+                "seo",
+                "silverstripe"
+            ],
+            "time": "2016-11-14 14:12:54"
+        },
+        {
+            "name": "graphiques-digitale/silverstripe-seo-open-graph",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Graphiques-Digitale/silverstripe-seo-open-graph.git",
+                "reference": "e0409001c751e9062944cef1e7dd3be9dfb7d0f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Graphiques-Digitale/silverstripe-seo-open-graph/zipball/e0409001c751e9062944cef1e7dd3be9dfb7d0f7",
+                "reference": "e0409001c751e9062944cef1e7dd3be9dfb7d0f7",
+                "shasum": ""
+            },
+            "require": {
+                "graphiques-digitale/silverstripe-seo-metadata": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-seo-open-graph",
+                "screenshots": [
+                    "screenshot-1.png",
+                    "screenshot-2.png",
+                    "screenshot-3.png",
+                    "screenshot-4.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Gerber",
+                    "email": "atari@graphiquesdigitale.net"
+                }
+            ],
+            "description": "Adds Open Graph metadata to Pages",
+            "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-open-graph",
+            "keywords": [
+                "engine",
+                "facebook",
+                "metadata",
+                "module",
+                "open graph",
+                "optimisation",
+                "optimization",
+                "search",
+                "seo",
+                "silverstripe"
+            ],
+            "time": "2016-07-05 04:24:16"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -988,6 +1147,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "thezenmonkey/silverstripe-amp": 20,
+        "graphiques-digitale/silverstripe-seo-metadata": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": true,
