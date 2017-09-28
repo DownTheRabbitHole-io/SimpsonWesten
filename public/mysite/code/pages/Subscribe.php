@@ -27,13 +27,13 @@ class Subscribe_Controller extends Page_Controller{
             new TextField('Name', "Your Full Name"),
             new EmailField('Email', "Your Email"),
             new LabelField('Publication Categories'),
-            new CheckboxField('All publications', 'All publications'),
-            new CheckboxField('Fineprint', 'Fineprint'),
-            new CheckboxField('Commercial eSpeaking', 'Commercial eSpeaking'),
-            new CheckboxField('Property Speaking', 'Property Speaking'),
-            new CheckboxField('Trust eSpeaking', 'Trust eSpeaking'),
-            new CheckboxField('Employment Bulletin', 'Employment Bulletin'),
-            new CheckboxField('Online News', 'Online News')
+            new CheckboxField('All publications', '<strong>All publications</<strong>'),
+            new CheckboxField('Fineprint', '<strong>Fineprint:</strong> Our quarterly general newsletter with helpful articles on a wide range of legal topics suitable for both business and personal clients'),
+            new CheckboxField('Commercial eSpeaking', '<strong>Commercial eSpeaking:</strong> Our quarterly update on legal issues affecting our business clients'),
+            new CheckboxField('Property Speaking', '<strong>Property Speaking:</strong>  Our quarterly update for owners and tenants of residential and commercial property'),
+            new CheckboxField('Trust eSpeaking', '<strong>Trust eSpeaking:</strong>  Our quarterly update on issues affecting trusts'),
+            new CheckboxField('Employment Bulletin', '<strong>Employment Bulletin:</strong> Keep up to date with developments in employment, HR and health and safety'),
+            new CheckboxField('Online News', '<strong>Online News:</strong> Receive regular updates from our Savvy Lawyer blog and important legal alerts')
         );
 
         // Create action

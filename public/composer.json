@@ -13,7 +13,7 @@
 		"undefinedoffset/sortablegridfield": "^0.6.9",
 		"graphiques-digitale/silverstripe-seo-metadata": "dev-master",
 		"graphiques-digitale/silverstripe-seo-icons": "^1.0",
-		"graphiques-digitale/silverstripe-seo-open-graph": "^1.0"
+		"graphiques-digitale/silverstripe-seo-open-graph": "^1.0"		
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

@@ -142,3 +142,17 @@
   font-family: 'gibsonsemibold';
   font-size: 13px;
 }
+
+
+/* sub form */
+
+#Form_Form label{
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  vertical-align: top;
+}
+#Form_Form label strong{
+  font-family: 'gibsonsemibold';
+  color: #56565a !important;
+}

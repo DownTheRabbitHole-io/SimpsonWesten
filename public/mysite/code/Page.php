@@ -75,7 +75,7 @@ class Page_Controller extends ContentController {
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/bootstrap.min.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/bootstrap-datepicker.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/chosen.min.js");
-        Requirements::javascript("{$this->ThemeDir()}/javascript/common/bootstrap-checkbox.js");
+        //Requirements::javascript("{$this->ThemeDir()}/javascript/common/bootstrap-checkbox.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/nice-scroll.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/common/jquery-browser.js");
         Requirements::javascript("{$this->ThemeDir()}/javascript/scripts.js");

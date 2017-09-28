@@ -8,14 +8,14 @@ $(function () {
         });
     }
 
-
+/* turn off custom checkboxes
     if ($('input[type="checkbox"]').length) {
         $('input[type="checkbox"]').checkbox({
             checkedClass: 'fa fa-check-square-o',
             uncheckedClass: 'fa fa-square-o'
         });
     }
-
+*/
 
     if ($('[data-datepicker]').length) {
         $('[data-datepicker]').datetimepicker({

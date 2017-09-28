@@ -33,6 +33,21 @@ jQuery.noConflict();
 			scrollToAnchor('contentAnchor', 100);
 		});
 
+
+		var $others = $('.checkbox').not('#Form_Form_All_publications');
+		$('#Form_Form_All_publications').change(function () {
+				if (this.checked) {
+					 console.log('uncheck', this);
+						$others.prop('checked', false)
+				}
+		});
+		$others.change(function () {
+				if (this.checked) {
+					console.log('uncheck all');
+						$('#Form_Form_All_publications').prop('checked', false)
+				}
+		});
+
 		function scrollToAnchor(aid, adjustment){
 				var aTag = $("a[name='"+ aid +"']");
 				$('html,body').animate({scrollTop: aTag.offset().top - adjustment},'slow');
